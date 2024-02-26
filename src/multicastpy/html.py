@@ -1,39 +1,6 @@
 from lxml.etree import parse, HTMLParser
 
-
-def iter_text(p, markdown=False, strict=True):
-    for e in p.xpath('child::node()'):
-        if getattr(e, 'tag', None):
-            if e.tag == 'em':
-                if markdown:
-                    yield '*{}*'.format(text(e, markdown=markdown))
-                else:
-                    yield text(e)
-            elif e.tag == 'strong':
-                if markdown:
-                    yield '**{}**'.format(text(e))
-                else:
-                    yield text(e)
-            elif e.tag == 'a':
-                assert markdown
-                yield '[{}]({})'.format(text(e), e.get('href'))
-            elif e.tag == 'span':
-                assert markdown or e.get('class') == 'citeurl'
-                if e.get('class') == 'citeurl':
-                    yield 'https://{}'.format(e.text)
-                else:
-                    yield text(e, markdown=markdown)
-            elif e.tag == 'br':
-                yield '\n'
-            else:
-                if 'Comment' not in str(e.tag) and strict:
-                    raise ValueError(e.tag)
-        else:
-            yield str(e)
-
-
-def text(e, markdown=False, strict=True):
-    return ''.join(iter_text(e, markdown=markdown, strict=strict)).strip()
+from .xml import text
 
 
 def iter_corpus_metadata(index_html, corpora):

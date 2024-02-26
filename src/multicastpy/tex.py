@@ -1,5 +1,7 @@
 from TexSoup import TexSoup
 
+__all__ = ['iter_text_metadata']
+
 
 def iter_text_metadata(tex, tsv, corpus, globalmd):
     """
