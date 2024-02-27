@@ -81,9 +81,6 @@ def run(args):
     # - data files (tsv, xml, ...)
     md = mc.metadata(args.version, args.corpus)
     dump({t.id: attr.asdict(t) for t in md.texts}, rdir / 'texts.json', indent=4)
-    #
-    # pubs!?
-    #
     dump({
         "id": "mc{}".format(args.corpus),
         "title": "Multi-CAST {}".format(md.lname),

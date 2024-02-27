@@ -1,4 +1,5 @@
 from multicastpy.__main__ import main
+from cldfbench.__main__ import main as cldfbench
 
 
 def test_all(tmp_path, fixtures):

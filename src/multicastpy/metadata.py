@@ -14,29 +14,19 @@ def repl_version(s, version):
 class ReplaceReferences:
     def __init__(self):
         self.references = set()
-        self.pubs = {}
+        self.pubs = []
 
     def __call__(self, ml):
         if ml.parsed_url.fragment:
             self.references.add(ml.parsed_url.fragment)
             ml.url = 'Source#cldf:{}'.format(ml.parsed_url.fragment)
         elif 'data/pubs' in ml.parsed_url.path:
-            path = ml.parsed_url.path
-            if path.startswith('/'):
-                path = path[1:]
-            did = pathlib.Path(ml.url).stem.replace('-', '_')
-            self.pubs[pathlib.Path(ml.url).name] = did
-            ml.url = 'MediaTable#cldf:{}'.format(did)
+            self.pubs.append(pathlib.Path(ml.url).name)
+            ml.url = 'MediaTable#cldf:{}'.format(pathlib.Path(ml.url).name)
         return ml
 
     def replace(self, text):
         return MarkdownLink.replace(text, self)
-
-
-@attr.s
-class CorpusDoc:
-    id = attr.ib(validator=attr.validators.matches_re('^[a-zA-Z0-9_]+$'))
-    name = attr.ib()
 
 
 @attr.s
@@ -51,9 +41,7 @@ class CorpusMetadata:
         validator=[attr.validators.min_len(1), attr.validators.instance_of(list)])
     description = attr.ib(validator=attr.validators.min_len(1))
     image_description = attr.ib(validator=attr.validators.min_len(1))
-    docs = attr.ib(
-        converter=lambda s: [CorpusDoc(id=i, name=n) for n, i in s.items()],
-        validator=attr.validators.instance_of(list))
+    docs = attr.ib(validator=attr.validators.instance_of(list))
     texts = attr.ib(
         converter=lambda s: [TextMetadata(**ss) for ss in s],
         validator=[attr.validators.min_len(1), attr.validators.instance_of(list)])

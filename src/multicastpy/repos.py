@@ -65,21 +65,23 @@ class MultiCast(API):
 
         tmd = self.text_metadata(version)
         corpora_in_version = {r['corpus'] for r in tmd}
+        if corpus:
+            assert corpus in corpora_in_version
+            corpora_in_version = {corpus}
 
         res = {d['id']: d for d in iter_corpus_metadata(self.repos / 'index.html', self.corpora)}
         for cid in corpora_in_version:
-            if not corpus or (corpus == cid):
-                cmd = res[cid]
-                cmd['texts'] = list(
-                    iter_text_metadata(self.corpora_tex, self.text_metadata(version), cid, cmd))
-                cmd['citation'] = self.citation(cid, version=version)
+            cmd = res[cid]
+            cmd['texts'] = list(
+                iter_text_metadata(self.corpora_tex, self.text_metadata(version), cid, cmd))
+            cmd['citation'] = self.citation(cid, version=version)
 
-                desc_repl = ReplaceReferences()
-                cmd['description'] = desc_repl.replace(cmd['description'])
-                cmd['sources'] = [
-                    self.sources[sid] for sid in
-                    sorted(desc_repl.references.union(cmd['sources']))]
-                cmd['docs'] = desc_repl.pubs
+            desc_repl = ReplaceReferences()
+            cmd['description'] = desc_repl.replace(cmd['description'])
+            cmd['sources'] = [
+                self.sources[sid] for sid in
+                sorted(desc_repl.references.union(cmd['sources']))]
+            cmd['docs'] = desc_repl.pubs
 
         res = {cid: CorpusMetadata(**d) for cid, d in res.items() if cid in corpora_in_version}
         return res if not corpus else res[corpus]

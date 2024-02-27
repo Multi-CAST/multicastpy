@@ -8,11 +8,13 @@ import attr
 from clldutils.markup import add_markdown_text
 from clldutils.path import md5
 from cldfbench import Dataset as BaseDataset, CLDFSpec, Metadata
+from pycldf import Sources
 from csvw.dsv import reader
 
 from .util import rmdir
 from .refind import iter_referents, refind_map, remap_refind
 from .xml import UNMARKED, get_file
+from .eaf import add_orthography
 
 
 @attr.s
@@ -30,7 +32,7 @@ class MultiCastMetadata(Metadata):
 class Dataset(BaseDataset):
     metadata_cls = MultiCastMetadata
 
-    def cldf_specs(self):  # A dataset must declare all CLDF sets it creates.
+    def cldf_specs(self):  # pragma: no cover
         return CLDFSpec(
             dir=self.cldf_dir,
             module='TextCorpus',
@@ -60,9 +62,6 @@ class Dataset(BaseDataset):
     @functools.cached_property
     def refind_map(self):
         return refind_map(self.raw_dir / 'tsv')
-
-    def cmd_download(self, args):
-        pass
 
     def cmd_readme(self, args):
         res = BaseDataset.cmd_readme(self, args)
@@ -112,12 +111,23 @@ class Dataset(BaseDataset):
             for p in self.raw_dir.joinpath(d).glob('*.' + d):
                 shutil.copyfile(p, mdir / p.name)
                 remap_refind(mdir / p.name, self.refind_map)
+
+        docmap = {}
+        for p in ['annotation-notes.pdf', 'image.jpg'] + self.metadata.docs:
+            p = self.raw_dir / p
+            docmap[p.name] = md5(p)
+            shutil.copyfile(p, mdir / p.name)
+            args.writer.objects['MediaTable'].append(dict(
+                ID=docmap[p.name],
+                Name=p.name,
+                Media_Type=mimetypes.guess_type(p.name)[0],
+                Size=p.stat().st_size,
+                Download_URL='{}/{}'.format(mdir.name, p.name),
+            ))
         #
-        # FIXME:
-        # - add annotation-notes.pdf
-        # - add corpus image
-        # - add corpus docs
+        # FIXME: use docmap to fix URLs in description!
         #
+
         glang = args.glottolog.api.languoid(self.metadata.glottocode)
         args.writer.objects['LanguageTable'].append(dict(
             ID=self.id,
@@ -130,6 +140,12 @@ class Dataset(BaseDataset):
             Areas=self.metadata.areas,
             Varieties=self.metadata.varieties,
         ))
+        args.writer.objects['LanguageTable'].append(dict(
+            ID='en',
+            Name='English',
+            Glottocode='stan1293',
+        ))
+        args.writer.cldf.sources = Sources.from_file(self.raw_dir / 'sources.bib')
         args.writer.objects['referents.csv'].append(dict(refind=UNMARKED))
         for row, rels in iter_referents(self.raw_dir / 'list-of-referents.tsv', self.refind_map):
             args.writer.objects['referents.csv'].append(row)
@@ -141,6 +157,7 @@ class Dataset(BaseDataset):
             cfids, clauses, reclength = [], 0, 0
             for p in mdir.glob('mc_{}_{}*.xml'.format(self.lid, tid)):
                 file = get_file(p)
+                orthography = add_orthography(mdir / '{}.eaf'.format(p.stem))
                 fname = pathlib.Path(file.audio)
                 mp3 = self.raw_dir / 'audio' / '{}.mp3'.format(fname.stem)
                 fids = [md5(mp3)]
@@ -182,21 +199,16 @@ class Dataset(BaseDataset):
                         Comment=unit.add_comments,
                         Audio_Start=int(unit.start_time),
                         Audio_End=int(unit.end_time),  # milliseconds
-                        #Meta_Language_ID=cids['english'],
+                        Meta_Language_ID='en',
                         graid=unit.graid,
                         refind=unit.refind,
                         refindFK=unit.refind,
                         isnref=unit.isnref,
+                        add_orthography=orthography.get(unit.uid),
                         Media_IDs=fids,
-                        #Contribution_ID=cid,
-                        #
-                        # FIXME: add_orthography - alternative orthography
-                        #
+                        Contribution_ID=tid,
                     ))
                 cfids.extend(fids)
-            #
-            # FIXME: sources!
-            #
             args.writer.objects['ContributionTable'].append(dict(
                 ID=t['id'],
                 Name=t['title'] or t['id'],
@@ -215,6 +227,7 @@ class Dataset(BaseDataset):
                 Type=t['type'],
                 Year_Recorded=int(t['recorded']),
                 Recording_Length=reclength,
+                Source=sorted(args.writer.cldf.sources.keys()),
             ))
 
     def add_schema(self, cldf):
@@ -288,7 +301,12 @@ class Dataset(BaseDataset):
             {
                 "name": "Recording_Length",
                 "datatype": "float",
-            }
+            },
+            {
+                "name": "Source",
+                "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#source",
+                "separator": ";",
+            },
         )
         cldf['ContributionTable'].common_props['dc:description'] = \
             "A collection of texts from one language, with shared provenance."
@@ -323,6 +341,14 @@ class Dataset(BaseDataset):
                     "relations and animacy in discourse, Haig & Schnell 2014) or ## as clause "
                     "boundary marker.",
                 "separator": "\t",
+            },
+            {
+                "name": "add_orthography",
+                "dc:description":
+                    "The object language text in another orthographical system; in "
+                    "Mandarin or Japanese, for instance, this tier contains the text in its "
+                    "original orthography (hanzi, or kanji and kana) while the utterance tier "
+                    "is a transliteration of the text (pinyin, or romaji)."
             },
             {
                 "name": "Text_ID",

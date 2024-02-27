@@ -6,7 +6,8 @@ import collections
 
 from csvw.dsv import reader, UnicodeWriter
 
-from .xml import updateable_xml
+from .xml import updateable_xml, remap_refind as xml_remap_refind
+from .eaf import remap_refind as eaf_remap_refind
 
 __all__ = ['iter_referents', 'remap_refind', 'refind_map']
 
@@ -84,13 +85,10 @@ def remap_refind(p, refind_map):
     tid = tid[:-2] if tid.endswith('_a') or tid.endswith('_b') else tid
     if p.suffix == '.eaf':
         with updateable_xml(p, newline='\n') as xml:
-            for e in xml.xpath(
-                    ".//TIER[@TIER_ID='refind']/ANNOTATION/REF_ANNOTATION/ANNOTATION_VALUE"):
-                e.text = str(refind_map[tid, e.text])
+            eaf_remap_refind(xml, refind_map, tid)
     elif p.suffix == '.xml':
         with updateable_xml(p, newline='\r\n') as xml:
-            for e in xml.xpath(".//refind"):
-                e.text = str(refind_map[tid, e.text])
+            xml_remap_refind(xml, refind_map, tid)
     elif p.suffix == '.tsv':
         rows = list(reader(p, dicts=True, delimiter='\t'))
         with UnicodeWriter(p, delimiter='\t') as writer:

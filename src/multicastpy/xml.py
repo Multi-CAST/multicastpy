@@ -3,7 +3,7 @@ import collections
 
 from lxml.etree import parse, tostring
 
-__all__ = ['UNMARKED', 'updateable_xml', 'get_file', 'text']
+__all__ = ['UNMARKED', 'updateable_xml', 'get_file', 'text', 'remap_refind']
 UNMARKED = '∅'
 
 
@@ -16,6 +16,11 @@ def updateable_xml(p, newline='\n'):
         with p.open('w', encoding='utf8', newline=newline) as fp:
             fp.write('<?xml version="1.0" encoding="UTF-8"?>\n{}'.format(
                 tostring(d, pretty_print=True, encoding=str)))
+
+
+def remap_refind(doc, refind_map, tid):
+    for e in doc.xpath(".//refind"):
+        e.text = str(refind_map[tid, e.text])
 
 
 def iter_text(p, markdown=False):
