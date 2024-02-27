@@ -1,8 +1,6 @@
 from multicastpy.tex import *
 
 
-
-
 def test_iter_text_metadata(api):
     gmd = {}
     res = list(iter_text_metadata(

@@ -1,6 +1,24 @@
 import shutil
 
+import pytest
+from lxml.etree import fromstring
+
 from multicastpy.xml import *
+
+
+@pytest.mark.parametrize(
+    'xml,plain,markdown',
+    [
+        ('the <em>title</em> text', 'the title text', 'the *title* text'),
+        ('the <strong>title</strong> text', 'the title text', 'the **title** text'),
+        ('the <a href="http://example.com">link</a>', None, 'the [link](http://example.com)'),
+        ('two<br/>lines', 'two\nlines', 'two\nlines'),
+    ]
+)
+def test_text(xml, plain, markdown):
+    if plain:
+        assert text(fromstring('<r>{}</r>'.format(xml))) == plain
+    assert text(fromstring('<r>{}</r>'.format(xml)), markdown=True) == markdown
 
 
 def test_get_file(fixtures):

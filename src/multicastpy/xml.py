@@ -18,39 +18,26 @@ def updateable_xml(p, newline='\n'):
                 tostring(d, pretty_print=True, encoding=str)))
 
 
-def iter_text(p, markdown=False, strict=True):
+def iter_text(p, markdown=False):
     for e in p.xpath('child::node()'):
         if getattr(e, 'tag', None):
             if e.tag == 'em':
-                if markdown:
-                    yield '*{}*'.format(text(e, markdown=markdown))
-                else:
-                    yield text(e)
+                yield '*{}*'.format(text(e, markdown=markdown)) if markdown else text(e)
             elif e.tag == 'strong':
-                if markdown:
-                    yield '**{}**'.format(text(e))
-                else:
-                    yield text(e)
+                yield '**{}**'.format(text(e)) if markdown else text(e)
             elif e.tag == 'a':
                 assert markdown
                 yield '[{}]({})'.format(text(e), e.get('href'))
             elif e.tag == 'span':
-                assert markdown or e.get('class') == 'citeurl'
-                if e.get('class') == 'citeurl':
-                    yield 'https://{}'.format(e.text)
-                else:
-                    yield text(e, markdown=markdown)
+                yield text(e, markdown=markdown)
             elif e.tag == 'br':
                 yield '\n'
-            else:
-                if 'Comment' not in str(e.tag) and strict:
-                    raise ValueError(e.tag)
         else:
             yield str(e)
 
 
-def text(e, markdown=False, strict=True):
-    return ''.join(iter_text(e, markdown=markdown, strict=strict)).strip()
+def text(e, markdown=False):
+    return ''.join(iter_text(e, markdown=markdown)).strip()
 
 
 def parse_tiers(unit):

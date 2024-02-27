@@ -1,0 +1,1775 @@
+corpus	text	uid	gword	gloss	graid	gform	ganim	gfunc	refind	isnref
+veraa	isam	0001	#	#	#nc	#nc				
+veraa	isam	0001	lē	LOC	nc	nc				
+veraa	isam	0001	=n	=ART	nc	nc				
+veraa	isam	0001	qōn̄	night	nc	nc				
+veraa	isam	0001	ne	NUM.ART	nc	nc				
+veraa	isam	0001	vō-wal	NUM-one	nc	nc				
+veraa	isam	0001	kaka	story	nc	nc				
+veraa	isam	0001	di	3SG	nc	nc				
+veraa	isam	0001	=n	=ART	nc	nc				
+veraa	isam	0001	a	LOC.SP	nc	nc				
+veraa	isam	0001	kel-gi	behind-3SG	nc	nc				
+veraa	isam	0001	lusuwēn	downwind	nc	nc				
+veraa	isam	0001	so	QUOT	nc	nc				
+veraa	isam	0001	lē	LOC	nc	nc				
+veraa	isam	0001	=n	=ART	nc	nc				
+veraa	isam	0001	a	LOC.SP	nc	nc				
+veraa	isam	0001	lēn	Lemerig	nc_np	nc_np			0001	new
+veraa	isam	0001	mērig	NC	nc	nc				
+veraa	isam	0002	#	#	##	##				
+veraa	isam	0002	qōn	night	np:other	np		other		
+veraa	isam	0002	ne	NUM.ART	rn	rn				
+veraa	isam	0002	vō-wal	NUM-one	rn	rn				
+veraa	isam	0002	'erē	PL	ln	ln				
+veraa	isam	0002	'an̄sar	person	np.h:pred	np	h	pred	0002	new
+veraa	isam	0002	'a	ASS.SP	rn	rn				
+veraa	isam	0002	lēmērig	Lemerig	rn	rn			0001	
+veraa	isam	0003	#	#	##	##				
+veraa	isam	0003	vaga	always	other	other				
+veraa	isam	0003	dir	3PL	pro.h:s	pro	h	s	0002	
+veraa	isam	0003	ga	STAT	lv	lv				
+veraa	isam	0003	van	go	v:pred	v		pred		
+veraa	isam	0003	qel	down	rv	rv				
+veraa	isam	0003	#	#	##	##				
+veraa	isam	0003	dir	3PL	pro.h:s	pro	h	s	0002	
+veraa	isam	0003	ga	STAT	lv	lv				
+veraa	isam	0003	vo-von̄odo	RED-sea.harvest	v:pred	v		pred		
+veraa	isam	0003	lē	LOC	adp	adp				
+veraa	isam	0003	=n	=ART	ln	ln				
+veraa	isam	0003	me'	reef	np:l	np		l	0003	new
+veraa	isam	0003	ne	NUM.ART	rn	rn				
+veraa	isam	0003	vō-wal	NUM-one	rn	rn				
+veraa	isam	0003	rōv-rōv'e	RED-close	rn	rn				
+veraa	isam	0003	=n	=ART	rn	rn				
+veraa	isam	0003	vono	home	rn_np	rn_np			0001	
+veraa	isam	0003	-re	-3PL	-rn_pro.h:poss	-rn_pro	h	poss	0002	
+veraa	isam	0004	#	#	##	##				
+veraa	isam	0004	lē	LOC	adp	adp				
+veraa	isam	0004	=n	=ART	=ln	=ln				
+veraa	isam	0004	masō-gi	time	np:other	np		other		
+veraa	isam	0004	dir	3PL	pro.h:s	pro	h	s	0002	
+veraa	isam	0004	=ēm	=TAM1	=lv	=lv				
+veraa	isam	0004	vo-von̄odo	RED-sea.harvest	v:pred	v		pred		
+veraa	isam	0005	#	#	##	##				
+veraa	isam	0005	dir	3PL	pro.h:s	pro	h	s	0002	
+veraa	isam	0005	=ēk	=TAM2	=lv	=lv				
+veraa	isam	0005	mul	go	v:pred	v		pred		
+veraa	isam	0005	kal	upwards	rv	rv				
+veraa	isam	0005	#	#	##	##				
+veraa	isam	0005	dir	3PL	pro.h:a	pro	h	a	0002	
+veraa	isam	0005	=ēk	=TAM2	=lv	=lv				
+veraa	isam	0005	bigbig	RED-eat	v:pred	v		pred		
+veraa	isam	0005	ēn	ART	ln	ln				
+veraa	isam	0005	go	POSS.EAT	ln	ln				
+veraa	isam	0005	-rē	-3PL	-ln_pro.h:poss	-ln_pro	h	poss	0002	
+veraa	isam	0005	=n	=ART	=ln	=ln				
+veraa	isam	0005	vo-von̄odo	RED-sea.harvest	np:p	np		p	0004	bridging
+veraa	isam	0005	si	or	rn	rn				
+veraa	isam	0005	=n	=ART	=rn	=rn				
+veraa	isam	0005	mes	fish	rn_np	rn_np			0005	bridging
+veraa	isam	0005	#	#	#rc_rn	#rc_rn				
+veraa	isam	0005	dir	3PL	pro.h:a	pro	h	a	0002	
+veraa	isam	0005	=ēm	=TAM1	=lv	=lv				
+veraa	isam	0005	da	do	v:pred	v		pred		
+veraa	isam	0005	ZERO	ZERO	0:p	0		p	0005	
+veraa	isam	0005	%	%	%	%				
+veraa	isam	0005	si	or	rn	rn				
+veraa	isam	0005	=n	=ART	=rn	=rn				
+veraa	isam	0005	goto	hermit.crab	rn_np	rn_np			0006	bridging
+veraa	isam	0005	si	or	rn	rn				
+veraa	isam	0005	=n	=ART	=rn	=rn				
+veraa	isam	0005	wōkalkal	crab	rn_np	rn_np			0007	bridging
+veraa	isam	0005	si	or	rn	rn				
+veraa	isam	0005	=n	=ART	=rn	=rn				
+veraa	isam	0005	wōsēs	mussel	rn_np	rn_np			0008	bridging
+veraa	isam	0005	senē	MAN.DEM1	rn	rn				
+veraa	isam	0006	#	#	##	##				
+veraa	isam	0006	dir	3PL	pro.h:a	pro	h	a	0002	
+veraa	isam	0006	=ēk	=TAM2	=lv	=lv				
+veraa	isam	0006	mul	go	v:pred	v		pred		
+veraa	isam	0006	'ō'	carry	rv	rv				
+veraa	isam	0006	kal	upwards	rv	rv				
+veraa	isam	0006	ZERO	ZERO	0:p	0		p	0004	
+veraa	isam	0006	lē	LOC	adp	adp				
+veraa	isam	0006	=n	=ART	=ln	=ln				
+veraa	isam	0006	vono	home	np:g	np		g	0001	
+veraa	isam	0006	-re	-3PL	-rn_pro.h:poss	-rn_pro	h	poss	0002	
+veraa	isam	0006	#	#	##	##				
+veraa	isam	0006	dir	3PL	pro.h:a	pro	h	a	0002	
+veraa	isam	0006	=ēk	=TAM2	=lv	=lv				
+veraa	isam	0006	big	eat	v:pred	v		pred		
+veraa	isam	0006	ZERO	ZERO	0:p	0		p	0004	
+veraa	isam	0007	#	#	##	##				
+veraa	isam	0007	dir	3PL	pro.h:s	pro	h	s	0002	
+veraa	isam	0007	=ēm	=TAM1	=lv	=lv				
+veraa	isam	0007	da	do	v:pred	v		pred		
+veraa	isam	0007	senē	MAN.DEM1	other	other				
+veraa	isam	0007	vaga	always=TAM1	other	other				
+veraa	isam	0007	#	#	##	##				
+veraa	isam	0007	ZERO	ZERO	0.h:s	0	h	s	0002	
+veraa	isam	0007	=m	=TAM1	=lv	=lv				
+veraa	isam	0007	da	do	v:pred	v		pred		
+veraa	isam	0007	vaga	always	other	other				
+veraa	isam	0007	#	#	##	##				
+veraa	isam	0007	ZERO	ZERO	0.h:s	0	h	s	0002	
+veraa	isam	0007	da	do	v:pred	v		pred		
+veraa	isam	0007	vaga	always	other	other				
+veraa	isam	0007	va-van	RED-go	other	other				
+veraa	isam	0008	#	#	##	##				
+veraa	isam	0008	lē	LOC	adp	adp				
+veraa	isam	0008	=n	=ART	=ln	=ln				
+veraa	isam	0008	qōn̄	night	np:other	np		other		
+veraa	isam	0008	ne	NUM.ART	rn	rn				
+veraa	isam	0008	vō-wal	NUM-one	rn	rn				
+veraa	isam	0008	e	PERS.ART	ln	ln				
+veraa	isam	0008	ruwa	two.people	np.h:dt_s	np	h	dt_s	0009	new
+veraa	isam	0008	vō-ruō	NUM-two	rn	rn				
+veraa	isam	0008	duru	3DL	pro.h:s	pro	h	s	0009	
+veraa	isam	0008	mak	IMM	lv	lv				
+veraa	isam	0008	leg	marry	v:pred	v		pred		
+veraa	isam	0008	'i	DEL	rv	rv				
+veraa	isam	0009	#	#	##	##				
+veraa	isam	0009	rekse	like	other	other				
+veraa	isam	0009	duru	3DL	pro.h:s	pro	h	s	0009	
+veraa	isam	0009	mak	IMM	lv	lv				
+veraa	isam	0009	leg	marry	v:pred	v		pred		
+veraa	isam	0009	'i	DEL	rv	rv				
+veraa	isam	0010	#	#	##	##				
+veraa	isam	0010	duru	3DL	pro.h:s	pro	h	s	0009	
+veraa	isam	0010	=m	=TAM1	=lv	=lv				
+veraa	isam	0010	'ēqēl	descend	v:pred	v		pred		
+veraa	isam	0010	rek	also	rv	rv				
+veraa	isam	0010	lē	LOC	adp	adp				
+veraa	isam	0010	=n	=ART	=ln	=ln				
+veraa	isam	0010	me'	reef	np:g	np		g	0003	
+veraa	isam	0010	#	#	##	##				
+veraa	isam	0010	duru	3DL	pro.h:s	pro	h	s	0009	
+veraa	isam	0010	=k	=TAM2	=lv	=lv				
+veraa	isam	0010	vo-von̄odo	RED-sea.harvest	v:pred	v		pred		
+veraa	isam	0011	#	#	##	##				
+veraa	isam	0011	lē	LOC	adp	adp				
+veraa	isam	0011	=n	=ART	=ln	=ln				
+veraa	isam	0011	masō-gi	time-3SG	np:other	np		other		
+veraa	isam	0011	duru	3DL	pro.h:s	pro	h	s	0009	
+veraa	isam	0011	=m	=TAM1	=lv	=lv				
+veraa	isam	0011	vo-von̄odo	RED-sea.harvest	v:pred	v		pred		
+veraa	isam	0011	qē'	finish	rv	rv				
+veraa	isam	0011	#	#	##	##				
+veraa	isam	0011	duru	3DL	pro.h:s	pro	h	s	0009	
+veraa	isam	0011	=k	=TAM2	=lv	=lv				
+veraa	isam	0011	mul	go	v:pred	v		pred		
+veraa	isam	0011	kal	upwards	rv	rv				
+veraa	isam	0011	den	ABL	rv	rv				
+veraa	isam	0012	#	#	##	##				
+veraa	isam	0012	'an̄sara	person	np.h:dt_s	np	h	dt_s	0010	new
+veraa	isam	0012	ne	NUM.ART	rn	rn				
+veraa	isam	0012	vō-wal	NUM-one	rn	rn				
+veraa	isam	0012	wuva	only	rn	rn				
+veraa	isam	0012	di	3SG	pro.h:s	pro	h	s	0010	
+veraa	isam	0012	=m	=TAM1	=lv	=lv				
+veraa	isam	0012	kalak	get.up	v:pred	v		pred		
+veraa	isam	0012	den	ABL	adp	adp				
+veraa	isam	0012	ēn	ART	ln	ln				
+veraa	isam	0012	m̄o-gi	POSS.HOUSE-3SG	np:obl	np		obl	0011	new
+veraa	isam	0012	gēr	approximately	other	other				
+veraa	isam	0012	lē	LOC	adp	adp				
+veraa	isam	0012	=n	=ART	=ln	=ln				
+veraa	isam	0012	'ēnēs	middle	np:other	np		other	0012	new
+veraa	isam	0012	qōn̄	night	rn	rn				
+veraa	isam	0012	gēr	approximately	other	other				
+veraa	isam	0012	senē	MAN.DEM1	other	other				
+veraa	isam	0013	#	#	##	##				
+veraa	isam	0013	di	3SG	pro.h:s	pro	h	s	0010	
+veraa	isam	0013	ne	TAM2:3SG	lv-pro_h_s	lv-pro_h_s				
+veraa	isam	0013	'ēqēl	descend	v:pred	v		pred		
+veraa	isam	0013	lē	LOC	adp	adp				
+veraa	isam	0013	=n	=ART	ln	ln				
+veraa	isam	0013	me'	reef	np:g	np		g	0003	
+veraa	isam	0013	rek	also	other	other				
+veraa	isam	0013	#	#	##	##				
+veraa	isam	0013	di	3SG	pro.h:a	pro	h	a	0010	
+veraa	isam	0013	ne	TAM2:3SG	lv-pro_h_a	lv-pro_h_a				
+veraa	isam	0013	sin̄	light	v:pred	v		pred		
+veraa	isam	0013	ēn	ART	ln	ln				
+veraa	isam	0013	mu-gi	POSS.GEN.3SG	ln_pro.h:poss	ln_pro	h	poss	0010	
+veraa	isam	0013	=n	=ART	=ln	=ln				
+veraa	isam	0013	nev	fire	np:p	np		p	0013	new
+veraa	isam	0013	lē	LOC	nc	nc				
+veraa	isam	0013	=n	=ART	nc	nc				
+veraa	isam	0013	lē	LOC	adp	adp				
+veraa	isam	0013	=n	=ART	=ln	=ln				
+veraa	isam	0013	m̄o-gi	POSS.HOUSE-3SG	np:l	np		l	0011	
+veraa	isam	0014	#	#	##	##				
+veraa	isam	0014	di	3SG	pro.h:s	pro	h	s	0010	
+veraa	isam	0014	ne	TAM2:3SG	lv-pro_h_s	lv-pro_h_s				
+veraa	isam	0014	'ēqēl	descend	v:pred	v		pred		
+veraa	isam	0014	rek	also	rv	rv				
+veraa	isam	0014	a	LOC.SP	adp	adp				
+veraa	isam	0014	=n	=ART	=ln	=ln				
+veraa	isam	0014	me'	reef	np:g	np		g	0003	
+veraa	isam	0015	#	#	##	##				
+veraa	isam	0015	di	3SG	pro.h:s	pro	h	s	0010	
+veraa	isam	0015	=m	=TAM1	=lv	=lv				
+veraa	isam	0015	'ēqēl	descend	v:pred	v		pred		
+veraa	isam	0015	a	LOC.SP	adp	adp				
+veraa	isam	0015	=n	=ART	=ln	=ln				
+veraa	isam	0015	me'	reef	np:g	np		g	0003	
+veraa	isam	0015	#	#	##	##				
+veraa	isam	0015	di	3SG	pro.h:s	pro	h	s	0010	
+veraa	isam	0015	=m	=TAM1	=lv	=lv				
+veraa	isam	0015	sō-sōk	RED-scan	v:pred	v		pred		
+veraa	isam	0015	kelkel	RED:back	rv	rv				
+veraa	isam	0015	a	LOC.SP	adp	adp				
+veraa	isam	0015	=n	=ART	=ln	=ln				
+veraa	isam	0015	me'	reef	np:l	np		l	0003	
+veraa	isam	0015	anē	DEM1.A	rn	rn				
+veraa	isam	0015	van	go	other	other				
+veraa	isam	0015	van	go	nc	nc				
+veraa	isam	0015	van	go	nc	nc				
+veraa	isam	0016	#	#	##	##				
+veraa	isam	0016	di	3SG	pro.h:s	pro	h	s	0010	
+veraa	isam	0016	=m	=TAM1	=lv	=lv				
+veraa	isam	0016	m̄alrow	startle	v:pred	v		pred		
+veraa	isam	0016	den	ABL	adp	adp				
+veraa	isam	0016	#	#	#cc:obl	#cc		obl		
+veraa	isam	0016	so	CPL	other	other				
+veraa	isam	0016	=n	=ART	=ln	=ln				
+veraa	isam	0016	me'	reef	np:dt_s	np		dt_s	0003	
+veraa	isam	0016	di	3SG	pro:s	pro		s	0003	
+veraa	isam	0016	=m	=TAM1	=lv	=lv				
+veraa	isam	0016	kalaka	get.up	v:pred	v		pred		
+veraa	isam	0017	#	#	##	##				
+veraa	isam	0017	enei	now	other	other				
+veraa	isam	0017	di	3SG	pro:s	pro		s	0003	
+veraa	isam	0017	ne	TAM2:3SG	lv-pro_s	lv-pro_s				
+veraa	isam	0017	qē'ēg	begin	v:pred	v		pred		
+veraa	isam	0017	van	go	rv	rv				
+veraa	isam	0017	sir	for	adp	adp				
+veraa	isam	0017	ēn	ART	ln	ln				
+veraa	isam	0017	'ekē	place	np:g	np		g	0014	new
+veraa	isam	0017	ga	STAT	rn	rn				
+veraa	isam	0017	rōr	deep	rn	rn				
+veraa	isam	0018	#	#	##	##				
+veraa	isam	0018	ba	but	other	other				
+veraa	isam	0018	di	3SG	nc_pro.h	nc_pro	h		0010	
+veraa	isam	0018	masō-gi	time-3SG	np:other	np		other	0015	new
+veraa	isam	0018	di	3SG	pro.h:s	pro	h	s	0010	
+veraa	isam	0018	=m	=TAM1	=lv	=lv				
+veraa	isam	0018	'ēn	see	v:pred	v		pred		
+veraa	isam	0018	sier	realise	rv	rv				
+veraa	isam	0018	#	#	#cc	#cc				
+veraa	isam	0018	so	CPL	other	other				
+veraa	isam	0018	me'	reef	np:dt_s	np		dt_s	0003	
+veraa	isam	0018	di	3SG	pro:s	pro		s	0003	
+veraa	isam	0018	=m	=TAM1	=lv	=lv				
+veraa	isam	0018	da	do	v:pred	v		pred		
+veraa	isam	0018	esenē	MAN.DEM1.E	other	other				
+veraa	isam	0018	#	#	##	##				
+veraa	isam	0018	di	3SG	pro.h:s	pro	h	s	0010	
+veraa	isam	0018	=m	=TAM1	lv	lv				
+veraa	isam	0018	m̄alrow	startle	v:pred	v		pred		
+veraa	isam	0018	den	ABL	rv	rv				
+veraa	isam	0018	#	#	##	##				
+veraa	isam	0018	di	3SG	pro.h:s	pro	h	s	0010	
+veraa	isam	0018	ne	TAM2:3SG	lv-pro_h_s	lv-pro_h_s				
+veraa	isam	0018	rara	cry	v:pred	v		pred		
+veraa	isam	0019	#	#	##	##				
+veraa	isam	0019	di	3SG	pro.h:s	pro	h	s	0010	
+veraa	isam	0019	ga	STAT	lv	lv				
+veraa	isam	0019	moros	want	v:pred	v		pred		
+veraa	isam	0019	rōw	jump	rv	rv				
+veraa	isam	0019	lē	LOC	adp	adp				
+veraa	isam	0019	=n	=ART	=ln	=ln				
+veraa	isam	0019	naw	saltwater	np:g	np		g	0016	bridging
+veraa	isam	0019	#	#	##neg	##neg				
+veraa	isam	0019	ba	but	other	other				
+veraa	isam	0019	di	3SG	pro.h:s	pro	h	s	0010	
+veraa	isam	0019	mas	INABIL1	lv	lv				
+veraa	isam	0019	da	do	v:pred	v		pred		
+veraa	isam	0019	m̄as	INABIL2	rv	rv				
+veraa	isam	0020	#	#	##	##				
+veraa	isam	0020	mana-gi	reason-3SG	np:other	np		other		
+veraa	isam	0020	si	or	other	other				
+veraa	isam	0020	di	3SG	pro.h:s	pro	h	s	0010	
+veraa	isam	0020	=m	=TAM1	=lv	=lv				
+veraa	isam	0020	rōw	jump	v:pred	v		pred		
+veraa	isam	0020	lē	LOC	adp	adp				
+veraa	isam	0020	=n	=ART	=ln	=ln				
+veraa	isam	0020	naw	saltwater	np:g	np		g	0016	
+veraa	isam	0020	#	#	##	##				
+veraa	isam	0020	di	3SG	pro.h:s	pro	h	s	0010	
+veraa	isam	0020	me	FUT	lv	lv				
+veraa	isam	0020	'ul	drown	v:pred	v		pred		
+veraa	isam	0021	#	#	##	##				
+veraa	isam	0021	so	CPL	other	other				
+veraa	isam	0021	di	3SG	pro.h:a	pro	h	a	0010	
+veraa	isam	0021	=m	=TAM1	=lv	=lv				
+veraa	isam	0021	'ukeg	letgo	v:pred	v		pred		
+veraa	isam	0021	wuva	only	rv	rv				
+veraa	isam	0021	diē	3SG	pro:p	pro		p	0003	
+veraa	isam	0022	#	#	##	##				
+veraa	isam	0022	di	3SG	pro.h:s	pro	h	s	0010	
+veraa	isam	0022	=m	=TAM1	=lv	=lv				
+veraa	isam	0022	'ir	stand	v:pred	v		pred		
+veraa	isam	0022	'i	DEL	rv	rv				
+veraa	isam	0022	a	LOC.SP	adp	adp				
+veraa	isam	0022	=n	=ART	=ln	=ln				
+veraa	isam	0022	me'	reef	np:l	np		l	0003	
+veraa	isam	0022	anē'ē	DEM1.A	rn	rn				
+veraa	isam	0023	#	#	##	##				
+veraa	isam	0023	lē	LOC	adp	adp				
+veraa	isam	0023	=n	=ART	=ln	=ln				
+veraa	isam	0023	masō-gi	time-3SG	np:other	np		other		
+veraa	isam	0023	di	3SG	nc	nc				
+veraa	isam	0023	ne	TAM2	nc	nc				
+veraa	isam	0023	=n	=ART	=ln	=ln				
+veraa	isam	0023	me'	reef	np:s	np		s	0003	
+veraa	isam	0023	ne	TAM2:3SG	lv-pro_s	lv-pro_s				
+veraa	isam	0023	vanvan	RED:go	v:pred	v		pred		
+veraa	isam	0023	rak	out	rv	rv				
+veraa	isam	0023	lik	more	rv	rv				
+veraa	isam	0023	row	down	rv	rv				
+veraa	isam	0023	lē	LOC	adp	adp				
+veraa	isam	0023	=n	=ART	=ln	=ln				
+veraa	isam	0023	'ekē	place	np:g	np		g	0014	
+veraa	isam	0023	ga	STAT	rn	rn				
+veraa	isam	0023	rōr	deep	rn	rn				
+veraa	isam	0023	#	#	##	##				
+veraa	isam	0023	di	3SG	pro.h:s	pro	h	s	0010	
+veraa	isam	0023	ne	TAM2:3SG	lv-pro_h_s	lv-pro_h_s				
+veraa	isam	0023	sōk	scan	v:pred	v		pred		
+veraa	isam	0023	sier	realise	rv	rv				
+veraa	isam	0023	#	#	#cc	#cc				
+veraa	isam	0023	so	CPL	other	other				
+veraa	isam	0023	=n	=ART	=ln	=ln				
+veraa	isam	0023	me'	reef	np:dt_s	np		dt_s	0003	
+veraa	isam	0023	#	#	#nc	#nc				
+veraa	isam	0023	di	3SG	nc	nc				
+veraa	isam	0023	=m	=TAM1	nc	nc				
+veraa	isam	0023	gis	hold	nc	nc				
+veraa	isam	0023	rekse	like	nc	nc				
+veraa	isam	0023	=n	=ART	nc	nc				
+veraa	isam	0023	%	%	%	%				
+veraa	isam	0023	di	3SG	pro:s	pro		s	0003	
+veraa	isam	0023	=m	=TAM1	=lv	=lv				
+veraa	isam	0023	van	go	v:pred	v		pred		
+veraa	isam	0023	ma	hither	rv	rv				
+veraa	isam	0023	rekse	like	other	other				
+veraa	isam	0023	=n	=ART	=ln	=ln				
+veraa	isam	0023	'an̄sara	person	np:obl	np		obl		
+veraa	isam	0024	#	#	##	##				
+veraa	isam	0024	di	3SG	pro.d:s	pro	d	s	0003	
+veraa	isam	0024	=m	=TAM1	=lv	=lv				
+veraa	isam	0024	rērē	crane	v:pred	v		pred		
+veraa	isam	0024	kal	upwards	rv	rv				
+veraa	isam	0024	#	#	##	##				
+veraa	isam	0024	rekse	like	other	other				
+veraa	isam	0024	=n	=ART	=ln	=ln				
+veraa	isam	0024	aval	other.side	np:dt_s	np		dt_s		
+veraa	isam	0024	n̄ēn̄ērē'	shoreline	rn	rn				
+veraa	isam	0024	me'	reef	rn_np	rn_np			0003	
+veraa	isam	0024	di	3SG	pro:s	pro		s	0003	
+veraa	isam	0024	=m	=TAM1	=lv	=lv				
+veraa	isam	0024	rērē	crane	v:pred	v		pred		
+veraa	isam	0024	kal	upwards	rv	rv				
+veraa	isam	0024	den	ABL	adp	adp				
+veraa	isam	0024	ēn	ART	ln	ln				
+veraa	isam	0024	naw	saltwater	np:obl	np		obl	0016	
+veraa	isam	0024	#	#	##	##				
+veraa	isam	0024	di	3SG	pro.d:s	pro	d	s	0003	
+veraa	isam	0024	ne	TAM2:3SG	lv-pro_d_s	lv-pro_d_s				
+veraa	isam	0024	tek	speak	v:pred	v		pred		
+veraa	isam	0024	mē	DAT	adp	adp				
+veraa	isam	0024	diē	3SG	pro.h:g	pro	h	g	0010	
+veraa	isam	0024	so	QUOT	other	other				
+veraa	isam	0024	#	#	##ds	##ds				
+veraa	isam	0024	bul	friend	np.h:voc	np	h	voc	0010	
+veraa	isam	0025	#	#	##ds	##ds				
+veraa	isam	0025	nik	2SG	pro.2:s	pro	2	s	0010	
+veraa	isam	0025	van	go	vother:pred	vother		pred		
+veraa	isam	0025	ma	hither	rv	rv				
+veraa	isam	0025	=n	=ART	nc	nc				
+veraa	isam	0025	lē	LOC	adp	adp				
+veraa	isam	0025	=n	=ART	=ln	=ln				
+veraa	isam	0025	kolo	back	np:g	np		g	0017	bridging
+veraa	isam	0025	-k	-1SG	-rn_pro.1:poss	-rn_pro	1	poss	0003	
+veraa	isam	0025	lē	LOC	adp	adp				
+veraa	isam	0025	=n	=ART	=ln	=ln				
+veraa	isam	0025	basbas	end	np:other	np		other	0017	
+veraa	isam	0025	na-gi	ORD-3SG	rn	rn				
+veraa	isam	0025	#	#	##ds	##ds				
+veraa	isam	0025	itok	good	v:pred	v		pred		
+veraa	isam	0025	#	#	##ds	##ds				
+veraa	isam	0025	gēdu	1DL.IN	pro.1:s	pro	1	s	0018	bridging
+veraa	isam	0025	=k	=TAM2	=lv	=lv				
+veraa	isam	0025	van	go	v:pred	v		pred		
+veraa	isam	0025	tetel	walk	rv	rv				
+veraa	isam	0026	#	#	#nc	#nc				
+veraa	isam	0026	so	QUOT	nc	nc				
+veraa	isam	0026	nik	2SG	nc_pro.2	nc_pro	2		0010	
+veraa	isam	0026	m	TAM1	nc	nc				
+veraa	isam	0026	#	#	##ds	##ds				
+veraa	isam	0026	enei	now	other	other				
+veraa	isam	0026	giduō	1DL.IN	pro.1:s	pro	1	s	0018	
+veraa	isam	0026	va'a	already	other:pred	other		pred		
+veraa	isam	0026	lē	LOC	adp	adp				
+veraa	isam	0026	=n	=ART	=ln	=ln				
+veraa	isam	0026	venē	middle	np:l	np		l	0014	
+veraa	isam	0026	lama	ocean	rn	rn				
+veraa	isam	0027	#	#	##ds	##ds				
+veraa	isam	0027	itok	good	v:pred	v		pred		
+veraa	isam	0027	#	#	##ds	##ds				
+veraa	isam	0027	so	PROSP	other	other				
+veraa	isam	0027	gidu	1DL.IN	pro.1:s	pro	1	s	0018	
+veraa	isam	0027	=k	=TAM2	=lv	=lv				
+veraa	isam	0027	'ēqēl	descend	v:pred	v		pred		
+veraa	isam	0027	lē	LOC	adp	adp				
+veraa	isam	0027	=n	=ART	=ln	=ln				
+veraa	isam	0027	vunuō	land	np:g	np		g	0019	new
+veraa	isam	0027	ne	NUM.ART	rn	rn				
+veraa	isam	0027	vō-wal	NUM-one	rn	rn				
+veraa	isam	0027	#	#	#ds_rc_rn	#ds_rc_rn				
+veraa	isam	0027	dir	3PL	pro.h:a	pro	h	a	0020	new
+veraa	isam	0027	ga	STAT	lv	lv				
+veraa	isam	0027	ul	call	v:pred	v		pred		
+veraa	isam	0027	ZERO	ZERO	0:p	0		p	0019	
+veraa	isam	0027	so	QUOT	other	other				
+veraa	isam	0027	=n	=ART	=ln	=ln				
+veraa	isam	0027	Torres	Torres	pn_np:other	pn_np		other		
+veraa	isam	0027	lē	LOC	adp	adp				
+veraa	isam	0027	=n	=ART	=ln	=ln				
+veraa	isam	0027	suwē	downwind	np:other	np		other		
+veraa	isam	0027	=n	=ART	=ln	=ln				
+veraa	isam	0027	vunuō	land	np:other	np		other	0019	
+veraa	isam	0027	ne	NUM.ART	rn	rn				
+veraa	isam	0027	vō-wal	NUM-one	rn	rn				
+veraa	isam	0027	rak	out	rn	rn				
+veraa	isam	0027	rōwē	down	rn	rn				
+veraa	isam	0027	nē	DEM1	rn	rn				
+veraa	isam	0027	#	#	#ds_rc_rn	#ds_rc_rn				
+veraa	isam	0027	dir	3PL	pro.h:a	pro	h	a	0020	
+veraa	isam	0027	ga	STAT	lv	lv				
+veraa	isam	0027	ul	call	v:pred	v		pred		
+veraa	isam	0027	ZERO	ZERO	0:p	0		p	0019	
+veraa	isam	0027	Torres	Torres	pn_np:other	pn_np		other		
+veraa	isam	0028	#	#	##ds	##ds				
+veraa	isam	0028	ba	but	other	other				
+veraa	isam	0028	nik	2SG	pro.2:s	pro	2	s	0010	
+veraa	isam	0028	wo	and	other	other				
+veraa	isam	0028	=m	=TAM1	=lv	=lv				
+veraa	isam	0028	'ēn	see	v:pred	v		pred		
+veraa	isam	0028	#	#	#cc	#cc				
+veraa	isam	0028	so	CPL	other	other				
+veraa	isam	0028	=n	=ART	=ln	=ln				
+veraa	isam	0028	naw	saltwater	np:s	np		s	0016	
+veraa	isam	0028	wo	and	other	other				
+veraa	isam	0028	=m	=TAM1	=lv	=lv				
+veraa	isam	0028	lōl	flooded	v:pred	v		pred		
+veraa	isam	0028	luwo	big	rv	rv				
+veraa	isam	0028	ma	hither	rv	rv				
+veraa	isam	0028	#	#	#cc	#cc				
+veraa	isam	0028	si	or	other	other				
+veraa	isam	0028	ZERO	ZERO	0:a	0		a	0016	
+veraa	isam	0028	wo	and	other	other				
+veraa	isam	0028	=m	=TAM1	=lv	=lv				
+veraa	isam	0028	van	go	v:pred	v		pred		
+veraa	isam	0028	kal	upwards	rv	rv				
+veraa	isam	0028	gōr	block	rv	rv				
+veraa	isam	0028	giduō	1DL.IN	pro.1:p	pro	1	p	0003	
+veraa	isam	0028	#	#	##ds	##ds				
+veraa	isam	0028	nik	2SG	pro.2:s	pro	2	s	0010	
+veraa	isam	0028	ē	TAM2:2SG	lv-pro_2_s	lv-pro_2_s				
+veraa	isam	0028	kalraka	get.up	v:pred	v		pred		
+veraa	isam	0028	#	#	##ds	##ds				
+veraa	isam	0028	nik	2SG	pro.2:s	pro	2	s	0010	
+veraa	isam	0028	ē	TAM2:2SG	lv-pro_2_s	lv-pro_2_s				
+veraa	isam	0028	'ir	stand	v:pred	v		pred		
+veraa	isam	0028	kal	upwards	rv	rv				
+veraa	isam	0028	#	#	##ds	##ds				
+veraa	isam	0028	den	ABL	other	other				
+veraa	isam	0028	gōr	secure	nc	nc				
+veraa	isam	0028	n	ART	ln	ln				
+veraa	isam	0028	naw	saltwater	np:a	np		a	0016	
+veraa	isam	0028	ne	TAM2:3SG	lv-pro_a	lv-pro_a				
+veraa	isam	0028	le	transfer	v:pred	v		pred		
+veraa	isam	0028	nikē	2SG	pro.2:p	pro	2	p	0010	
+veraa	isam	0029	#	#	##ds	##ds				
+veraa	isam	0029	wo	and	other	other				
+veraa	isam	0029	nik	2SG	pro.2:s	pro	2	s	0010	
+veraa	isam	0029	=m	=TAM1	=lv	=lv				
+veraa	isam	0029	'ēn	see	v:pred	v		pred		
+veraa	isam	0029	#	#	#cc	#cc				
+veraa	isam	0029	n	ART	ln	ln				
+veraa	isam	0029	naw	saltwater	np:dt_s	np		dt_s	0016	
+veraa	isam	0029	di	3SG	pro:s	pro		s	0016	
+veraa	isam	0029	=m	=TAM1	=lv	=lv				
+veraa	isam	0029	'ēqēl	descend	v:pred	v		pred		
+veraa	isam	0029	kel	back	rv	rv				
+veraa	isam	0029	#	#	##ds	##ds				
+veraa	isam	0029	nik	2SG	pro.2:s	pro	2	s	0010	
+veraa	isam	0029	ē	TAM2:2SG	lv-pro_2_s	lv-pro_2_s				
+veraa	isam	0029	sag	sit	v:pred	v		pred		
+veraa	isam	0029	sur	down	rv	rv				
+veraa	isam	0029	kel	back	rv	rv				
+veraa	isam	0030	#	#	##	##				
+veraa	isam	0030	duru	3DL	pro.h:s	pro	h	s	0018	
+veraa	isam	0030	=m	=TAM1	=lv	=lv				
+veraa	isam	0030	da	do	v:pred	v		pred		
+veraa	isam	0030	esenē	MAN.DEM1.E	other	other				
+veraa	isam	0030	van	go	other	other				
+veraa	isam	0030	van	go	nc	nc				
+veraa	isam	0030	van	go	nc	nc				
+veraa	isam	0030	va-va-van	RED:go	nc	nc				
+veraa	isam	0031	#	#	##	##				
+veraa	isam	0031	ne	TAM2:3SG	lv-pro_s	lv-pro_s				
+veraa	isam	0031	maran	daylight	v:pred	v		pred		
+veraa	isam	0031	#	#	##	##				
+veraa	isam	0031	ne	TAM2:3SG	lv-pro_s	lv-pro_s				
+veraa	isam	0031	qōn̄	night	v:pred	v		pred		
+veraa	isam	0032	#	#	##	##				
+veraa	isam	0032	ne	TAM2:3SG	lv-pro_s	lv-pro_s				
+veraa	isam	0032	maran	daylight	v:pred	v		pred	0021	bridging
+veraa	isam	0032	#	#	##	##				
+veraa	isam	0032	duru	3DL	pro.h:a	pro	h	a	0018	
+veraa	isam	0032	=k	=TAM2	=lv	=lv				
+veraa	isam	0032	din̄	reach	v:pred	v		pred		
+veraa	isam	0032	ēn	ART	ln	ln				
+veraa	isam	0032	mē'ērsa	harbour	np:p	np		p	0022	bridging
+veraa	isam	0033	#	#	##	##				
+veraa	isam	0033	duru	3DL	pro.h:s	pro	h	s	0018	
+veraa	isam	0033	=m	=TAM1	=lv	=lv				
+veraa	isam	0033	kal	enter	v:pred	v		pred		
+veraa	isam	0033	lē	LOC	adp	adp				
+veraa	isam	0033	=n	=ART	=ln	=ln				
+veraa	isam	0033	mē'ērsa	harbour	np:g	np		g	0022	
+veraa	isam	0033	lē	LOC	rn	rn				
+veraa	isam	0033	=n	=ART	=rn	=rn				
+veraa	isam	0033	vunuō	land	rn_np	rn_np			0023	bridging
+veraa	isam	0033	ne	NUM.ART	rn	rn				
+veraa	isam	0033	vō-wal	NUM-one	rn	rn				
+veraa	isam	0033	#	#	#rc_rn	#rc_rn				
+veraa	isam	0033	dir	3PL	pro.h:a	pro	h	a	0020	
+veraa	isam	0033	ga	STAT	lv	lv				
+veraa	isam	0033	ul	call	v:pred	v		pred		
+veraa	isam	0033	ZERO	ZERO	0:p	0		p	0023	
+veraa	isam	0033	so	QUOT	other	other				
+veraa	isam	0033	Hiw	Hiw	pn_np:other	pn_np		other		
+veraa	isam	0033	lē	LOC	adp	adp				
+veraa	isam	0033	=n	=ART	=ln	=ln				
+veraa	isam	0033	Torres	Torres	pn_np:other	pn_np		other	0019	
+veraa	isam	0033	'erē	PL	ln	ln				
+veraa	isam	0033	vunuō	land	np:other	np		other		
+veraa	isam	0033	'arn̄i	group	np:other	np		other		
+veraa	isam	0033	vunuō	land	rn	rn				
+veraa	isam	0033	a	LOC.SP	rn	rn				
+veraa	isam	0033	suwēn	downwind	rn	rn				
+veraa	isam	0033	a	LOC.SP	rn	rn				
+veraa	isam	0033	Torres	Torres	rn_pn_np	rn_pn_np			0019	
+veraa	isam	0033	#	#	##	##				
+veraa	isam	0033	dir	3PL	pro.h:a	pro	h	a	0020	
+veraa	isam	0033	ga	STAT	lv	lv				
+veraa	isam	0033	ul	call	v:pred	v		pred		
+veraa	isam	0033	ZERO	ZERO	0:p	0		p	0023	
+veraa	isam	0033	Hiw	Hiw	pn_np:other	pn_np		other		
+veraa	isam	0034	#	#	##	##				
+veraa	isam	0034	duru	3DL	pro.h:s	pro	h	s	0018	
+veraa	isam	0034	=m	=TAM1	=lv	=lv				
+veraa	isam	0034	kal	enter	v:pred	v		pred		
+veraa	isam	0034	ba'	into	rv	rv				
+veraa	isam	0034	'ekēnē	LOC.DEM1	other:l	other		l	0022	
+veraa	isam	0035	#	#	##	##				
+veraa	isam	0035	duru	3DL	pro.h:s	pro	h	s	0018	
+veraa	isam	0035	=m	=TAM1	=lv	=lv				
+veraa	isam	0035	van	go	v:pred	v		pred		
+veraa	isam	0035	sar	inland	rv	rv				
+veraa	isam	0035	lē	LOC	adp	adp				
+veraa	isam	0035	=n	=ART	=ln	=ln				
+veraa	isam	0035	mē'ērsa	harbour	np:g	np		g	0022	
+veraa	isam	0035	ne	NUM.ART	rn	rn				
+veraa	isam	0035	vō-wal	NUM-one	rn	rn				
+veraa	isam	0036	#	#	##	##				
+veraa	isam	0036	me'	reef	np.d:s	np	d	s	0003	
+veraa	isam	0036	ne	TAM2:3SG	lv-pro_d_s	lv-pro_d_s				
+veraa	isam	0036	tek	speak	v:pred	v		pred		
+veraa	isam	0036	mē	DAT	adp	adp				
+veraa	isam	0036	diē	3SG	pro.h:g	pro	h	g	0010	
+veraa	isam	0036	so	QUOT	other	other				
+veraa	isam	0036	#	#	##	##				
+veraa	isam	0036	'ama'	spirit	nc	nc				
+veraa	isam	0036	lē	LOC	nc	nc				
+veraa	isam	0036	=n	=ART	=ln	=ln				
+veraa	isam	0036	'an̄sara	person	np.d:s	np	d	s	0024	bridging
+veraa	isam	0036	lē	LOC	rn	rn				
+veraa	isam	0036	=n	=ART	=rn	=rn				
+veraa	isam	0036	me'	reef	rn_np	rn_np			0003	
+veraa	isam	0036	ne	TAM2:3SG	lv-pro_d_s	lv-pro_d_s				
+veraa	isam	0036	tek	speak	v:pred	v		pred		
+veraa	isam	0036	mē	DAT	adp	adp				
+veraa	isam	0036	diē	3SG	pro.h:g	pro	h	g	0010	
+veraa	isam	0036	so	QUOT	other	other				
+veraa	isam	0037	#	#	##ds	##ds				
+veraa	isam	0037	bul	friend	np.h:voc	np	h	voc	0010	
+veraa	isam	0037	#	#	##ds	##ds				
+veraa	isam	0037	du	1DL.IN	wpro.1:s	wpro	1	s	0018	
+veraa	isam	0037	=k	=TAM2	=lv	=lv				
+veraa	isam	0037	kal	enter	v:pred	v		pred		
+veraa	isam	0037	ba'a	into	rv	rv				
+veraa	isam	0037	#	#	##ds	##ds				
+veraa	isam	0037	du	1DL.IN	wpro.1:s	wpro	1	s	0018	
+veraa	isam	0037	=k	=TAM2	=lv	=lv				
+veraa	isam	0037	momse	breathe	v:pred	v		pred		
+veraa	isam	0037	ke'i	for.a.moment	other	other				
+veraa	isam	0037	'ekēgēn	LOC.DEM2	other:l	other		l	0022	
+veraa	isam	0037	#	#	##ds	##ds				
+veraa	isam	0037	du	1DL.IN	wpro.1:s	wpro	1	s	0018	
+veraa	isam	0037	me	FUT	lv	lv				
+veraa	isam	0037	momse	breathe	v:pred	v		pred		
+veraa	isam	0037	alē	ASS	adp	adp				
+veraa	isam	0037	=n	=ART	=ln	=ln				
+veraa	isam	0037	'aklē	some	ln	ln				
+veraa	isam	0037	qōn̄	night	np:other	np		other	0025	new
+veraa	isam	0037	#	#	##ds	##ds				
+veraa	isam	0037	du	1DL.IN	wpro.1:s	wpro	1	s	0018	
+veraa	isam	0037	=k	=TAM2	=lv	=lv				
+veraa	isam	0037	mul	go	v:pred	v		pred		
+veraa	isam	0037	kel	back	rv	rv				
+veraa	isam	0037	lē	LOC	adp	adp				
+veraa	isam	0037	=n	=ART	=ln	=ln				
+veraa	isam	0037	'ekē	place	np:g	np		g	0001	
+veraa	isam	0037	#	#	#ds_rc_rn	#ds_rc_rn				
+veraa	isam	0037	gidu	1DL.IN	pro.1:s	pro	1	s	0018	
+veraa	isam	0037	=m	=TAM1	=lv	=lv				
+veraa	isam	0037	van	go	v:pred	v		pred		
+veraa	isam	0037	ma	hither	rv	rv				
+veraa	isam	0037	den	ABL	adp	adp				
+veraa	isam	0037	ZERO	ZERO	0:obl	0		obl	0001	
+veraa	isam	0038	#	#	##	##				
+veraa	isam	0038	duru	3DL	pro.h:s	pro	h	s	0018	
+veraa	isam	0038	=m	=TAM1	=lv	=lv				
+veraa	isam	0038	kal	enter	v:pred	v		pred		
+veraa	isam	0038	ba'	into	rv	rv				
+veraa	isam	0038	sar	inland	rv	rv				
+veraa	isam	0038	kēnē	LOC.DEM1	other:g	other		g	0026	bridging
+veraa	isam	0039	va	go	nc	nc				
+veraa	isam	0039	#	#	##	##				
+veraa	isam	0039	n	ART	ln	ln				
+veraa	isam	0039	me'	reef	np.d:s	np	d	s	0003	
+veraa	isam	0039	m	TAM1	lv	lv				
+veraa	isam	0039	van	go	v:pred	v		pred		
+veraa	isam	0039	sar	inland	rv	rv				
+veraa	isam	0039	#	#	##	##				
+veraa	isam	0039	ZERO	ZERO	0.d:s	0	d	s	0003	
+veraa	isam	0039	van	go	v:pred	v		pred		
+veraa	isam	0039	sar	inland	rv	rv				
+veraa	isam	0039	#	#	##	##				
+veraa	isam	0039	ZERO	ZERO	0.d:s	0	d	s	0003	
+veraa	isam	0039	van	go	v:pred	v		pred		
+veraa	isam	0039	sar	inland	rv	rv				
+veraa	isam	0039	#	#	##	##				
+veraa	isam	0039	ZERO	ZERO	0.d:s	0	d	s	0003	
+veraa	isam	0039	m	TAM1	lv	lv				
+veraa	isam	0039	van	go	v:pred	v		pred		
+veraa	isam	0039	sar	inland	rv	rv				
+veraa	isam	0039	lē	LOC	nc	nc				
+veraa	isam	0039	=n	=ART	nc	nc				
+veraa	isam	0039	lē	LOC	adp	adp				
+veraa	isam	0039	=n	=ART	=ln	=ln				
+veraa	isam	0039	qil	lagoon	np:g	np		g	0026	
+veraa	isam	0039	anē'ē	DEM1.A	rn	rn				
+veraa	isam	0039	#	#	##	##				
+veraa	isam	0039	ZERO	ZERO	0.d:s	0	d	s	0003	
+veraa	isam	0039	m	TAM1	lv	lv				
+veraa	isam	0039	kal	enter	v:pred	v		pred		
+veraa	isam	0039	ba'	into	rv	rv				
+veraa	isam	0039	'enteg	well	rv	rv				
+veraa	isam	0039	sar	inland	rv	rv				
+veraa	isam	0040	#	#	##	##				
+veraa	isam	0040	ZERO	ZERO	0.d:s	0	d	s	0003	
+veraa	isam	0040	so	QUOT	other:pred	other		pred		
+veraa	isam	0040	#	#	##ds	##ds				
+veraa	isam	0040	no	1SG	pro.1:s	pro	1	s	0003	
+veraa	isam	0040	me	FUT	lv	lv				
+veraa	isam	0040	sag	sit	v:pred	v		pred		
+veraa	isam	0040	ren̄	stuck	rv	rv				
+veraa	isam	0040	kēgēn	LOC.DEM2	other:l	other		l	0026	
+veraa	isam	0040	#	#	#nc	#nc				
+veraa	isam	0040	ba	but	nc	nc				
+veraa	isam	0040	=k	=TAM2	nc	nc				
+veraa	isam	0041	#	#	##ds	##ds				
+veraa	isam	0041	bul	friend	np.h:voc	np	h	voc	0010	
+veraa	isam	0041	#	#	##ds	##ds				
+veraa	isam	0041	nik	2SG	pro.2:s	pro	2	s	0010	
+veraa	isam	0041	ē	TAM2:2SG	lv-pro_2_s	lv-pro_2_s				
+veraa	isam	0041	row	jump	v:pred	v		pred		
+veraa	isam	0041	kal	upwards	rv	rv				
+veraa	isam	0041	sar	inland	rv	rv				
+veraa	isam	0041	a	LOC.SP	adp	adp				
+veraa	isam	0041	=n	=ART	=ln	=ln				
+veraa	isam	0041	n	ART	nc	nc				
+veraa	isam	0041	'ekē	place	np:g	np		g	0027	bridging
+veraa	isam	0041	ga	STAT	rn	rn				
+veraa	isam	0041	mamasa	dry	rn	rn				
+veraa	isam	0041	anē'ē	DEM1.A	rn	rn				
+veraa	isam	0042	#	#	##ds	##ds				
+veraa	isam	0042	nik	2SG	pro.2:s	pro	2	s	0010	
+veraa	isam	0042	ē	TAM2:2SG	lv-pro_2_s	lv-pro_2_s				
+veraa	isam	0042	van	go	v:pred	v		pred		
+veraa	isam	0042	kal	upwards	rv	rv				
+veraa	isam	0042	lē	LOC	adp	adp				
+veraa	isam	0042	=n	=ART	=ln	=ln				
+veraa	isam	0042	n̄ērē'iē	shore	np:g	np		g	0026	
+veraa	isam	0043	#	#	##ds	##ds				
+veraa	isam	0043	nik	2SG	pro.2:s	pro	2	s	0010	
+veraa	isam	0043	ē	TAM2:2SG	lv-pro_2_s	lv-pro_2_s				
+veraa	isam	0043	dar	wait	v:pred	v		pred		
+veraa	isam	0043	'ekēnē	LOC.DEM1	other:l	other		l	0026	
+veraa	isam	0043	#	#	##ds	##ds				
+veraa	isam	0043	nik	2SG	pro.2:a	pro	2	a	0010	
+veraa	isam	0043	ē	TAM2:2SG	lv-pro_2_a	lv-pro_2_a				
+veraa	isam	0043	siksik	RED:search	v:pred	v		pred		
+veraa	isam	0043	go	POSS.EAT	ln	ln				
+veraa	isam	0043	-m	-2SG	-ln_pro.2:poss	-ln_pro	2	poss	0010	
+veraa	isam	0043	ēn	ART	ln	ln				
+veraa	isam	0043	gengen	food	np:p	np		p	0028	new
+veraa	isam	0043	#	#	##ds	##ds				
+veraa	isam	0043	rekse	like	other	other				
+veraa	isam	0043	sava	what	np:dt_p	np		dt_p		
+veraa	isam	0043	nik	2SG	pro.2:a	pro	2	a	0010	
+veraa	isam	0043	me	ABIL1	lv	lv				
+veraa	isam	0043	'ēn	see	v:pred	v		pred		
+veraa	isam	0043	sier	realise	rv	rv				
+veraa	isam	0043	m̄as	ABIL2	rv	rv				
+veraa	isam	0043	ZERO	ZERO	0:p	0		p	0028	
+veraa	isam	0043	#	#	#ds_cc:other	#ds_cc		other		
+veraa	isam	0043	alē	ASS	other	other				
+veraa	isam	0043	nik	2SG	pro.2:a	pro	2	a	0010	
+veraa	isam	0043	ga	STAT	lv	lv				
+veraa	isam	0043	gen	eat	v:pred	v		pred		
+veraa	isam	0043	ZERO	ZERO	0:p	0		p	0028	
+veraa	isam	0043	#	#	##ds	##ds				
+veraa	isam	0043	nik	2SG	pro.2:a	pro	2	a	0010	
+veraa	isam	0043	ē	TAM2:2SG	lv-pro_2_a	lv-pro_2_a				
+veraa	isam	0043	gen	eat	v:pred	v		pred		
+veraa	isam	0043	ZERO	ZERO	0:p	0		p	0028	
+veraa	isam	0044	#	#	##ds	##ds				
+veraa	isam	0044	nik	2SG	pro.2:s	pro	2	s	0010	
+veraa	isam	0044	ē	TAM2:2SG	lv-pro_2_s	lv-pro_2_s				
+veraa	isam	0044	dar	wait	v:pred	v		pred		
+veraa	isam	0044	gōr	secure	rv	rv				
+veraa	isam	0044	#	#	##ds	##ds				
+veraa	isam	0044	si	or	other	other				
+veraa	isam	0044	no	1SG	pro.1:s	pro	1	s	0003	
+veraa	isam	0044	=m	=TAM1	=lv	=lv				
+veraa	isam	0044	tek	speak	v:pred	v		pred		
+veraa	isam	0044	mē	DAT	adp	adp				
+veraa	isam	0044	nikē	2SG	pro.2:g	pro	2	g	0010	
+veraa	isam	0044	so	QUOT	other	other				
+veraa	isam	0044	#	#	##ds	##ds				
+veraa	isam	0044	du	1DL.IN	wpro.1:s	wpro	1	s	0018	
+veraa	isam	0044	=k	=TAM2	=lv	=lv				
+veraa	isam	0044	mul	go	v:pred	v		pred		
+veraa	isam	0044	kel	back	rv	rv				
+veraa	isam	0044	#	#	##ds	##ds				
+veraa	isam	0044	du	1DL.IN	wpro.1:s	wpro	1	s	0018	
+veraa	isam	0044	=k	=TAM2	=lv	=lv				
+veraa	isam	0044	mulō	go	v:pred	v		pred		
+veraa	isam	0045	#	#	##ds	##ds				
+veraa	isam	0045	nik	2SG	pro.2:a	pro	2	a	0010	
+veraa	isam	0045	ē	TAM2:2SG	lv-pro_2_a	lv-pro_2_a				
+veraa	isam	0045	sōk	scan	v:pred	v		pred		
+veraa	isam	0045	sier	realise	rv	rv				
+veraa	isam	0045	lik	more	rv	rv				
+veraa	isam	0045	ēn	ART	ln	ln				
+veraa	isam	0045	'ōnō	place	np:p	np		p	0029	new
+veraa	isam	0045	mi-mi'ir	RED-sleep	rn	rn				
+veraa	isam	0045	nō	POSS.DOM	rn	rn				
+veraa	isam	0045	-m	-2SG	-rn_pro.2:poss	-rn_pro	2	poss	0010	
+veraa	isam	0045	#	#	##ds	##ds				
+veraa	isam	0045	nik	2SG	pro.2:s	pro	2	s	0010	
+veraa	isam	0045	ē	TAM2:2SG	lv-pro_2_s	lv-pro_2_s				
+veraa	isam	0045	mi'ir	sleep	v:pred	v		pred		
+veraa	isam	0046	#	#	##ds	##ds				
+veraa	isam	0046	nik	2SG	pro.2:s	pro	2	s	0010	
+veraa	isam	0046	ē	TAM2:2SG	lv-pro_2_s	lv-pro_2_s				
+veraa	isam	0046	on	lie	v:pred	v		pred		
+veraa	isam	0046	sur	down	rv	rv				
+veraa	isam	0046	#	#	##ds	##ds				
+veraa	isam	0046	nik	2SG	pro.2:s	pro	2	s	0010	
+veraa	isam	0046	ē	TAM2:2SG	lv-pro_2_s	lv-pro_2_s				
+veraa	isam	0046	mi'ir	sleep	v:pred	v		pred		
+veraa	isam	0047	#	#	##ds	##ds				
+veraa	isam	0047	alē	INTERJ	nc	nc				
+veraa	isam	0047	=n	=ART	=ln	=ln				
+veraa	isam	0047	masō-gi	time-3SG	np:other	np		other	0030	bridging
+veraa	isam	0047	rekse	like	other	other				
+veraa	isam	0047	no	1SG	pro.1:a	pro	1	a	0003	
+veraa	isam	0047	=m	=TAM1	=lv	=lv				
+veraa	isam	0047	ulul	RED:call	v:pred	v		pred		
+veraa	isam	0047	kel	back	rv	rv				
+veraa	isam	0047	nikē	2SG	pro.2:p	pro	2	p	0010	
+veraa	isam	0047	lē	LOC	adp	adp				
+veraa	isam	0047	=n	=ART	=ln	=ln				
+veraa	isam	0047	sav	what	np:other	np		other	0030	
+veraa	isam	0047	qōn̄	night	rn	rn				
+veraa	isam	0047	#	#	#ds_rc_rn	#ds_rc_rn				
+veraa	isam	0047	du	3DL	wpro.1:s	wpro	1	s	0018	
+veraa	isam	0047	wo	and	other	other				
+veraa	isam	0047	=m	=TAM1	=lv	=lv				
+veraa	isam	0047	mulō	go	v:pred	v		pred		
+veraa	isam	0047	#	#	##ds	##ds				
+veraa	isam	0047	du	1DL.IN	wpro.1:s	wpro	1	s	0018	
+veraa	isam	0047	=k	=TAM2	=lv	=lv				
+veraa	isam	0047	mulō	go	v:pred	v		pred		
+veraa	isam	0048	#	#	##	##				
+veraa	isam	0048	itok	good	v:pred	v		pred		
+veraa	isam	0048	#	#	##	##				
+veraa	isam	0048	duru	3DL	pro.h:s	pro	h	s	0018	
+veraa	isam	0048	=k	=TAM2	=lv	=lv				
+veraa	isam	0048	van	go	v:pred	v		pred		
+veraa	isam	0048	kal	upwards	rv	rv				
+veraa	isam	0048	#	#	##	##				
+veraa	isam	0048	di	3SG	pro.h:s	pro	h	s	0010	
+veraa	isam	0048	ne	TAM2:3SG	lv-pro_h_s	lv-pro_h_s				
+veraa	isam	0048	van	go	v:pred	v		pred		
+veraa	isam	0048	kal	upwards	rv	rv				
+veraa	isam	0048	#	#	##	##				
+veraa	isam	0048	ZERO	ZERO	0.h:s	0	h	s	0010	
+veraa	isam	0048	row	jump	v:pred	v		pred		
+veraa	isam	0048	kal	upwards	rv	rv				
+veraa	isam	0048	sarē	inland	other:g	other		g		
+veraa	isam	0048	#	#	##	##				
+veraa	isam	0048	di	3SG	pro.h:s	pro	h	s	0010	
+veraa	isam	0048	=m	=TAM1	=lv	=lv				
+veraa	isam	0048	'ōg	stay	v:pred	v		pred		
+veraa	isam	0048	kelkel	RED:back	rv	rv				
+veraa	isam	0048	#	#	##	##				
+veraa	isam	0048	ZERO	ZERO	0.h:s	0	h	s	0010	
+veraa	isam	0048	'ōg	stay	v:pred	v		pred		
+veraa	isam	0048	kelkel	RED-back	rv	rv				
+veraa	isam	0048	#	#	##	##				
+veraa	isam	0048	n	ART	ln	ln				
+veraa	isam	0048	me'	reef	np.d:s	np	d	s	0003	
+veraa	isam	0048	ne	TAM2:3SG	lv-pro_d_s	lv-pro_d_s				
+veraa	isam	0048	onon	RED:lie	v:pred	v		pred		
+veraa	isam	0048	rōw	down	rv	rv				
+veraa	isam	0048	nē'	DEM1	other	other				
+veraa	isam	0049	#	#	##	##				
+veraa	isam	0049	di	3SG	pro.h:s	pro	h	s	0010	
+veraa	isam	0049	=m	=TAM1	=lv	=lv				
+veraa	isam	0049	'ōg	stay	v:pred	v		pred		
+veraa	isam	0049	kelkel	RED-back	rv	rv				
+veraa	isam	0049	van	go	other	other				
+veraa	isam	0049	van	go	nc	nc				
+veraa	isam	0049	van	go	nc	nc				
+veraa	isam	0049	vavavavan	RED-RED-RED-go	nc	nc				
+veraa	isam	0050	#	#	#nc	#nc				
+veraa	isam	0050	di	3SG	nc_pro.h	nc_pro	h		0010	
+veraa	isam	0050	=m	=TAM1	nc	nc				
+veraa	isam	0050	#	#	##	##				
+veraa	isam	0050	qōn̄	night	np:other	np		other		
+veraa	isam	0050	ne	NUM.ART	rn	rn				
+veraa	isam	0050	vō-wal	NUM-one	rn	rn				
+veraa	isam	0050	di	3SG	pro.h:s	pro	h	s	0010	
+veraa	isam	0050	=m	=TAM1	=lv	=lv				
+veraa	isam	0050	mi'ir	sleep	v:pred	v		pred		
+veraa	isam	0050	lik	more	rv	rv				
+veraa	isam	0051	#	#	##	##				
+veraa	isam	0051	di	3SG	pro.h:s	pro	h	s	0010	
+veraa	isam	0051	ne	TAM2:3SG	lv-pro_h_s	lv-pro_h_s				
+veraa	isam	0051	mi'ir	sleep	v:pred	v		pred		
+veraa	isam	0051	suwō	thither	rv	rv				
+veraa	isam	0051	#	#	##	##				
+veraa	isam	0051	di	3SG	pro.h:s	pro	h	s	0010	
+veraa	isam	0051	ne	TAM2:3SG	lv-pro_h_s	lv-pro_h_s				
+veraa	isam	0051	qōrqōr	RED-dream	v:pred	v		pred		
+veraa	isam	0051	#	#	##	##				
+veraa	isam	0051	n	ART	ln	ln				
+veraa	isam	0051	me'	reef	np.d:s	np	d	s	0003	
+veraa	isam	0051	ne	TAM2:3SG	lv-pro_d_s	lv-pro_d_s				
+veraa	isam	0051	van	go	v:pred	v		pred		
+veraa	isam	0051	ma	hither	rv	rv				
+veraa	isam	0051	#	#	##	##				
+veraa	isam	0051	ZERO	ZERO	0.d:s	0	d	s	0003	
+veraa	isam	0051	ne	TAM2:3SG	lv-pro_d_s	lv-pro_d_s				
+veraa	isam	0051	tēk	speak	v:pred	v		pred		
+veraa	isam	0051	mē	DAT	adp	adp				
+veraa	isam	0051	diē	3SG	pro.h:g	pro	h	g	0010	
+veraa	isam	0051	so	QUOT	other	other				
+veraa	isam	0052	#	#	##ds	##ds				
+veraa	isam	0052	giduō	1DL.IN	pro.1:s	pro	1	s	0018	
+veraa	isam	0052	me	FUT	lv	lv				
+veraa	isam	0052	mul	go	v:pred	v		pred		
+veraa	isam	0052	kel	back	rv	rv				
+veraa	isam	0052	qiri	today	other	other			0031	bridging
+veraa	isam	0052	lē	LOC	nc	nc				
+veraa	isam	0052	=n	=ART	nc	nc				
+veraa	isam	0052	#	#	##ds	##ds				
+veraa	isam	0052	ZERO	ZERO	0.2:s	0	2	s	0010	
+veraa	isam	0052	kalraka	get.up	vother:pred	vother		pred		
+veraa	isam	0052	#	#	##ds	##ds				
+veraa	isam	0052	du	1DL.IN	wpro.1:s	wpro	1	s	0018	
+veraa	isam	0052	=k	=TAM2	=lv	=lv				
+veraa	isam	0052	'ēqēl	descend	v:pred	v		pred		
+veraa	isam	0053	#	#	##	##				
+veraa	isam	0053	n	ART	ln	ln				
+veraa	isam	0053	'an̄sara	person	np.h:s	np	h	s	0010	
+veraa	isam	0053	=m	=TAM1	=lv	=lv				
+veraa	isam	0053	kalraka	get.up	v:pred	v		pred		
+veraa	isam	0053	#	#	##	##				
+veraa	isam	0053	ZERO	ZERO	0.h:a	0	h	a	0010	
+veraa	isam	0053	van	go	v:pred	v		pred		
+veraa	isam	0053	'a-'ag	RED-follow	rv	rv				
+veraa	isam	0053	diē	3SG	pro.d:p	pro	d	p	0003	
+veraa	isam	0054	#	#	##	##				
+veraa	isam	0054	rekse	like	other	other				
+veraa	isam	0054	di	3SG	pro.h:a	pro	h	a	0010	
+veraa	isam	0054	=m	=TAM1	=lv	=lv				
+veraa	isam	0054	van	go	v:pred	v		pred		
+veraa	isam	0054	'ag	follow	rv	rv				
+veraa	isam	0054	ēn	ART	ln	ln				
+veraa	isam	0054	qōrqōr	RED-dream	np:p	np		p	0032	bridging
+veraa	isam	0054	#	#	##	##				
+veraa	isam	0054	ZERO	ZERO	0.h:s	0	h	s	0010	
+veraa	isam	0054	ne	TAM2:3SG	lv-pro_h_s	lv-pro_h_s				
+veraa	isam	0054	'ēqēl	descend	v:pred	v		pred		
+veraa	isam	0054	din̄	reach	rv	rv				
+veraa	isam	0054	rōwē	down.there	other:g	other		g	0027	
+veraa	isam	0054	#	#	##	##				
+veraa	isam	0054	ZERO	ZERO	0.h:s	0	h	s	0010	
+veraa	isam	0054	ne	TAM2:3SG	lv-pro_h_s	lv-pro_h_s				
+veraa	isam	0054	va-van	RED-go	v:pred	v		pred		
+veraa	isam	0054	kal	upwards	rv	rv				
+veraa	isam	0054	ma	hither	rv	rv				
+veraa	isam	0054	a	LOC.SP	adp	adp				
+veraa	isam	0054	=n	=ART	=ln	=ln				
+veraa	isam	0054	me'	reef	np.d:g	np	d	g	0003	
+veraa	isam	0054	#	#	##	##				
+veraa	isam	0054	n	ART	ln	ln				
+veraa	isam	0054	me'	reef	np.d:a	np	d	a	0003	
+veraa	isam	0054	mal	REM.PST	lv	lv				
+veraa	isam	0054	dar	wait	v:pred	v		pred		
+veraa	isam	0054	diē	3SG	pro.h:p	pro	h	p	0010	
+veraa	isam	0054	#	#	#nc	#nc				
+veraa	isam	0054	rekse	like	nc	nc				
+veraa	isam	0054	ga	STAT	nc	nc				
+veraa	isam	0054	#	#	##	##				
+veraa	isam	0054	di	3SG	pro.d:s	pro	d	s	0003	
+veraa	isam	0054	mal	REM.PST	lv	lv				
+veraa	isam	0054	sal	float	v:pred	v		pred		
+veraa	isam	0054	kal	upwards	rv	rv				
+veraa	isam	0055	#	#	##	##				
+veraa	isam	0055	n	ART	ln	ln				
+veraa	isam	0055	me'	reef	np.d:s	np	d	s	0003	
+veraa	isam	0055	mal	REM.PST	lv	lv				
+veraa	isam	0055	kalrak	get.up	v:pred	v		pred		
+veraa	isam	0055	den	ABL	adp	adp				
+veraa	isam	0055	'ono	place	np:obl	np		obl	0033	bridging
+veraa	isam	0055	-gi	-3SG	-rn_pro.d:poss	-rn_pro	d	poss	0003	
+veraa	isam	0055	#	#	#rc_rn	#rc_rn				
+veraa	isam	0055	a	REL	other	other				
+veraa	isam	0055	di	3SG	pro.d:s	pro	d	s	0003	
+veraa	isam	0055	=m	=TAM1	=lv	=lv				
+veraa	isam	0055	on	lie	v:pred	v		pred		
+veraa	isam	0055	'i	DEL	rv	rv				
+veraa	isam	0055	bēne	PRO.OBL	other:l	other		l	0033	
+veraa	isam	0055	#	#	##	##				
+veraa	isam	0055	di	3SG	pro.d:s	pro	d	s	0003	
+veraa	isam	0055	=m	=TAM1	=lv	=lv				
+veraa	isam	0055	sal	float	v:pred	v		pred		
+veraa	isam	0055	kal	upwards	rv	rv				
+veraa	isam	0056	#	#	##	##				
+veraa	isam	0056	enei	now	other	other				
+veraa	isam	0056	di	3SG	pro.d:a	pro	d	a	0003	
+veraa	isam	0056	ga	STAT	lv	lv				
+veraa	isam	0056	dar	wait	v:pred	v		pred		
+veraa	isam	0056	diē	3SG	pro.h:p	pro	h	p	0010	
+veraa	isam	0056	va'anē	TEMP.DEM1	other	other				
+veraa	isam	0056	#	#	#nc	#nc				
+veraa	isam	0056	so	NC	nc	nc				
+veraa	isam	0056	duru	3DL	nc_pro.h	nc_pro	h		0018	
+veraa	isam	0056	=k	=TAM2	nc	nc				
+veraa	isam	0056	itok	good	nc	nc				
+veraa	isam	0056	#	#	##ds	##ds				
+veraa	isam	0056	ZERO	ZERO	0.2:s	0	2	s	0010	
+veraa	isam	0056	rem	climb	vother:pred	vother		pred		
+veraa	isam	0056	a	LOC.SP	adp	adp				
+veraa	isam	0056	=n	=ART	=ln	=ln				
+veraa	isam	0056	kolo	back	np:g	np		g	0017	
+veraa	isam	0056	-k	-1SG	-rn_pro.1:poss	-rn_pro	1	poss	0003	
+veraa	isam	0057	#	#	##	##				
+veraa	isam	0057	di	3SG	pro.h:s	pro	h	s	0010	
+veraa	isam	0057	=m	=TAM1	=lv	=lv				
+veraa	isam	0057	rem	climb	v:pred	v		pred		
+veraa	isam	0057	kal	upwards	rv	rv				
+veraa	isam	0057	a	LOC.SP	adp	adp				
+veraa	isam	0057	=n	=ART	=lv	=lv				
+veraa	isam	0057	kolo	back	np:g	np		g	0017	
+veraa	isam	0057	-gi	-3SG	-rn_pro.d:poss	-rn_pro	d	poss	0003	
+veraa	isam	0057	#	#	##	##				
+veraa	isam	0057	ZERO	ZERO	0.h:s	0	h	s	0010	
+veraa	isam	0057	=m	=TAM1	=lv	=lv				
+veraa	isam	0057	row	jump	v:pred	v		pred		
+veraa	isam	0057	kal	upwards	rv	rv				
+veraa	isam	0057	kel	back	rv	rv				
+veraa	isam	0057	a	LOC.SP	adp	adp				
+veraa	isam	0057	=n	=ART	=ln	=ln				
+veraa	isam	0057	me'	reef	np.d:g	np	d	g	0003	
+veraa	isam	0057	anē	DEM1.A	rn	rn				
+veraa	isam	0057	#	#	##	##				
+veraa	isam	0057	ZERO	ZERO	0.d:s	0	d	s	0003	
+veraa	isam	0057	so	QUOT	other:pred	other		pred		
+veraa	isam	0057	#	#	##ds	##ds				
+veraa	isam	0057	ga	STAT	lv	lv				
+veraa	isam	0057	itok	good	v:pred	v		pred		
+veraa	isam	0057	#	#	##ds	##ds				
+veraa	isam	0057	giduō	1DL.IN	pro.1:s	pro	1	s	0018	
+veraa	isam	0057	=m	=TAM1	=lv	=lv				
+veraa	isam	0057	van	go	v:pred	v		pred		
+veraa	isam	0058	#	#	##ds	##ds				
+veraa	isam	0058	nik	2SG	pro.2:s	pro	2	s	0010	
+veraa	isam	0058	me	FUT	lv	lv				
+veraa	isam	0058	da	do	v:pred	v		pred		
+veraa	isam	0058	lik	more	rv	rv				
+veraa	isam	0058	#	#	##ds	##ds				
+veraa	isam	0058	rekse	like	other	other				
+veraa	isam	0058	gidu	1DL.IN	pro.1:s	pro	1	s	0018	
+veraa	isam	0058	=m	=TAM1	=lv	=lv				
+veraa	isam	0058	van	go	v:pred	v		pred		
+veraa	isam	0058	ma	hither	rv	rv				
+veraa	isam	0058	#	#	##ds	##ds				
+veraa	isam	0058	nik	2SG	pro.2:s	pro	2	s	0010	
+veraa	isam	0058	da	do	vother:pred	vother		pred		
+veraa	isam	0058	#	#	##ds	##ds				
+veraa	isam	0058	rekse	like	other	other				
+veraa	isam	0058	=n	=ART	=ln	=ln				
+veraa	isam	0058	naw	saltwater	np:s	np		s	0016	
+veraa	isam	0058	wo	and	other	other				
+veraa	isam	0058	=m	=TAM1	=lv	=lv				
+veraa	isam	0058	van	go	v:pred	v		pred		
+veraa	isam	0058	ma	hither	rv	rv				
+veraa	isam	0058	ga	STAT	rv	rv				
+veraa	isam	0058	lōwōo	big	rv	rv				
+veraa	isam	0058	#	#	##ds	##ds				
+veraa	isam	0058	nik	2SG	pro.2:s	pro	2	s	0010	
+veraa	isam	0058	ē	TAM2:2SG	lv-pro_2_s	lv-pro_2_s				
+veraa	isam	0058	'ir	stand	v:pred	v		pred		
+veraa	isam	0058	kal	upwards	rv	rv				
+veraa	isam	0058	#	#	##ds	##ds				
+veraa	isam	0058	n	ART	ln	ln				
+veraa	isam	0058	naw	saltwater	np:s	np		s	0016	
+veraa	isam	0058	wo	and	other	other				
+veraa	isam	0058	=m	=TAM1	=lv	=lv				
+veraa	isam	0058	'ēqēl	descend	v:pred	v		pred		
+veraa	isam	0058	#	#	##ds	##ds				
+veraa	isam	0058	nik	2SG	pro.2:s	pro	2	s	0010	
+veraa	isam	0058	ē	TAM2:2SG	lv-pro_2_s	lv-pro_2_s				
+veraa	isam	0058	sag	sit	v:pred	v		pred		
+veraa	isam	0058	sur	down	rv	rv				
+veraa	isam	0059	#	#	##	##				
+veraa	isam	0059	di	3SG	pro.h:s	pro	h	s	0010	
+veraa	isam	0059	=m	=TAM1	=lv	=lv				
+veraa	isam	0059	row	jump	v:pred	v		pred		
+veraa	isam	0059	kal	upwards	rv	rv				
+veraa	isam	0059	rōw	down	rv	rv				
+veraa	isam	0059	a	LOC.SP	adp	adp				
+veraa	isam	0059	=n	=ART	=ln	=ln				
+veraa	isam	0059	kolo	back	np:g	np		g	0017	
+veraa	isam	0059	-gi	-3SG	-rn_pro.d:poss	-rn_pro	d	poss	0003	
+veraa	isam	0059	#	#	##	##				
+veraa	isam	0059	duru	3DL	pro.h:s	pro	h	s	0018	
+veraa	isam	0059	=k	=TAM2	=lv	=lv				
+veraa	isam	0059	'ēqēl	descend	v:pred	v		pred		
+veraa	isam	0059	va'anē	TEMP.DEM1	other	other				
+veraa	isam	0060	#	#	##	##				
+veraa	isam	0060	duru	3DL	pro.h:s	pro	h	s	0018	
+veraa	isam	0060	=m	=TAM1	=lv	=lv				
+veraa	isam	0060	van	go	v:pred	v		pred		
+veraa	isam	0060	van	go	rv	rv				
+veraa	isam	0060	#	#	##	##				
+veraa	isam	0060	ZERO	ZERO	0.h:s	0	h	s	0018	
+veraa	isam	0060	da	do	v:pred	v		pred		
+veraa	isam	0060	esenē	MAN.DEM1.E	other	other				
+veraa	isam	0060	van	go	other	other				
+veraa	isam	0060	va-va-van	RED-RED-go	nc	nc				
+veraa	isam	0060	#	#	##	##				
+veraa	isam	0060	a	LOC.SP	adp	adp				
+veraa	isam	0060	=n	=ART	=ln	=ln				
+veraa	isam	0060	kele	behind	ln	ln				
+veraa	isam	0060	qōn̄	night	nc	nc				
+veraa	isam	0060	wunva	perhaps	other	other				
+veraa	isam	0060	=n	=ART	nc	nc				
+veraa	isam	0060	qōn̄	night	np:other	np		other	0034	bridging
+veraa	isam	0060	vō-ruō	NUM-two	rn	rn				
+veraa	isam	0060	duru	3DL	pro.h:a	pro	h	a	0018	
+veraa	isam	0060	=k	=TAM2	=lv	=lv				
+veraa	isam	0060	din̄	reach	v:pred	v		pred		
+veraa	isam	0060	kel	back	rv	rv				
+veraa	isam	0060	ma	hither	rv	rv				
+veraa	isam	0060	=n	=ART	=ln	=ln				
+veraa	isam	0060	mē'ērsa	harbour	np:p	np		p	0035	bridging
+veraa	isam	0060	suw	downwind	rn	rn				
+veraa	isam	0060	a	LOC.SP	nc	nc				
+veraa	isam	0060	ga	STAT	nc	nc				
+veraa	isam	0060	lē	LOC	rn	rn				
+veraa	isam	0060	=n	=ART	=rn	=rn				
+veraa	isam	0060	man̄ri	Man̄ri	rn	rn				
+veraa	isam	0060	bēne	PRO.OBL	rn	rn				
+veraa	isam	0061	#	#	##	##				
+veraa	isam	0061	duru	3DL	pro.h:s	pro	h	s	0018	
+veraa	isam	0061	=k	=TAM2	=lv	=lv				
+veraa	isam	0061	kal	enter	v:pred	v		pred		
+veraa	isam	0061	ba'a	into	rv	rv				
+veraa	isam	0061	kel	back	rv	rv				
+veraa	isam	0061	sarē	bushwards	other:g	other		g	0035	
+veraa	isam	0062	#	#	##	##				
+veraa	isam	0062	ba	but	other	other				
+veraa	isam	0062	=n	=ART	=ln	=ln				
+veraa	isam	0062	masō-gi	time-3SG	np:other	np		other	0036	bridging
+veraa	isam	0062	duru	3DL	pro.h:s	pro	h	s		
+veraa	isam	0062	=m	=TAM1	=lv	=lv				
+veraa	isam	0062	van	go	v:pred	v		pred		
+veraa	isam	0062	ma	hither	rv	rv				
+veraa	isam	0062	rōwēn	down.there	other:g	other		g		
+veraa	isam	0062	#	#	##	##				
+veraa	isam	0062	me'	reef	np.d:dt_s	np	d	dt_s	0003	
+veraa	isam	0062	di	3SG	pro.d:s	pro	d	s	0003	
+veraa	isam	0062	ne	TAM2:3SG	lv-pro_d_s	lv-pro_d_s				
+veraa	isam	0062	mōwōrōo	falll.apart	v:pred	v		pred		
+veraa	isam	0062	ne	NUM.ART	ln	ln				
+veraa	isam	0062	vō-ruō	NUM-two	np:other	np		other	0037	new
+veraa	isam	0062	bēne	PRO.OBL	rn	rn				
+veraa	isam	0063	#	#	##	##				
+veraa	isam	0063	rekse	like	other	other				
+veraa	isam	0063	di	3SG	pro.d:s	pro	d	s	0003	
+veraa	isam	0063	ne	TAM2:3SG	lv-pro_h_s	lv-pro_h_s				
+veraa	isam	0063	mēlē'	break	v:pred	v		pred		
+veraa	isam	0063	kirm̄o'	broken	rv	rv				
+veraa	isam	0063	ne	NUM.ART	ln	ln				
+veraa	isam	0063	vō-ruō	NUM-two	np:other	np		other	0037	
+veraa	isam	0063	bēne	PRO.OBL	rn	rn				
+veraa	isam	0064	#	#	#nc	#nc				
+veraa	isam	0064	ge	DEICT	nc	nc				
+veraa	isam	0064	'ew'i	other	nc	nc				
+veraa	isam	0064	ga	STAT	nc	nc				
+veraa	isam	0064	lōwōo	big	nc	nc				
+veraa	isam	0064	#	#	##	##				
+veraa	isam	0064	=n	=ART	=ln	=ln				
+veraa	isam	0064	kum̄	floating.reef	np.d:s	np	d	s	0038	bridging
+veraa	isam	0064	ga	STAT	rn	rn				
+veraa	isam	0064	lōwōo	big	rn	rn				
+veraa	isam	0064	ne	TAM2:3SG	lv-pro_d_s	lv-pro_d_s				
+veraa	isam	0064	sag	sit	v:pred	v		pred		
+veraa	isam	0064	'i	DEL	rv	rv				
+veraa	isam	0064	rōwē	down.there	other:l	other		l		
+veraa	isam	0065	#	#	##	##				
+veraa	isam	0065	wo	and	other	other				
+veraa	isam	0065	n	ART	ln	ln				
+veraa	isam	0065	menre	piece	np.d:s	np	d	s	0039	bridging
+veraa	isam	0065	kum̄	floating.reef	rn	rn				
+veraa	isam	0065	'ane'ē̄	DEM1	rn	rn				
+veraa	isam	0065	ne	TAM2:3SG	lv-pro_d_s	lv-pro_d_s				
+veraa	isam	0065	van	go	v:pred	v		pred		
+veraa	isam	0065	kel	back	rv	rv				
+veraa	isam	0065	sar	inland	rv	rv				
+veraa	isam	0065	#	#	##	##				
+veraa	isam	0065	ZERO	ZERO	0.d:a	0	d	a	0039	
+veraa	isam	0065	ne	TAM2:3SG	lv-pro_d_a	lv-pro_d_a				
+veraa	isam	0065	kal	enter	v:pred	v		pred		
+veraa	isam	0065	'ō'	carry	rv	rv				
+veraa	isam	0065	ba'a	into	rv	rv				
+veraa	isam	0065	kel	back	rv	rv				
+veraa	isam	0065	sar	inland	rv	rv				
+veraa	isam	0065	ēn	ART	ln	ln				
+veraa	isam	0065	'an̄sara	person	np.h:p	np	h	p	0010	
+veraa	isam	0065	ē	DEM3	rn	rn				
+veraa	isam	0065	lē	LOC	nc	nc				
+veraa	isam	0065	=n	=ART	nc	nc				
+veraa	isam	0065	lē	LOC	adp	adp				
+veraa	isam	0065	=n	=ART	=ln	=ln				
+veraa	isam	0065	mē'ērsa	harbour	np:g	np		g	0035	
+veraa	isam	0066	#	#	##	##				
+veraa	isam	0066	masō-gi	time-3SG	np:other	np		other		
+veraa	isam	0066	di	3SG	pro.d:s	pro	d	s	0039	
+veraa	isam	0066	=m	=TAM1	=lv	=lv				
+veraa	isam	0066	va-va-van	RED-RED-RED-go	v:pred	v		pred		
+veraa	isam	0066	#	#	##	##				
+veraa	isam	0066	di	3SG	pro.d:a	pro	d	a	0039	
+veraa	isam	0066	=m	=TAM1	=lv	=lv				
+veraa	isam	0066	din̄	reach	v:pred	v		pred		
+veraa	isam	0066	sar	inland	rv	rv				
+veraa	isam	0066	ēn	ART	ln	ln				
+veraa	isam	0066	mē'ērsa	harbour	np:p	np		p	0035	
+veraa	isam	0067	#	#	#nc	#nc				
+veraa	isam	0067	di	3SG	nc_pro.d	nc_pro	d		0039	
+veraa	isam	0067	ne	TAM2	nc	nc				
+veraa	isam	0067	tēk	say	nc	nc				
+veraa	isam	0067	mē	DAT	nc	nc				
+veraa	isam	0067	#	#	##	##				
+veraa	isam	0067	=n	=ART	=ln	=ln				
+veraa	isam	0067	me'	reef	np.d:s	np	d	s	0003	
+veraa	isam	0067	ne	TAM2:3SG	lv-pro_d_s	lv-pro_d_s				
+veraa	isam	0067	tēk	speak	v:pred	v		pred		
+veraa	isam	0067	mē	DAT	adp	adp				
+veraa	isam	0067	=n	=ART	=ln	=ln				
+veraa	isam	0067	'an̄sara	person	np.h:g	np	h	g	0010	
+veraa	isam	0067	ē	DEM3	rn	rn				
+veraa	isam	0067	so	QUOT	other	other				
+veraa	isam	0067	#	#	##ds	##ds				
+veraa	isam	0067	nik	2SG	pro.2:s	pro	2	s	0010	
+veraa	isam	0067	ē	TAM2	lv-pro_2_s	lv-pro_2_s				
+veraa	isam	0067	vidir	jump.up	v:pred	v		pred		
+veraa	isam	0067	kal	upwards	rv	rv				
+veraa	isam	0067	va'anē	TEMP.DEM1	other	other				
+veraa	isam	0067	#	#	##ds	##ds				
+veraa	isam	0067	nik	2SG	pro.2:s	pro	2	s	0010	
+veraa	isam	0067	ē	TAM2:2SG	lv-pro_2_s	lv-pro_2_s				
+veraa	isam	0067	van	go	v:pred	v		pred		
+veraa	isam	0067	kal	upwards	rv	rv				
+veraa	isam	0067	#	#	##ds	##ds				
+veraa	isam	0067	enei	now	other	other				
+veraa	isam	0067	e	PERS.ART	ln	ln				
+veraa	isam	0067	raga	people	np.h:dt_s	np	h	dt_s	0002	
+veraa	isam	0067	dir	3PL	pro.h:s	pro	h	s	0002	
+veraa	isam	0067	=ēm	=TAM1	=lv	=lv				
+veraa	isam	0067	da	do	v:pred	v		pred		
+veraa	isam	0067	gengen	food	rv	rv				
+veraa	isam	0067	sir	for	adp	adp				
+veraa	isam	0067	nikē	2SG	pro.2:obl	pro	2	obl	0010	
+veraa	isam	0067	alē	ASS	adp	adp				
+veraa	isam	0067	=n	=ART	=ln	=ln				
+veraa	isam	0067	qōn̄	night	np:other	np		other	0040	new
+veraa	isam	0067	vēlimē	five	rn	rn				
+veraa	isam	0067	sagē	upwind	other:l	other		l		
+veraa	isam	0068	#	#	#nc	#nc				
+veraa	isam	0068	enei	now	nc	nc				
+veraa	isam	0068	dir	3PL	nc_pro.h	nc_pro	h		0002	
+veraa	isam	0068	=ēk	=TAM2	nc	nc				
+veraa	isam	0068	dir	3PL	nc_pro.h	nc_pro	h		0002	
+veraa	isam	0068	=ēk	=TAM2	nc	nc				
+veraa	isam	0068	lik	empty	nc	nc				
+veraa	isam	0068	ēk	TAM2	nc	nc				
+veraa	isam	0068	dir	3PL	nc_pro.h	nc_pro	h		0002	
+veraa	isam	0068	=ēk	=TAM2	nc	nc				
+veraa	isam	0068	#	#	##ds	##ds				
+veraa	isam	0068	lē	LOC	adp	adp				
+veraa	isam	0068	=n	=ART	=ln	=ln				
+veraa	isam	0068	ma'ava	morning	np:other	np		other	0041	new
+veraa	isam	0068	anei	DEM4?	rn	rn				
+veraa	isam	0068	nik	2SG	pro.2:s	pro	2	s	0010	
+veraa	isam	0068	row	jump	vother:pred	vother		pred		
+veraa	isam	0068	sur	down	rv	rv				
+veraa	isam	0068	a	LOC.SP	adp	adp				
+veraa	isam	0068	enei	now	other	other				
+veraa	isam	0068	#	#	##ds	##ds				
+veraa	isam	0068	nik	2SG	pro.2:s	pro	2	s	0010	
+veraa	isam	0068	virig	rush	vother:pred	vother		pred		
+veraa	isam	0068	kal	upwards	rv	rv				
+veraa	isam	0069	#	#	##ds	##ds				
+veraa	isam	0069	enei	now	other	other				
+veraa	isam	0069	dir	3PL	pro.h:a	pro	h	a	0002	
+veraa	isam	0069	=ēm	=TAM1	=lv	=lv				
+veraa	isam	0069	da	do	v:pred	v		pred		
+veraa	isam	0069	ZERO	ZERO	0:p	0		p		
+veraa	isam	0069	#	#	##ds	##ds				
+veraa	isam	0069	ba	but	other	other				
+veraa	isam	0069	nik	2SG	pro.2:s	pro	2	s	0010	
+veraa	isam	0069	'ovi'i	PROH	lv	lv				
+veraa	isam	0069	rowrow	RED:jump.out	v:pred	v		pred		
+veraa	isam	0069	lu	out	rv	rv				
+veraa	isam	0069	ke'i	for.the.moment	other	other				
+veraa	isam	0069	#	#	##ds	##ds				
+veraa	isam	0069	qiri	today	other	other			0042	bridging
+veraa	isam	0069	lē	LOC	adp	adp				
+veraa	isam	0069	=n	=ART	=ln	=ln				
+veraa	isam	0069	revrev	evening	np:other	np		other	0040	
+veraa	isam	0069	lē	LOC	adp	adp				
+veraa	isam	0069	=n	=ART	=ln	=ln				
+veraa	isam	0069	masō-gi	time-3SG	np:other	np		other	0043	bridging
+veraa	isam	0069	=n	=ART	=ln	=ln				
+veraa	isam	0069	lak-laka	RED-dance	np:pred	np		pred		
+veraa	isam	0069	#	#	##ds	##ds				
+veraa	isam	0069	nik	2SG	pro.2:s	pro	2	s	0010	
+veraa	isam	0069	mak	IMM	lv	lv				
+veraa	isam	0069	kalu	exit	v:pred	v		pred		
+veraa	isam	0069	lē	LOC	adp	adp				
+veraa	isam	0069	=n	=ART	=ln	=ln				
+veraa	isam	0069	lak-laka	RED-dance	np:g	np		g	0044	bridging
+veraa	isam	0070	#	#	##	##				
+veraa	isam	0070	itok	good	v:pred	v		pred		
+veraa	isam	0070	#	#	##	##				
+veraa	isam	0070	di	3SG	pro.h:s	pro	h	s	0010	
+veraa	isam	0070	=m	=TAM1	=lv	=lv				
+veraa	isam	0070	van	go	v:pred	v		pred		
+veraa	isam	0070	sar	inland	rv	rv				
+veraa	isam	0070	#	#	##	##				
+veraa	isam	0070	ZERO	ZERO	0.h:s	0	h	s	0010	
+veraa	isam	0070	ne	TAM2:3SG	lv-pro_h_s	lv-pro_h_s				
+veraa	isam	0070	vidir	jump.up	v:pred	v		pred		
+veraa	isam	0070	sur	down	rv	rv				
+veraa	isam	0070	#	#	##	##				
+veraa	isam	0070	wo	and	other	other				
+veraa	isam	0070	=n	=ART	=ln	=ln				
+veraa	isam	0070	wom̄al	sitting.reef	np.d:s	np	d	s	0039	
+veraa	isam	0070	ne	TAM2:3SG	lv-pro_d_s	lv-pro_d_s				
+veraa	isam	0070	kalu	exit	v:pred	v		pred		
+veraa	isam	0070	kel	back	rv	rv				
+veraa	isam	0070	rōw	down	rv	rv				
+veraa	isam	0071	#	#	##	##				
+veraa	isam	0071	masō-gi	time-3SG	np:other	np		other		
+veraa	isam	0071	di	3SG	pro.d:s	pro	d	s	0039	
+veraa	isam	0071	=m	=TAM1	=lv	=lv				
+veraa	isam	0071	van	go	v:pred	v		pred		
+veraa	isam	0071	rōw	down	rv	rv				
+veraa	isam	0071	#	#	##	##				
+veraa	isam	0071	diē	3SG	pro.d:s	pro	d	s	0039	
+veraa	isam	0071	e	GEN.NEG1	lv	lv				
+veraa	isam	0071	aqit	far	v:pred	v		pred		
+veraa	isam	0071	'ēn'ēn	RED:NEG2	rv	rv				
+veraa	isam	0071	den	ABL	adp	adp				
+veraa	isam	0071	ēn	ART	ln	ln				
+veraa	isam	0071	vunu	land	np:obl	np		obl	0045	new
+veraa	isam	0071	luwo	big	rn	rn				
+veraa	isam	0071	Vunu Lava	Vunu.Lava	pn_np:appos	pn_np		appos	0045	
+veraa	isam	0072	#	#	##	##				
+veraa	isam	0072	wo	and	other	other				
+veraa	isam	0072	=n	=ART	=ln	=ln				
+veraa	isam	0072	tō	fowl	np:s	np		s	0046	new
+veraa	isam	0072	ne	TAM2:3SG	lv-pro_s	lv-pro_s				
+veraa	isam	0072	tōrtōrōg	crow	v:pred	v		pred		
+veraa	isam	0073	#	#	##	##				
+veraa	isam	0073	so	NC	other	other				
+veraa	isam	0073	=m	=TAM1	=lv	=lv				
+veraa	isam	0073	da	do	v:pred	v		pred		
+veraa	isam	0073	'i	DEL	rv	rv				
+veraa	isam	0073	#	#	#cc	#cc				
+veraa	isam	0073	so	CPL	other	other				
+veraa	isam	0073	di	3SG	nc_pro.d	nc_pro	d		0039	
+veraa	isam	0073	=m	=TAM1	nc	nc				
+veraa	isam	0073	di	3SG	pro.d:s	pro	d	s	0039	
+veraa	isam	0073	=m	=TAM1	=lv	=lv				
+veraa	isam	0073	sag	sit	v:pred	v		pred		
+veraa	isam	0073	ren̄	stuck	rv	rv				
+veraa	isam	0073	'ekēnē	LOC.DEM1	other:l	other		l	0047	bridging
+veraa	isam	0073	#	#	##	##				
+veraa	isam	0073	enei	now	other	other				
+veraa	isam	0073	dir	3PL	pro.h:a	pro	h	a	0020	
+veraa	isam	0073	ga	STAT	lv	lv				
+veraa	isam	0073	ul	call	v:pred	v		pred		
+veraa	isam	0073	ēn	ART	ln	ln				
+veraa	isam	0073	wōm̄al	sitting.reef	np:p	np		p	0039	
+veraa	isam	0073	anē'ē	DEM1.A	rn	rn				
+veraa	isam	0073	kum̄ō	floating.reef	np:appos	np		appos	0039	
+veraa	isam	0073	anē'ē	DEM1.A	rn	rn				
+veraa	isam	0073	so	QUOT	other	other				
+veraa	isam	0073	#	#	#cc:obl	#cc		obl		
+veraa	isam	0073	di	3SG	pro.d:s	pro	d	s	0039	
+veraa	isam	0073	=n	=ART	=ln	=ln				
+veraa	isam	0073	Maltetrag	Maltetrag	pn_np:pred	pn_np		pred		
+veraa	isam	0074	#	#	##	##				
+veraa	isam	0074	sow	DISC	other	other				
+veraa	isam	0074	'an̄sar	person	np.d:dt_s	np	d	dt_s	0024	
+veraa	isam	0074	di	3SG	pro.d:s	pro	d	s	0024	
+veraa	isam	0074	=m	=TAM1	=lv	=lv				
+veraa	isam	0074	sag	sit	v:pred	v		pred		
+veraa	isam	0074	ren̄	stuck	rv	rv				
+veraa	isam	0074	'ekēnē	LOC.DEM1	other:l	other		l	0047	
+veraa	isam	0075	#	#	##	##				
+veraa	isam	0075	'an̄sara	person	np.h:dt_s	np	h	dt_s	0010	
+veraa	isam	0075	anē'ē	DEM1.A	rn	rn				
+veraa	isam	0075	di	3SG	pro.h:s	pro	h	s	0010	
+veraa	isam	0075	=m	=TAM1	=lv	=lv				
+veraa	isam	0075	van	go	v:pred	v		pred		
+veraa	isam	0075	#	#	##	##				
+veraa	isam	0075	ZERO	ZERO	0.h:s	0	h	s	0010	
+veraa	isam	0075	van	go	v:pred	v		pred		
+veraa	isam	0075	kal	upwards	rv	rv				
+veraa	isam	0075	'as	all.way	rv	rv				
+veraa	isam	0075	#	#	##	##				
+veraa	isam	0075	ZERO	ZERO	0.h:s	0	h	s	0010	
+veraa	isam	0075	van	go	v:pred	v		pred		
+veraa	isam	0075	sar	inland	rv	rv				
+veraa	isam	0075	#	#	##	##				
+veraa	isam	0075	ZERO	ZERO	0.h:s	0	h	s	0010	
+veraa	isam	0075	'aq	hide	v:pred	v		pred		
+veraa	isam	0075	'i	DEL	rv	rv				
+veraa	isam	0075	esēnē	MAN.DEM1.E	other	other				
+veraa	isam	0075	#	#	##	##				
+veraa	isam	0075	=m	=TAM1	=lv	=lv				
+veraa	isam	0075	äh--	HES	nc	nc				
+veraa	isam	0075	va-van	RED-go	v:pred	v		pred		
+veraa	isam	0075	#	#	##	##				
+veraa	isam	0075	revrev	evening	np:other	np		other	0040	
+veraa	isam	0075	dir	3PL	pro.h:a	pro	h	a	0002	
+veraa	isam	0075	=ēm	=TAM1	=lv	=lv				
+veraa	isam	0075	lik	empty	v:pred	v		pred		
+veraa	isam	0075	ēn	ART	ln	ln				
+veraa	isam	0075	gengen	RED:eat	np:p	np		p		
+veraa	isam	0075	#	#	##	##				
+veraa	isam	0075	lē	LOC	adp	adp				
+veraa	isam	0075	=n	=ART	=ln	=ln				
+veraa	isam	0075	ma'ava	morning	np:other	np		other	0041	
+veraa	isam	0075	dir	3PL	pro.h:s	pro	h	s	0002	
+veraa	isam	0075	=ēm	=TAM1	=lv	=lv				
+veraa	isam	0075	gengen	RED:eat	v:pred	v		pred		
+veraa	isam	0075	va-vanvan	RED-RED:go	other	other				
+veraa	isam	0075	#	#	##	##				
+veraa	isam	0075	rōv'e	close	other	other				
+veraa	isam	0075	man	PFV	lv	lv				
+veraa	isam	0075	revrev	evening	v:pred	v		pred	0043	
+veraa	isam	0075	#	#	##	##				
+veraa	isam	0075	dir	3PL	pro.h:a	pro	h	a	0002	
+veraa	isam	0075	=ēk	=TAM2	=lv	=lv				
+veraa	isam	0075	da	do	v:pred	v		pred		
+veraa	isam	0075	=n	=ART	=ln	=ln				
+veraa	isam	0075	lak-laka	RED-dance	np:p	np		p	0044	
+veraa	isam	0076	#	#	##	##				
+veraa	isam	0076	lē	LOC	adp	adp				
+veraa	isam	0076	=n	=ART	=ln	=ln				
+veraa	isam	0076	masō-gi	time-3SG	np:other	np		other		
+veraa	isam	0076	di	3SG	pro.h:s	pro	h	s	0010	
+veraa	isam	0076	=m	=TAM1	=lv	=lv				
+veraa	isam	0076	sag-sag	RED:sit	v:pred	v		pred		
+veraa	isam	0076	anē	DEM1.A	other	other				
+veraa	isam	0076	#	#	##	##				
+veraa	isam	0076	ba	but	other	other				
+veraa	isam	0076	di	3SG	pro.h:a	pro	h	a	0010	
+veraa	isam	0076	ne	TAM2:3SG	lv-pro_h_a	lv-pro_h_a				
+veraa	isam	0076	su-sur	RED-down	v:pred	v		pred		
+veraa	isam	0076	lik	more	rv	rv				
+veraa	isam	0076	ēn	ART	ln	ln				
+veraa	isam	0076	aklē	some	ln	ln				
+veraa	isam	0076	dudu	leaf	np:p	np		p	0048	new
+veraa	isam	0076	woqe'enge	tree	rn	rn				
+veraa	isam	0076	#	#	##	##				
+veraa	isam	0076	ZERO	ZERO	0.h:s	0	h	s	0010	
+veraa	isam	0076	ne	TAM2:3SG	lv-pro_h_s	lv-pro_h_s				
+veraa	isam	0076	da	do	v:pred	v		pred		
+veraa	isam	0076	so	NC	other	other				
+veraa	isam	0076	rekse	like	other	other				
+veraa	isam	0076	=n	=ART	=ln	=ln				
+veraa	isam	0076	nō	POSS.DOM	np:other	np		other	0049	new
+veraa	isam	0076	-gi	-3SG	-rn_pro.h:poss	-rn_pro	h	poss	0010	
+veraa	isam	0076	=n	=ART	nc	nc				
+veraa	isam	0076	#	#	##	##				
+veraa	isam	0076	ZERO	ZERO	0.h:a	0	h	a	0010	
+veraa	isam	0076	ne	TAM2:3SG	lv-pro_h_a	lv-pro_h_a				
+veraa	isam	0076	sigil	seal	v:pred	v		pred		
+veraa	isam	0076	di	3SG	pro.h:p	pro	h	p	0049	
+veraa	isam	0076	bēne	PRO.OBL	other:obl	other		obl		
+veraa	isam	0077	#	#	##	##				
+veraa	isam	0077	masō-gi	time-3SG	np:other	np		other		
+veraa	isam	0077	dir	3PL	pro.h:a	pro	h	a	0002	
+veraa	isam	0077	=ēm	=TAM1	=lv	=lv				
+veraa	isam	0077	da	do	v:pred	v		pred		
+veraa	isam	0077	=n	=ART	=ln	=ln				
+veraa	isam	0077	lak-laka	RED-dance	np:p	np		p	0044	
+veraa	isam	0077	lē	LOC	nc	nc				
+veraa	isam	0077	=n	=ART	nc	nc				
+veraa	isam	0077	rō-rōv'e	RED-close	adp	adp				
+veraa	isam	0077	=n	=ART	=ln	=ln				
+veraa	isam	0077	revrev	evening	np:other	np		other	0050	bridging
+veraa	isam	0078	#	#	##	##				
+veraa	isam	0078	di	3SG	pro.h:s	pro	h	s	0010	
+veraa	isam	0078	ne	TAM2:3SG	lv-pro_h_s	lv-pro_h_s				
+veraa	isam	0078	kalu	exit	v:pred	v		pred		
+veraa	isam	0078	va'anē	TEMP.DEM1	other	other				
+veraa	isam	0078	#	#	##	##				
+veraa	isam	0078	dir	3PL	pro.h:a	pro	h	a	0002	
+veraa	isam	0078	=ēm	=TAM1	=lv	=lv				
+veraa	isam	0078	es	spear	v:pred	v		pred		
+veraa	isam	0078	rak	out	rv	rv				
+veraa	isam	0078	sag	up	rv	rv				
+veraa	isam	0078	ēn	ART	ln	ln				
+veraa	isam	0078	lak-laka	RED-dance	np:p	np		p	0044	
+veraa	isam	0078	n	ART	ln	ln				
+veraa	isam	0078	lak-laka	RED-dance	np:dt_p	np		dt_p	0044	
+veraa	isam	0078	rekse	like	other	other				
+veraa	isam	0078	wunva	perhaps	other	other				
+veraa	isam	0078	=n	=ART	ln	ln				
+veraa	isam	0078	resdōn̄ar	resdōn̄ar.dance	np:other	np		other	0051	bridging
+veraa	isam	0078	n	ART	ln	ln				
+veraa	isam	0078	lak-laka	RED-dance	np:other	np		other	0051	
+veraa	isam	0078	mu	POSS.GEN	rn	rn				
+veraa	isam	0078	'ama'	spirit	rn	rn				
+veraa	isam	0079	#	#	##	##				
+veraa	isam	0079	masō-gi	time-3SG	np:other	np		other		
+veraa	isam	0079	dir	3PL	nc_pro.h	nc_pro	h		0002	
+veraa	isam	0079	=ēm	=TAM1	nc	nc				
+veraa	isam	0079	dir	3PL	pro.h:s	pro	h	s	0002	
+veraa	isam	0079	=ēm	=TAM1	=lv	=lv				
+veraa	isam	0079	qē'ēg	begin	v:pred	v		pred		
+veraa	isam	0079	#	#	#cc	#cc				
+veraa	isam	0079	alēn	ASS	adp	adp				
+veraa	isam	0079	ga	STAT	lv	lv				
+veraa	isam	0079	laka	dance	vother:pred	vother		pred		
+veraa	isam	0080	#	#	##	##				
+veraa	isam	0080	di	3SG	pro.h:s	pro	h	s	0010	
+veraa	isam	0080	ne	TAM2:3SG	lv-pro_h_s	lv-pro_h_s				
+veraa	isam	0080	lak	dance	v:pred	v		pred		
+veraa	isam	0080	lu	through	rv	rv				
+veraa	isam	0080	ma	hither	rv	rv				
+veraa	isam	0080	rek	also	other	other				
+veraa	isam	0080	va'anē	TEMP.DEM1	other	other				
+veraa	isam	0081	#	#	##	##				
+veraa	isam	0081	di	3SG	pro.h:s	pro	h	s	0010	
+veraa	isam	0081	=m	=TAM1	=lv	=lv				
+veraa	isam	0081	laka	dance	v:pred	v		pred		
+veraa	isam	0081	rekse	like	other	other				
+veraa	isam	0081	#	#	##	##				
+veraa	isam	0081	di	3SG	pro.h:s	pro	h	s	0010	
+veraa	isam	0081	=m	=TAM1	=lv	=lv				
+veraa	isam	0081	lak	dance	v:pred	v		pred		
+veraa	isam	0081	lu	through	rv	rv				
+veraa	isam	0081	ma	hither	rv	rv				
+veraa	isam	0081	lē	LOC	nc	nc				
+veraa	isam	0081	=n	=ART	nc	nc				
+veraa	isam	0081	'ow'ow	before	other	other				
+veraa	isam	0081	#	#	##	##				
+veraa	isam	0081	lē	LOC	adp	adp				
+veraa	isam	0081	=n	=ART	=ln	=ln				
+veraa	isam	0081	m̄oa	first	ln	ln				
+veraa	isam	0081	lak-laka	RED-dance	np:other	np		other	0052	bridging
+veraa	isam	0081	di	3SG	pro.h:s	pro	h	s	0010	
+veraa	isam	0081	=m	=TAM1	=lv	=lv				
+veraa	isam	0081	lak	dance	v:pred	v		pred		
+veraa	isam	0081	lu	through	rv	rv				
+veraa	isam	0081	ma	hither	rv	rv				
+veraa	isam	0082	#	#	##	##				
+veraa	isam	0082	m	TAM1	lv	lv				
+veraa	isam	0082	da	do	v:pred	v		pred		
+veraa	isam	0082	#	#	#cc	#cc				
+veraa	isam	0082	so	CPL	other	other				
+veraa	isam	0082	vag-ruō	MULT-two	np:other	np		other	0053	bridging
+veraa	isam	0082	na-gi	ORD-3SG	rn	rn				
+veraa	isam	0082	dir	3PL	pro.h:a	pro	h	a	0002	
+veraa	isam	0082	e	GEN.NEG1	lv	lv				
+veraa	isam	0082	'ēn	see	v:pred	v		pred		
+veraa	isam	0082	rak	out	rv	rv				
+veraa	isam	0082	'ēn	NEG2	rv	rv				
+veraa	isam	0082	diē	3SG	pro.h:p	pro	h	p	0010	
+veraa	isam	0083	#	#	##	##				
+veraa	isam	0083	da	do	other	other				
+veraa	isam	0083	vag-'ōl	MULT-three	np:other	np		other	0054	bridging
+veraa	isam	0083	na-gi	ORD-3SG	rn	rn				
+veraa	isam	0083	dir	3PL	pro.h:a	pro	h	a	0002	
+veraa	isam	0083	e	GEN.NEG1	lv	lv				
+veraa	isam	0083	'ēn	see	v:pred	v		pred		
+veraa	isam	0083	rak	out	rv	rv				
+veraa	isam	0083	'ēn	NEG2	rv	rv				
+veraa	isam	0083	diē	3SG	pro.h:p	pro	h	p	0010	
+veraa	isam	0084	#	#	##	##				
+veraa	isam	0084	enei	now	other	other				
+veraa	isam	0084	dir	3PL	pro.h:s	pro	h	s	0002	
+veraa	isam	0084	=ēk	=TAM2	=lv	=lv				
+veraa	isam	0084	dōm	think	v:pred	v		pred		
+veraa	isam	0084	#	#	#cc	#cc				
+veraa	isam	0084	so	CPL	other	other				
+veraa	isam	0084	dir	3PL	pro.h:a	pro	h	a	0002	
+veraa	isam	0084	=ēk	=TAM2	=lv	=lv				
+veraa	isam	0084	gis	hold	v:pred	v		pred		
+veraa	isam	0084	vagra	tight	rv	rv				
+veraa	isam	0084	diē	3SG	pro.h:p	pro	h	p	0010	
+veraa	isam	0084	va'anē	TEMP.DEM1	other	other				
+veraa	isam	0084	#	#	##ds	##ds				
+veraa	isam	0084	so	QUOT	other	other				
+veraa	isam	0084	=n	=ART	=ln	=ln				
+veraa	isam	0084	sav	what	np:pred	np		pred		
+veraa	isam	0084	nē	DEM1	dem_pro:s	dem_pro		s	0010	
+veraa	isam	0084	#	#	##ds	##ds				
+veraa	isam	0084	ZERO	ZERO	0:s	0		s	0010	
+veraa	isam	0084	n	ART	ln	ln				
+veraa	isam	0084	'ama'	spirit	np.d:pred	np	d	pred		
+veraa	isam	0084	#	#	##ds	##ds				
+veraa	isam	0084	si	or	other	other				
+veraa	isam	0084	ZERO	ZERO	0:s	0		s	0010	
+veraa	isam	0084	=n	=ART	=ln	=ln				
+veraa	isam	0084	'an̄sara	person	np.h:pred	np	h	pred		
+veraa	isam	0085	#	#	##	##				
+veraa	isam	0085	so	NC	other	other				
+veraa	isam	0085	dir	3PL	pro.h:s	pro	h	s	0002	
+veraa	isam	0085	=ēm	=TAM1	=lv	=lv				
+veraa	isam	0085	dada	RED:do	v:pred	v		pred		
+veraa	isam	0085	'ēno	try	rv	rv				
+veraa	isam	0085	#	#	#cc	#cc				
+veraa	isam	0085	alēn	ASS	adp	adp				
+veraa	isam	0085	ga	STAT	lv	lv				
+veraa	isam	0085	gis	hold	vother:pred	vother		pred		
+veraa	isam	0085	va-varga	RED-tight	rv	rv				
+veraa	isam	0085	diē	3SG	pro.h:p	pro	h	p	0010	
+veraa	isam	0085	#	#	##	##				
+veraa	isam	0085	lē	LOC	adp	adp				
+veraa	isam	0085	=n	=ART	=ln	=ln				
+veraa	isam	0085	vag-'ōl	MULT-three	np:other	np		other	0054	
+veraa	isam	0085	na-gi	ORD-3SG	rn	rn				
+veraa	isam	0085	#	#	#rc_rn	#rc_rn				
+veraa	isam	0085	a	REL	other	other				
+veraa	isam	0085	di	3SG	pro.h:s	pro	h	s	0010	
+veraa	isam	0085	=m	=TAM1	=lv	=lv				
+veraa	isam	0085	lak	dance	v:pred	v		pred		
+veraa	isam	0085	lu	through	rv	rv				
+veraa	isam	0085	ma	hither	rv	rv				
+veraa	isam	0085	#	#	##	##				
+veraa	isam	0085	dir	3PL	pro.h:a	pro	h	a	0002	
+veraa	isam	0085	=ēk	=TAM2	=lv	=lv				
+veraa	isam	0085	gis	hold	v:pred	v		pred		
+veraa	isam	0085	varga	tight	rv	rv				
+veraa	isam	0085	ZERO	ZERO	0.h:p	0	h	p	0010	
+veraa	isam	0086	#	#	##	##				
+veraa	isam	0086	masō-gi	time-3SG	np:other	np		other		
+veraa	isam	0086	dir	3PL	pro.h:a	pro	h	a	0002	
+veraa	isam	0086	=ēm	=TAM1	=lv	=lv				
+veraa	isam	0086	gis	hold	v:pred	v		pred		
+veraa	isam	0086	varga	tight	rv	rv				
+veraa	isam	0086	diē	3SG	pro.h:p	pro	h	p	0010	
+veraa	isam	0086	#	#	##	##				
+veraa	isam	0086	dir	3PL	pro.h:s	pro	h	s	0002	
+veraa	isam	0086	=ēk	=TAM2	=lv	=lv				
+veraa	isam	0086	sōk	scan	v:pred	v		pred		
+veraa	isam	0086	sier	realise	rv	rv				
+veraa	isam	0086	#	#	#ds_cc	#ds_cc				
+veraa	isam	0086	so	CPL	other	other				
+veraa	isam	0086	'o	INTERJ	other	other				
+veraa	isam	0086	di	3SG	pro.h:s	pro	h	s	0010	
+veraa	isam	0086	=n	=ART	=ln	=ln				
+veraa	isam	0086	'an̄sara	person	np.h:pred	np	h	pred		
+veraa	isam	0086	#	#	##	##				
+veraa	isam	0086	dir	3PL	pro.h:a	pro	h	a	0002	
+veraa	isam	0086	=ēm	=TAM1	=lv	=lv				
+veraa	isam	0086	ran̄	tear	v:pred	v		pred		
+veraa	isam	0086	den	ABL	rv	rv				
+veraa	isam	0086	n	ART	ln	ln				
+veraa	isam	0086	nō	POSS.DOM	ln	ln				
+veraa	isam	0086	-gi	-3SG	-ln_pro.h:poss	-ln_pro	h	poss	0010	
+veraa	isam	0086	=n	=ART	ln	ln				
+veraa	isam	0086	'erē	PL	ln	ln				
+veraa	isam	0086	wōsisigile	seal	np:p	np		p	0049	
+veraa	isam	0087	#	#	##	##				
+veraa	isam	0087	dir	3PL	pro.h:s	pro	h	s	0002	
+veraa	isam	0087	=ēk	=TAM2	=lv	=lv				
+veraa	isam	0087	sōk	scan	v:pred	v		pred		
+veraa	isam	0087	sier	realise	rv	rv				
+veraa	isam	0087	#	#	#ds_cc	#ds_cc				
+veraa	isam	0087	so	QUOT	other	other				
+veraa	isam	0087	'o	INTERJ	other	other				
+veraa	isam	0087	di	3SG	pro.h:s	pro	h	s	0010	
+veraa	isam	0087	=n	=ART	=ln	=ln				
+veraa	isam	0087	'an̄sara	person	np.h:pred	np	h	pred		
+veraa	isam	0088	#	#	##ds	##ds				
+veraa	isam	0088	'o	INTERJ	other	other				
+veraa	isam	0088	ba	but	other	other				
+veraa	isam	0088	e	PERS.ART	ln	ln				
+veraa	isam	0088	ge	DEICT	np.h:s	np	h	s	0010	
+veraa	isam	0088	anē'ē	DEM1.A	rn	rn				
+veraa	isam	0088	sa	EMPH	other	other				
+veraa	isam	0088	#	#	#cc:pred	#cc		pred		
+veraa	isam	0088	dir	3PL	pro.h:a	pro	h	a	0002	
+veraa	isam	0088	=s	=SIM	=lv	=lv				
+veraa	isam	0088	da	do	v:pred	v		pred		
+veraa	isam	0088	=n	=ART	=ln	=ln				
+veraa	isam	0088	gengen	food	np:p	np		p	0055	bridging
+veraa	isam	0088	sir	for	adp	adp				
+veraa	isam	0088	ZERO	ZERO	0.h:obl	0	h	obl	0010	
+veraa	isam	0088	qiri	today	other	other				
+veraa	isam	0088	anē	DEM1.A	other	other				
+veraa	isam	0089	#	#	##	##				
+veraa	isam	0089	itok	good	v:pred	v		pred		
+veraa	isam	0089	#	#	##	##				
+veraa	isam	0089	e	DISC	other	other				
+veraa	isam	0089	dir	3PL	pro.h:a	pro	h	a	0002	
+veraa	isam	0089	=ēk	=TAM2	=lv	=lv				
+veraa	isam	0089	vesir	ask	v:pred	v		pred		
+veraa	isam	0089	diē	3SG	pro.h:p	pro	h	p	0010	
+veraa	isam	0089	#	#	##	##				
+veraa	isam	0089	di	3SG	pro.h:a	pro	h	a	0010	
+veraa	isam	0089	ne	TAM2:3SG	lv-pro_h_a	lv-pro_h_a				
+veraa	isam	0089	kaka	story	v:pred	v		pred		
+veraa	isam	0089	mē	DAT	adp	adp				
+veraa	isam	0089	dirē	3PL	pro.h:g	pro	h	g	0002	
+veraa	isam	0089	=n	=ART	=ln	=ln				
+veraa	isam	0089	'erē	PL	ln	ln				
+veraa	isam	0089	kaka	story	np:p	np		p	0056	bridging
+veraa	isam	0089	#	#	#cc	#cc				
+veraa	isam	0089	rekse	like	other	other				
+veraa	isam	0089	sivie	how	other	other				
+veraa	isam	0089	di	3SG	pro.h:s	pro	h	s	0010	
+veraa	isam	0089	=m	=TAM1	=lv	=lv				
+veraa	isam	0089	van	go	v:pred	v		pred		
+veraa	isam	0089	#	#	#cc	#cc				
+veraa	isam	0089	sivie	how	other	other				
+veraa	isam	0089	di	3SG	pro.h:s	pro	h	s	0010	
+veraa	isam	0089	=m	=TAM1	=lv	=lv				
+veraa	isam	0089	'ēqēl	descend	v:pred	v		pred		
+veraa	isam	0089	suw	thither	rv	rv				
+veraa	isam	0089	lē	LOC	adp	adp				
+veraa	isam	0089	=n	=ART	=ln	=ln				
+veraa	isam	0089	Torres	Torres	pn_np:g	pn_np		g	0019	
+veraa	isam	0090	#	#	##	##				
+veraa	isam	0090	di	3SG	pro.h:s	pro	h	s	0010	
+veraa	isam	0090	=m	=TAM1	=lv	=lv				
+veraa	isam	0090	'ōg-'ōg	RED:stay	v:pred	v		pred		
+veraa	isam	0090	suwei	downwind	other:l	other		l	0019	
+veraa	isam	0091	#	#	##	##				
+veraa	isam	0091	di	3SG	pro.h:s	pro	h	s	0010	
+veraa	isam	0091	=m	=TAM1	=lv	=lv				
+veraa	isam	0091	es	alive	v:pred	v		pred		
+veraa	isam	0091	sivie	how	other	other				
+veraa	isam	0091	#	#	##	##				
+veraa	isam	0091	wo	and	other	other				
+veraa	isam	0091	sivie	how	other	other				
+veraa	isam	0091	di	3SG	pro.h:s	pro	h	s	0010	
+veraa	isam	0091	=m	=TAM1	=lv	=lv				
+veraa	isam	0091	kel	back	v:pred	v		pred		
+veraa	isam	0091	ma	hither	rv	rv				
+veraa	isam	0091	#	#	##	##				
+veraa	isam	0091	ZERO	ZERO	0.h:s	0	h	s	0010	
+veraa	isam	0091	m	TAM1	lv	lv				
+veraa	isam	0091	din̄	reach	v:pred	v		pred		
+veraa	isam	0091	rekse	like	nc	nc				
+veraa	isam	0092	#	#	##	##				
+veraa	isam	0092	dir	3PL	pro.h:a	pro	h	a	0002	
+veraa	isam	0092	=ēm	=TAM1	=lv	=lv				
+veraa	isam	0092	dimdim	RED:NC	v:pred	v		pred		
+veraa	isam	0092	kel	back	rv	rv				
+veraa	isam	0092	ēn	ART	ln	ln				
+veraa	isam	0092	kele	behind	np:p	np		p	0057	bridging
+veraa	isam	0092	qōn̄	night	rn	rn				
+veraa	isam	0092	vēlimē	five	rn	rn				
+veraa	isam	0093	#	#	##	##				
+veraa	isam	0093	so	NC	other	other				
+veraa	isam	0093	dir	3PL	pro.h:a	pro	h	a	0002	
+veraa	isam	0093	=ēm	=TAM1	=lv	=lv				
+veraa	isam	0093	da	do	v:pred	v		pred		
+veraa	isam	0093	=n	=ART	=ln	=ln				
+veraa	isam	0093	qōn̄	night	np:p	np		p	0057	
+veraa	isam	0093	vēlimē	five	rn	rn				
+veraa	isam	0093	mu	POSS.GEN	rn	rn				
+veraa	isam	0093	-gi	-3SG	-rn_pro.h:poss	-rn_pro	h	poss	0010	
+veraa	isam	0094	#	#	##	##				
+veraa	isam	0094	di	3SG	pro.h:s	pro	h	s	0010	
+veraa	isam	0094	=m	=TAM1	=lv	=lv				
+veraa	isam	0094	din̄	reach	v:pred	v		pred		
+veraa	isam	0094	kel	back	rv	rv				
+veraa	isam	0094	ma	hither	rv	rv				
+veraa	isam	0094	mē-n	DAT-CS	adp	adp				
+veraa	isam	0094	e	PERS.ART	ln	ln				
+veraa	isam	0094	raga	people	ln	ln				
+veraa	isam	0094	sō-sōgō	RED-line	np.h:g	np	h	g	0058	new
+veraa	isam	0094	-gi	-3SG	-rn_pro.h:poss	-rn_pro	h	poss	0010	
+veraa	isam	0094	e	PERS.ART	rn	rn				
+veraa	isam	0094	raga	people	rn	rn				
+veraa	isam	0094	ni-ni'i	RED-offspring	rn_np.h	rn_np	h		0058	
+veraa	isam	0094	-gi	-3SG	-rn_pro.h:poss	-rn_pro	h	poss	0010	
+veraa	isam	0094	lē	LOC	rn	rn				
+veraa	isam	0094	=n	=ART	=rn	=rn				
+veraa	isam	0094	vunuō	land	rn	rn				
+veraa	isam	0094	'a	ASS.SP	rn	rn				
+veraa	isam	0094	Lēnmerig	Lēnmerig	rn_pn_np	rn_pn_np			0001	
+veraa	isam	0095	#	#	##	##				
+veraa	isam	0095	wunva	probably	other	other				
+veraa	isam	0095	=n	=ART	=ln	=ln				
+veraa	isam	0095	kaka	story	np:dt_s	np		dt_s		
+veraa	isam	0095	di	3SG	pro:s	pro		s		
+veraa	isam	0095	=m	=TAM1	=lv	=lv				
+veraa	isam	0095	qē'	finish	v:pred	v		pred		
+veraa	isam	0095	'ekēnē	LOC.DEM1	other	other				

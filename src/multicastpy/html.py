@@ -2,6 +2,8 @@ from lxml.etree import parse, HTMLParser
 
 from .xml import text
 
+__all__ = ['iter_corpus_metadata']
+
 
 def iter_corpus_metadata(index_html, corpora):
     """

@@ -145,6 +145,17 @@ def run(args):
     # refind -> foreign keys! prefix with integer ID of the text! Must also be done for refinds in "relations"!
     # -> extract referents-list.relations into assoc table referent_relations!
 
+    tdir.joinpath('cldfbench_mc{}.py'.format(args.corpus)).write_text("""\
+import pathlib
+
+from multicastpy.dataset import Dataset as BaseDataset
+
+
+class Dataset(BaseDataset):
+    dir = pathlib.Path(__file__).parent
+    id = "mc{}"
+""".format(args.corpus), encoding='utf8')
+
 #
 # FIXME: some texts are split into several tsv/xml/eaf/audio files! "_a|b" appendix of filename stem
 #

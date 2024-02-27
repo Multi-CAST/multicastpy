@@ -1,0 +1,16 @@
+﻿Cite this Multi-CAST data set as:
+
+Schnell, Stefan. 2015. Multi-CAST Vera'a. In Haig, Geoffrey & Schnell, Stefan (eds.), Multi-CAST: Multilingual corpus of annotated spoken texts. Version 2311. Bamberg: University of Bamberg. (multicast.aspra.uni-bamberg.de/#veraa) (date accessed)
+
+@incollection{Schnell2015,
+ author = {Schnell, Stefan},
+ title = {{Multi-CAST Vera'a}},
+ year = {2015},
+ editor = {Haig, Geoffrey and Schnell, Stefan},
+ booktitle = {{Multi-CAST}},
+ booksubtitle = {{Multilingual corpus of annotated spoken texts}},
+ note = {Version 2311},
+ address = {Bamberg},
+ publisher = {University of Bamberg},
+ url = {multicast.aspra.uni-bamberg.de/#veraa}
+}

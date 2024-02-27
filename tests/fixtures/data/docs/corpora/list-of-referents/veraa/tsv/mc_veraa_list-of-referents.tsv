@@ -1,0 +1,647 @@
+corpus	text	refind	label	description	class	relations	notes
+veraa	anv	0001	ruwa	married couple	hum	> 0002, 0004	
+veraa	anv	0002	ren̄e	woman, wife of 0004	hum	< 0001	
+veraa	anv	0003	ni'i ren̄e	child of 0002 and 0004	hum		
+veraa	anv	0004	'ama	husband of 0002, father of 0003	hum	< 0001	
+veraa	anv	0005	maru	uncle of 0003	hum	< 0015	
+veraa	anv	0006	'ōnō 'ev'ē voruo'	litter place	loc		
+veraa	anv	0007	ren̄e	close friend of 0003	hum	< 0015	
+veraa	anv	0008	voruo'	rubbish	inm		
+veraa	anv	0009	tētē	two babies	hum		
+veraa	anv	0010	kolo	back of 0007	bdp	M 0007	
+veraa	anv	0011	'uvu woqe'enge	tree	inm		
+veraa	anv	0012	bē	water	inm		depicted reality
+veraa	anv	0013	wovinqa	coconut shells	inm		depicted reality
+veraa	anv	0014	dudu n̄ar	nangae leaves	inm		depicted reality
+veraa	anv	0015	dē	0007 and 0005	hum	> 0007, 0005	depicted reality
+veraa	anv	0016	gogov	clothes of 0009	inm		
+veraa	anv	0018	babara	shooting contest	loc		
+veraa	anv	0019	vus	bows	inm		
+veraa	anv	0020	wō'iqē	arrows	inm		
+veraa	anv	0021	dir	'they'; probably the aunt, uncle and the two babies (0005, 0007, 0015, 0009)	hum	> 0005, 0007, 0015, 0009	
+veraa	anv	0022	'ili	chicken egg	inm		
+veraa	anv	0024	raga	everybody there	hum		
+veraa	anv	0025	tōo	chickens hatched from 0022	anm		depicted reality
+veraa	anv	0026	ren̄e	woman looking after the twins (0009)	hum		
+veraa	anv	0027	bēlēl	chicken basket	inm		depicted reality
+veraa	anv	0028	ge	first one of the twins	anm	< 0009	
+veraa	anv	0029	ge	second one of the twins	anm	< 0009	
+veraa	anv	0030	'ili	m̄ala eggs	inm		depicted reality
+veraa	anv	0031	dom	yams	inm		
+veraa	anv	0032	baka	nambanga tree	inm		
+veraa	anv	0033	tōo	first one of the chickens	anm	< 0025	
+veraa	anv	0034	tōo	second one of the chickens	anm	< 0025	
+veraa	anv	0035	gaga	nambanga vine	inm		
+veraa	anv	0036	aval	the other side	loc		
+veraa	anv	0037	qaran̄a	gorge	loc		
+veraa	anv	0038	raga	everybody at home	hum		depicted reality
+veraa	anv	0039	raga	everybody	hum		
+veraa	anv	0040	wōm̄ōm̄ō'	bush	loc		
+veraa	anv	0041	naw	sea	loc		
+veraa	anv	0042	busu	finger of 0029	bdp	M 0029	
+veraa	anv	0043	busu	finger of 0028	bdp	M 0028	
+veraa	anv	0044	busu	fingers of 0028 and 0029	bdp	> 0042, 0043	
+veraa	as1	0001	kaka	story to be told	abs		
+veraa	as1	0002	ruwa	two brothers	hum	> 0017, 0018; < 0009	
+veraa	as1	0003	raw	intra-sex pig the two brothers want	anm		
+veraa	as1	0004	Lēmērig	Lēmērig	loc		
+veraa	as1	0005	Vatov	Vatov	loc		
+veraa	as1	0006	Dōl	Dōl	anm	> 0032; < 0009	
+veraa	as1	0007	ZERO	(shell) money the brothers have	inm		
+veraa	as1	0008	raw	the intra-sex pig the brothers buy	anm		
+veraa	as1	0009	gidō'ōl	Dōl and the two brothers	hum	> 0002, 0006	
+veraa	as1	0010	'ēqē'	garden	loc		
+veraa	as1	0011	qe'e	taro	inm		
+veraa	as1	0012	rōrō'	cabbage	inm		
+veraa	as1	0013	gie	kava	inm		
+veraa	as1	0014	nim̄ē	house	loc		
+veraa	as1	0015	n̄ar	canarium nuts	inm		
+veraa	as1	0016	wig	wig pudding	mss		
+veraa	as1	0017	'uwam̄ēre	firstborn of the two brothers	hum	> 0020, 0021; < 0002	
+veraa	as1	0018	'isim̄ēre	second born of the two brothers	hum	< 0002	
+veraa	as1	0019	wōvēre	coconut fibres	inm		
+veraa	as1	0020	wōbin	penis of 0017	bdp	M 0017	
+veraa	as1	0021	'irbē	body of 0017	bdp	M 0017	
+veraa	as1	0022	nim̄	toilet	loc		
+veraa	as1	0023	ma'av	breakfast	mss		
+veraa	as1	0024	bē	river	loc		
+veraa	as1	0025	so	name of river	abs		
+veraa	as1	0026	vus	bow	inm		
+veraa	as1	0027	wōvinqa	coconut shell	inm		
+veraa	as1	0028	'an̄a	basket	inm		
+veraa	as1	0029	bē	water	mss		
+veraa	as1	0030	mērē	urine	mss		
+veraa	as1	0031	uvu	tree	inm		
+veraa	as1	0032	nōgō	changed face of 0006	bdp	M 0006	
+veraa	as1	0033	raw	intra-sex pig needed for 0029	inm		
+veraa	gabg	0001	buskat	cat	anm	> 0022; < 0003	
+veraa	gabg	0002	gōsuwō	rat	anm	> 0021, 0027, 0030, 0031; < 0003	
+veraa	gabg	0003	duru	the cat and the rat	anm	> 0001, 0002	
+veraa	gabg	0004	vunu	island	loc		
+veraa	gabg	0005	nim̄ē	house	loc		
+veraa	gabg	0006	lo	the seaside	loc		
+veraa	gabg	0007	me'	reef	loc		
+veraa	gabg	0009	naw	saltwater	mss		
+veraa	gabg	0010	vus	bow	inm		
+veraa	gabg	0011	qē	fishing rod	inm		
+veraa	gabg	0012	bēlēl	basket for fish	inm		
+veraa	gabg	0013	n̄ērē'iē	shore	loc		
+veraa	gabg	0014	'ēqē	garden	loc		
+veraa	gabg	0015	mes	fish cat and rat have caught	inm		
+veraa	gabg	0016	wova'al	pawpaws	inm		
+veraa	gabg	0017	'uvu'	pawpaw trees in garden	inm	> 0018	
+veraa	gabg	0018	'uvu'	one of the pawpaw trees	inm	> 0025; < 0017	
+veraa	gabg	0019	wēwē	fruits of 0018	inm	> 0020	
+veraa	gabg	0020	wēwē	only fruit of the pawpaw tree that was ripe	inm	< 0019	
+veraa	gabg	0021	wulen	fingernails of the rat	bdp	M 0002	
+veraa	gabg	0022	wō-wōle	fingernails of the cat	bdp	M 0001	
+veraa	gabg	0023	qe'an	ground under the pawpaw tree (0018)	loc		
+veraa	gabg	0024	aval	other side of the pawpaw tree	loc		
+veraa	gabg	0025	gako	stalk of the pawpaw tree	inm	M 0018	
+veraa	gabg	0026	qoro	hole gnawed by rat into the pawpaw tree	inm		
+veraa	gabg	0027	'aqa	belly of the rat	bdp	M 0002	
+veraa	gabg	0028	m̄ō'	bush	loc		
+veraa	gabg	0029	qaran̄a	hole in the bush	loc		
+veraa	gabg	0030	qi'i	head of the rat	bdp	M 0002	
+veraa	gabg	0031	gōlō	tail of the rat	bdp	M 0002	
+veraa	gaqg	0001	qono	seagull	anm	< 0003	
+veraa	gaqg	0002	gusuwō	rat	anm	< 0003, 0018	
+veraa	gaqg	0003	duruō	seagull and rat	anm	> 0001, 0002	
+veraa	gaqg	0004	qoro	river	loc		
+veraa	gaqg	0005	woqe'enge	tree	loc		
+veraa	gaqg	0006	qoro	hole	loc	M 0010	
+veraa	gaqg	0007	qoro	dry creek	loc		
+veraa	gaqg	0008	wēde	rain	mss		
+veraa	gaqg	0009	bē	water of the river and the rain	mss		
+veraa	gaqg	0010	bē	trunk of the tree with the rat's hole	inm	> 0006	
+veraa	gaqg	0011	lo	seaside	loc		
+veraa	gaqg	0012	vemimie	the deep sea	loc		
+veraa	gaqg	0013	dōdōmia	rat's thoughts	abs		
+veraa	gaqg	0014	sava	something that will help the plan get back to land	abs		
+veraa	gaqg	0015	vunuō	land, shore	loc		
+veraa	gaqg	0016	ZERO	turtle	anm	> 0017, 0038, 0039; < 0018	
+veraa	gaqg	0017	kolo	turtle's back	bdp	M 0016	
+veraa	gaqg	0018	duru	the turtle and the rat	anm	> 0016, 0002	
+veraa	gaqg	0019	n̄erē'iē	the shore where the turtle brings the rat	loc		
+veraa	gaqg	0020	nōn	sand / beach at that shore	loc		
+veraa	gaqg	0021	wōm̄ōm̄ō'	bush	loc		
+veraa	gaqg	0022	qoro	hole for the turtle as a thank you	loc		
+veraa	gaqg	0023	'an̄sar	two humans	hum	> 0024	
+veraa	gaqg	0024	ge'ew'i	one of the two humans	hum	< 0023	
+veraa	gaqg	0025	vunu	the village	loc		
+veraa	gaqg	0026	maranaga	the chief of the village	hum		
+veraa	gaqg	0027	sul	the people of the village	hum		
+veraa	gaqg	0028	revrev	evening	tme		
+veraa	gaqg	0029	nev	fire	mss		
+veraa	gaqg	0030	dōdōmia	plan of the seagull to save turtle	abs		
+veraa	gaqg	0031	masōgi	time when people are in village cooking turtle	tme		
+veraa	gaqg	0032	m̄ēm̄ēlege	things the seagull will wear	inm		
+veraa	gaqg	0033	sere-ge	village square	loc		
+veraa	gaqg	0034	gaga	vine the turtle is tied up with	inm		
+veraa	gaqg	0035	rōrō	news that a turtle dances in the village square	abs		
+veraa	gaqg	0036	ZERO	the dance of the turtle	abs		
+veraa	gaqg	0037	'ekē	place where fire is lit	loc		
+veraa	gaqg	0038	'aqa	belly of the turtle	bdp	M 0016	
+veraa	gaqg	0039	bini	hands of the turtle	bdp	M 0016	
+veraa	gaqg	0040	mē'ēsala	path from village to sea	loc		
+veraa	gaqg	0041	di	message seagull wants to convey by dancing	abs		
+veraa	gaqg	0042	masōgi	time when seagull stops dancing	tme		
+veraa	hhak	0001	'ama'	devouring devil	hum		
+veraa	hhak	0002	'an̄sara	people	hum		
+veraa	hhak	0003	Vunu Lava	Vanua Lava	loc		
+veraa	hhak	0004	'an̄sara	people	hum		
+veraa	hhak	0005	mē'ē	place of the sunrise	loc		
+veraa	hhak	0006	'ōnō	place of sunset	loc		
+veraa	hhak	0007	vunu	village	loc		
+veraa	hhak	0008	dir	they	hum		
+veraa	hhak	0009	tōo	fowl	anm		
+veraa	hhak	0010	qō	pig	anm		
+veraa	hhak	0011	buluk	cow	anm		
+veraa	hhak	0012	vunu	village	loc		
+veraa	hhak	0013	sul	people of the village	hum		
+veraa	hhak	0014	vunuō	village	loc		
+veraa	hhak	0015	ren̄e	woman	hum		
+veraa	hhak	0016	ruwa	two people, siblings	hum		
+veraa	hhak	0017	'am̄an	man	hum	< 0016	
+veraa	hhak	0018	nik	you two	hum	> 0016	depicted reality
+veraa	hhak	0019	nak	canoe	inm		depicted reality
+veraa	hhak	0020	ni-ni'i-k	children of 0017	hum		depicted reality
+veraa	hhak	0021	'aqa-m	big belly of 0015	hum	M 0015	depicted reality
+veraa	hhak	0022	kamam	us	hum	> 0016, 0020	depicted reality
+veraa	hhak	0023	'aklē-gi	some more people	hum		
+veraa	hhak	0024	nak	canoe	inm		depicted reality
+veraa	hhak	0025	ni'i	small children of 0023	hum		depicted reality
+veraa	hhak	0026	qoro	cave	loc		
+veraa	hhak	0027	m̄ērm̄ēre	twins	hum		
+veraa	hhak	0028	zero	twins and mother	hum	> 0015, 0027	
+veraa	hhak	0029	go	food	inm		
+veraa	hhak	0030	'ēqē	taro garden	loc		
+veraa	hhak	0031	mēdēr	rocks to block the cave	inm		
+veraa	hhak	0032	mēdēr	one rock to block the cave	inm		
+veraa	hhak	0033	mēdēr	another rock	inm		
+veraa	hhak	0034	'owo	brother	hum		depicted reality
+veraa	hhak	0035	kamak	0034 and 0015	hum		depicted reality
+veraa	hhak	0036	vus	bow	inm		depicted reality
+veraa	hhak	0037	mes	fish	anm		
+veraa	hhak	0038	nak	canoe	inm		depicted reality
+veraa	hhak	0039	ge	one of the twins	hum	< 0027	
+veraa	hhak	0040	so-gi	name of 0039	inm		
+veraa	hhak	0041	ge	other one of the twins	hum	< 0027	
+veraa	hhak	0042	so-gi	name of 0041	inm		
+veraa	hhak	0044	wo'iqē	arrows	inm		
+veraa	hhak	0045	lo	seaside	loc		
+veraa	hhak	0046	lama	open sea	loc		
+veraa	hhak	0047	n̄ērē'iē	coast	loc		
+veraa	hhak	0048	qorot	noise	inm		depicted reality
+veraa	hhak	0049	nes	song	inm		depicted reality
+veraa	hhak	0050	lan̄	wind	inm		depicted reality
+veraa	hhak	0051	ner	seaoak	inm		depicted reality
+veraa	hhak	0052	mēdēr	rock	inm		
+veraa	hhak	0053	mē'ēm̄ē	door of the cave	inm		
+veraa	hhak	0054	mēdēr	rock	inm		
+veraa	hhak	0055	mēdēr	rock	inm		
+veraa	hhak	0056	es	life of the devil	inm		depicted reality
+veraa	hhak	0057	vōwal	one shot	inm		
+veraa	hhak	0059	vus	bow	inm		
+veraa	hhak	0058	vōwal	one shot	inm		
+veraa	hhak	0060	ma'ava	morning	inm		
+veraa	hhak	0061	qi'i	head of the devil	bdp	M 0001	
+veraa	hhak	0062	nev	fire	inm		
+veraa	hhak	0063	'irbē	body of the devil	bdp	M 0001	
+veraa	hhak	0064	gengen	food	inm		
+veraa	hhak	0065	nos	smoke	inm		
+veraa	hhak	0066	tōo	fowl	anm		
+veraa	hhak	0067	qō	pig	anm		
+veraa	hhak	0068	bigbig	meat	inm		
+veraa	hhak	0069	gengen	food	inm		
+veraa	hhak	0070	maranaga	chief	hum		
+veraa	hhak	0071	nak	canoe	inm		
+veraa	hhak	0072	qōtō	basket	inm		
+veraa	hhak	0073	ZERO	people	hum		
+veraa	hhak	0074	mē'ērsa	harbour	loc		
+veraa	hhak	0075	nak	canoe	inm		
+veraa	hhak	0076	nōn	beach	loc		
+veraa	hhak	0077	nak	canoe	inm		
+veraa	isam	0001	Lemerig	Lemerig	loc		
+veraa	isam	0002	'an̄sar	people of Lemerig	hum	> 0009, 0010	
+veraa	isam	0003	me'	reef	loc	> 0017, 0024, 0037, 0038, 0039; < 0018	
+veraa	isam	0004	vo-von̄odo	sea harvest	inm		
+veraa	isam	0005	mes	fish	inm		
+veraa	isam	0006	goto	hermit crab	inm		
+veraa	isam	0007	wōkalkal	crab	inm		
+veraa	isam	0008	wōsēs	mussel	inm		
+veraa	isam	0009	ruwa	a couple	hum	< 0002	
+veraa	isam	0010	'an̄sara	one person	hum	< 0002, 0018	
+veraa	isam	0011	m̄o-gi	house of 0010	loc		
+veraa	isam	0012	'ēnēs	middle of the night	tme		
+veraa	isam	0013	nev	fire	mss		
+veraa	isam	0014	'ekē	place in the deep sea	loc		
+veraa	isam	0015	masō-gi	the time 0010 notices the reef moving	tme		
+veraa	isam	0016	naw	saltwater / the sea	mss		
+veraa	isam	0017	kolo	back of the reef	bdp	M 0003	
+veraa	isam	0018	gēdu	the reef and 0010	anm	> 0003, 0010	
+veraa	isam	0019	vunuō	land (Torres)	loc		
+veraa	isam	0020	dir	they (generic)	hum		
+veraa	isam	0021	maran	daylight	tme		
+veraa	isam	0022	mē'ērsa	harbour of Hiw	loc		
+veraa	isam	0023	vunuō	Hiw island	loc		
+veraa	isam	0024	'an̄sara	person / spirit in the reef	hum	< 0003	
+veraa	isam	0025	qōn̄	amount of time to be spent on Hiw island	tme		
+veraa	isam	0026	kēnē	inland (Hiw island)	loc		
+veraa	isam	0027	'ekē	dry place for 0010 to jump onto	loc		
+veraa	isam	0028	gengen	food that reef wants 0010 to eat	inm		
+veraa	isam	0029	'ōnō	place to sleep for 0010 (to be found)	loc		
+veraa	isam	0030	masō-gi	the time when reef calls 0010 to return home	tme		
+veraa	isam	0031	qiri	today	tme		
+veraa	isam	0032	qōrqōr	dream 0010 has (that the reef calls him to go back)	abs		
+veraa	isam	0033	'ono	place where reef lied	loc		
+veraa	isam	0034	qōn̄	two nights they need to get to the harbour	tme		
+veraa	isam	0035	mē'ērsa	harbour of Lemerig	loc		
+veraa	isam	0036	masō-gi	time when they get into the harbour	tme		
+veraa	isam	0037	vō-ruō	two pieces of the reef	anm	> 0038, 0039; M 0003	
+veraa	isam	0038	kum̄	the bigger part of the reef	anm	M 0037, 0003	
+veraa	isam	0039	menre	other piece of the reef	anm	M 0037, 0003	
+veraa	isam	0040	qōn̄	fifth night 0010 has been missing	tme		
+veraa	isam	0041	ma'ava	the morning of the fifth night	tme		
+veraa	isam	0042	qiri	the day of the fifth night	tme		
+veraa	isam	0043	masō-gi	time for the dances on the fifth night	tme		
+veraa	isam	0044	lak-laka	the dances on the fifth night	abs		
+veraa	isam	0045	Vunu Lava	Vanua Lava	loc		
+veraa	isam	0046	tō	fowl	anm		
+veraa	isam	0047	ekēnē	the place where the reef gets stuck permanently	loc		
+veraa	isam	0048	dudu	leaf tree	inm		
+veraa	isam	0049	nō	clothes made out of leaf tree	inm		
+veraa	isam	0050	revrev	afternoon	tme		
+veraa	isam	0051	resdōn̄ar	special kind of dance, the devil dance	abs		
+veraa	isam	0052	lak-laka	first dance	abs		
+veraa	isam	0053	vag-ruō	second dance	abs		
+veraa	isam	0054	vag-'ōl	third dance	abs		
+veraa	isam	0055	gengen sir	food for 0010	inm		
+veraa	isam	0056	kaka	story of how 0010 went to Hiw island with the reef	abs		
+veraa	isam	0057	kele	another fifth night	tme		
+veraa	isam	0058	sō-sōgō	the line of 0010	abs		
+veraa	iswm	0001	Wowōt	Wowōt	hum	> 0046, 0056, 0070; < 0004, 0133	
+veraa	iswm	0002	m̄eter	m̄eter	hum	> 0068, 0069; < 0004	
+veraa	iswm	0003	vono	home	loc		
+veraa	iswm	0004	-ruō	0001 and 0002	hum	> 0001, 0002	
+veraa	iswm	0005	dir	they (generic)	hum	> 0084, 0086	
+veraa	iswm	0006	vono	village of 0001 (Nos)	loc		
+veraa	iswm	0007	vono	village of 0002 (n̄erelan̄tir)	loc		
+veraa	iswm	0008	ruwa	a couple	hum	> 0010, 0015; < 0020, 0096, 0138	
+veraa	iswm	0010	'ama	father of the baby	hum	< 0008, 0020, 0138	
+veraa	iswm	0011	m̄ōgm̄ōglēge	things the father blessed the baby with	abs	> 0012, 0013	
+veraa	iswm	0012	man̄ra	money	mss	< 0011	
+veraa	iswm	0013	qō	pigs	anm	< 0011	
+veraa	iswm	0014	so	name of the baby	abs		
+veraa	iswm	0015	vēvē-n	mother of 0001	hum	< 0008, 0020, 0138	
+veraa	iswm	0016	dōdōmia	plan of parents for 0001 to be blessed	abs		
+veraa	iswm	0017	nim̄ē	house of 0008	loc		
+veraa	iswm	0018	ren̄e	women (generic)	hum		
+veraa	iswm	0019	sara	village square	loc		
+veraa	iswm	0020	dir	they	hum	> 0008, 0010, 0015	
+veraa	iswm	0021	'uwō	hill where 0020 stay	loc		
+veraa	iswm	0022	Laln̄e'ak	Laln̄e'ak	loc		
+veraa	iswm	0024	m̄ērm̄ēre	kids playing on the village square	hum	< 0031	
+veraa	iswm	0025	vēvē	mothers of the kids playing on the village square	hum	< 0027, 0031	
+veraa	iswm	0026	'ama	fathers of the kids playing on the village square	hum	< 0027, 0031	
+veraa	iswm	0027	lu-luwo	adults (mothers and fathers)	hum	> 0025, 0026; < 0031	
+veraa	iswm	0028	ren̄e	woman that stays downwards of the hill	hum		
+veraa	iswm	0029	bur	lamp downhill	inm		
+veraa	iswm	0030	bur	lamps used in village of 0001 (Nos)	inm		
+veraa	iswm	0031	-de	our' (adults and their kids)	hum	> 0024, 0025, 0026, 0027	
+veraa	iswm	0032	dō	canarium leaves	inm	> 0033	
+veraa	iswm	0033	'ir	base of canarium leaf	inm	< 0032	
+veraa	iswm	0034	'in̄i	juice to make lamps	mss		
+veraa	iswm	0035	'ama	father of 0002	hum	< 0037	
+veraa	iswm	0036	vēvē	mother of 0002	hum	< 0037	
+veraa	iswm	0037	duru	mother and father	hum	> 0035, 0036	
+veraa	iswm	0038	nim̄ē	household of 0002	loc		
+veraa	iswm	0039	vo-vo'	weaving	abs		
+veraa	iswm	0040	bolo	valuable things in terms of money	abs		
+veraa	iswm	0041	bolo	other valuable things	abs		
+veraa	iswm	0042	lum-lumgav	all the young men	hum	> 0043, 0064, 0065	
+veraa	iswm	0043	'aklē	some of the young men	hum	< 0042	
+veraa	iswm	0044	vulō	moon	inm		
+veraa	iswm	0045	riar	bow and arrow	inm		
+veraa	iswm	0046	bini	arm / hand of 0001	bdp	M 0001	
+veraa	iswm	0047	bē	river	loc		
+veraa	iswm	0048	vu'	tree	inm		
+veraa	iswm	0049	Ban̄lav	Ban̄lav	loc		
+veraa	iswm	0050	Laln̄ē'ak	Laln̄ē'ak	loc		
+veraa	iswm	0051	Qugemel	Qugemel	loc		
+veraa	iswm	0052	Mamles	Mamles	loc		
+veraa	iswm	0053	Kalon	Kalon	loc		
+veraa	iswm	0054	Qesōw	Qesōw	loc		
+veraa	iswm	0055	bē	river	loc		
+veraa	iswm	0056	'irbē	body of 0001	bdp	< 0001, 0114	
+veraa	iswm	0057	mesgi'e	sweat	inm		
+veraa	iswm	0058	n̄ērē	shore (of the river?)	loc		
+veraa	iswm	0059	ne'	reef	loc		
+veraa	iswm	0060	n̄ērē	shore of 0061	loc		
+veraa	iswm	0062	ve'	stones on the ground	inm		
+veraa	iswm	0063	mē'ēsal	path	loc		
+veraa	iswm	0064	'aklē	some of the young men	hum	< 0042	
+veraa	iswm	0065	'aklē	some of the young men	hum	< 0042	
+veraa	iswm	0066	'uvu	a stone	inm		
+veraa	iswm	0067	mē'ēm̄ē	door of 0002	inm		
+veraa	iswm	0068	'irbē	body of 0002	bdp	M 0002	
+veraa	iswm	0069	nōgō	face of 0002	bdp	M 0002	
+veraa	iswm	0070	nōgō-n	face of 0001	bdp	M 0001	
+veraa	iswm	0072	kakaka	conversation between 0001 and 0002	abs		
+veraa	iswm	0073	dōdōmia	plan of 0064	abs		
+veraa	iswm	0074	qiri	today (the day 0001 should be killed)	tme		
+veraa	iswm	0075	momse	breath of 0001	bdp		
+veraa	iswm	0076	n̄ērē	shore of 0077	loc		
+veraa	iswm	0078	qa-qan̄	wall	inm		
+veraa	iswm	0079	qoro	hole	inm		
+veraa	iswm	0080	ma'avan	morning after 0001's death	tme		
+veraa	iswm	0081	nim̄ē	houses in the village of Nos (0006)	inm		
+veraa	iswm	0082	kaka	story of 0002, 0008 tell 0001	abs		
+veraa	iswm	0083	'ubu-n	grandfather of 0001	hum	> 0089; < 0114, 0133	
+veraa	iswm	0084	bini	arms of people	bdp	M 0005	
+veraa	iswm	0085	sē	anything / anyone lost	abs		
+veraa	iswm	0086	sē	someone coming (?)	abs	> 0088; < 0005	
+veraa	iswm	0087	dōdōmia	tradition of handrubbing when someone / sth is lost	abs		
+veraa	iswm	0088	bini	hand of 0086	bdp	M 0086	
+veraa	iswm	0089	bini	hand of grandfather	bdp	M 0083	
+veraa	iswm	0090	n̄ē-n̄ērē-gi	all shores of Vanua Lava	loc		
+veraa	iswm	0091	Lates	Lates	loc		
+veraa	iswm	0092	Mē'ēsarig	Mē'ēsarig	loc		
+veraa	iswm	0094	vu'	spirit in grandfather's hands	anm		
+veraa	iswm	0095	sul	everybody	hum	< 0096	
+veraa	iswm	0096	gidē	we (the people and 0008)	hum	> 0008, 0095, 0101	
+veraa	iswm	0097	gēnē	pig 0096 take	anm		
+veraa	iswm	0098	gēnē	shell money 0096 take	inm	< 0099	
+veraa	iswm	0099	ZERO	0097 and 0098	inm	> 0097, 0098	
+veraa	iswm	0100	Bēgorwa'ag	Bēgorwa'ag	loc		
+veraa	iswm	0101	maranag	a chief	hum	< 0096	
+veraa	iswm	0102	wisma'	k.o. plant, sign of peace	inm		
+veraa	iswm	0103	raga	people of 0093	hum	> 0104	
+veraa	iswm	0104	maranaga	chief of 0103	hum	< 0103	
+veraa	iswm	0105	mē'ēsala	way to the body of 0001	abs		
+veraa	iswm	0106	'ekē	place where 0001 was killed, place of Gek	loc		
+veraa	iswm	0107	qōn̄	four nights (time passed with 0001's body in the hole)	tme		
+veraa	iswm	0108	du vog	leafs used to wrap 0001	inm		
+veraa	iswm	0109	lan̄	flies	anm		
+veraa	iswm	0110	woqe'enge	piece of wood to carry 0001	inm		
+veraa	iswm	0111	gamal	grandfather's gamal (men's house)	loc		
+veraa	iswm	0112	sava	the instructions of the grandfather as to where to put 0001	abs		
+veraa	iswm	0113	sē	anybody who comes and disturbs grandfather	hum		
+veraa	iswm	0114	kamadu	grandfather and 0001's body	hum	> 0083, 0056	possibly also includes 0001; see connection to 0113
+veraa	iswm	0115	qōn̄	four nights (time grandfather will stay in gamal)	tme	> 0123	
+veraa	iswm	0116	du m̄ēl	m̄ēl leaf	inm		
+veraa	iswm	0117	seg	seg leaf	inm		
+veraa	iswm	0118	man-mana	magic power of song and leaves (?)	abs		
+veraa	iswm	0119	nes	song grandfather sings that has magic powers	abs		
+veraa	iswm	0120	'an̄sar	all the spirits of all the hills of the entire area	anm		
+veraa	iswm	0121	n̄ē-n̄ērē	all the hills	loc		
+veraa	iswm	0122	es	the life (force) of 0001	abs		
+veraa	iswm	0123	qōn̄	the fourth night	tme	< 0115	
+veraa	iswm	0124	di	the act of coming alive	abs		
+veraa	iswm	0125	revrev	evening	tme		
+veraa	iswm	0126	di	morning	tme		
+veraa	iswm	0127	gengen	food	mss		
+veraa	iswm	0128	qōn̄	fifth night	tme		
+veraa	iswm	0129	bē	water	mss		
+veraa	iswm	0130	di	the staying in the room	abs		
+veraa	iswm	0131	qōn̄	time of 0130 (ten nights)	tme		
+veraa	iswm	0132	miē	outside of 0111	loc		
+veraa	iswm	0133	duru	grandfather and 0001	hum	> 0083, 0001	see connection to 0114
+veraa	iswm	0134	gengen	only roasted food	mss		
+veraa	iswm	0135	gargar	strict diet for 0133	abs		
+veraa	iswm	0136	qōn̄	time 0001 still stays in gamal (10 nights)	tme		
+veraa	iswm	0137	dōdōmia	plan 0001 has to follow when going out	abs		
+veraa	iswm	0138	dir	the people who will do a dance for 0001 to follow	hum	> 0008, 0010, 0015, 0148	
+veraa	iswm	0139	lak-laka	dance the poeple will do; plan for 0146	abs		depicted reality
+veraa	iswm	0140	rōrō	message that 0001 is alive	abs		
+veraa	iswm	0141	qōn̄	twelfth day	tme		
+veraa	iswm	0142	n̄ērē	point of 0006	loc		
+veraa	iswm	0143	Bēgōrwa'ag	Bēgōrwa'ag	loc		
+veraa	iswm	0144	lōo	sun	inm		
+veraa	iswm	0145	lak-laka	general dancing	abs		
+veraa	iswm	0146	lak-laka	actual dance 0138 do; is realisation of 0139	abs		
+veraa	iswm	0147	raga	people in general	hum		
+veraa	iswm	0148	ruwa	two people	hum	< 0138	
+veraa	iswm	0149	'ōsōm̄	ashes	mss		
+veraa	iswm	0150	-gi	the realising of 0002 who 0001 is	abs		
+veraa	iswm	0151	'ekē	white spot in 0001's face	loc		
+veraa	iswm	0152	sē	older men	hum		
+veraa	iswm	0153	sara	village square	loc		
+veraa	iswm	0154	'e	many years 0004 lived	tme		
+veraa	jjq	0001	Qo'	Qo', brother of 0002	hum		
+veraa	jjq	0002	'isi	brothers of 0001	hum		
+veraa	jjq	0003	dir	Qo' and his brothers	hum	> 0001, 0002	
+veraa	jjq	0004	Rev	Rev	loc		
+veraa	jjq	0005	nik	you	hum		depicted reality
+veraa	jjq	0006	skul	school	inm		
+veraa	jjq	0007	so	name	inm		
+veraa	jjq	0009	naka	canoes of 0003	inm		
+veraa	jjq	0008	wōm̄ōm̄ō'	bush	loc		
+veraa	jjq	0010	Serewan	Serewan	loc		
+veraa	jjq	0011	mē'ērsa	harbour of 0004	loc		
+veraa	jjq	0012	Narwē	Narwē	loc		
+veraa	jjq	0013	ge	one of the brothers	hum	< 0002	
+veraa	jjq	0015	nak	canoe of 0013	inm		
+veraa	jjq	0017	naw	saltwater	inm		
+veraa	jjq	0014	ge	another of the brothers	hum	< 0002	
+veraa	jjq	0016	ko	down to the sea	inm		
+veraa	jjq	0018	naka	canoe	inm		
+veraa	jjq	0019	nanara	nanara tree	inm		
+veraa	jjq	0020	wōmarawraw	spider	anm		
+veraa	jjq	0021	kōlōv	wood chip	inm		
+veraa	jjq	0022	'ōnō	location of 0018	loc		
+veraa	jjq	0023	menren	piece of wood chip	inm	M 0021	
+veraa	jjq	0024	im̄ē	house of 0001	loc		
+veraa	jjq	0026	duru	0020 and 0001	hum	> 0020, 0001	
+veraa	jjq	0027	qōn̄	night	inm		
+veraa	jjq	0028	wēde	rain	inm		
+veraa	jjq	0029	gaga	vines	inm		
+veraa	jjq	0030	wo'iw'iwēm	connecting woods	inm		
+veraa	jjq	0031	sama	outrigger	inm		
+veraa	jjq	0032	qaran̄	conjuring hole	loc		
+veraa	jjq	0033	n̄ērē	shoreline	loc		
+veraa	jjq	0034	'aklē	some of the brothers	hum	< 0002	
+veraa	jjq	0035	'aklē	some of the brothers	hum	< 0002	
+veraa	jjq	0036	ma'a	garden	loc		
+veraa	jjq	0037	n̄ēn̄ērē	store / shore	loc		
+veraa	jjq	0038	gunu	wife of 0001	hum		
+veraa	jjq	0039	tēktēk	talk of brothers to Qo'	inm		
+veraa	jjq	0040	daraga	wild nutmeg trees	inm		
+veraa	jjq	0041	daraga	the wildest nutmeg tree	inm		
+veraa	jjq	0042	n̄ōl	top of 0041	inm	M 0041	
+veraa	jjq	0043	ga	vine to catch birds	inm		
+veraa	jjq	0044	nes	song	inm		
+veraa	jjq	0045	Lōkōno	Lōkōno	loc		
+veraa	jjq	0046	dir	0002 and 0038	hum	> 0002, 0038	
+veraa	jjq	0047	Sisiol	Sisiol	loc		
+veraa	jjq	0048	so	name	inm		
+veraa	jjq	0049	Tatgan	Tatgan	loc		
+veraa	jjq	0052	di	the plain	loc		
+veraa	jjq	0054	dir	they	hum		
+veraa	jjq	0055	mē'ērsa	harbour of 0049	loc		
+veraa	jjq	0057	'irbē	body of 0040	bdp	M 0040	
+veraa	jjq	0058	bini	hands of 0001	bdp	M 0001	
+veraa	jjq	0059	ga	spider web	inm		
+veraa	jjq	0060	qe'an	ground	loc		
+veraa	jjq	0061	vēvē	mother	hum		
+veraa	jjq	0063	dir	they (wife of 0001 and his brothers)	hum	> 0062, 0002, 0001	depicted reality
+veraa	jjq	0064	wōwen̄	basket	inm		depicted reality
+veraa	jjq	0065	va'al	banana	inm		depicted reality
+veraa	jjq	0066	du	0061 and 0001	hum	> 0061, 0001	depicted reality
+veraa	jjq	0067	naw	waves	inm		depicted reality
+veraa	jjq	0068	so	name of mother	inm		
+veraa	jjq	0069	vin	banana skins	inm	M 0065	
+veraa	jjq	0070	vin	another piece of banana skin	inm	M 0065	
+veraa	jjq	0071	vin	another piece of banana skin	inm	M 0065	
+veraa	jjq	0072	mē'ērsa	harbour of 0045	loc	M 0045	
+veraa	jjq	0074	dir	0001, 0002, and 0038	hum	> 0001, 0002, 0038	
+veraa	jjq	0073	nērē	shoreline	loc		
+veraa	jjq	0075	so	name of the place where brothers are trapped	inm		
+veraa	jjq	0076	'ekē	place where brothers are trapped	loc		
+veraa	jjq	0077	Tumeren	Tumeren, husband of 0078	hum		
+veraa	jjq	0078	gunu	wife of Tumeren (0077)	hum		
+veraa	jjq	0079	qō	pigs	anm		
+veraa	jjq	0080	gamal	men's house	loc		
+veraa	jjq	0081	Vunu Lava	Vanua Lava	loc		depicted reality
+veraa	jjq	0082	wōlil	albino?	hum		
+veraa	jjq	0083	so	name of W.	inm		
+veraa	jjq	0085	bo	sleeping thing	inm		depicted reality
+veraa	jjq	0086	qan̄ris	stone oven	loc		
+veraa	jjq	0087	gamal	other men's house	loc		
+veraa	jjq	0088	tēktēk	talking of Qo'	inm		
+veraa	jjq	0089	tēktēk	talking of Qo'	inm		
+veraa	jjq	0090	woruqruqō	struts of the roofing	loc		
+veraa	jjq	0091	wio	bamboo	inm		
+veraa	jjq	0092	lōlō	inside	loc		
+veraa	jjq	0093	lōlō	inside the house	loc		
+veraa	jjq	0094	qōn̄	two nights	inm		
+veraa	jjq	0095	qōn̄	the third day	inm		
+veraa	jjq	0096	dōdōmia	Qo's plan	inm		
+veraa	jjq	0097	wōqa'ag	post	loc		
+veraa	jjq	0098	dōdōmia	thoughts of the devil	inm		
+veraa	jjq	0099	wō'il	tree	loc		
+veraa	jjq	0100	qē	end of the house	loc		
+veraa	jjq	0101	woqe'enge	two trees Qo' plants at the shore	inm		
+veraa	jjq	0102	varvara	a varvara tree	inm	< 0101	
+veraa	jjq	0103	ner	seaoak	inm	< 0101	
+veraa	jjq	0104	m̄ōm̄ōglēge	Tomeren's things	inm		
+veraa	jjq	0105	'ibiē	platter	inm		
+veraa	jjq	0106	qō	a pig	anm		
+veraa	jjq	0107	'ibiē	another platter	inm		
+veraa	jjq	0108	qēqē	last fight	inm		
+veraa	jjq	0109	tēktēk	speaking of 0077	inm		
+veraa	jjq	0110	qan̄	side of the seaoak	inm	M 0103	
+veraa	jjq	0111	magala	ants	anm		
+veraa	jjq	0112	qe'an	ground	loc		
+veraa	jjq	0113	magala	fire ants	anm		
+veraa	jjq	0114	'isi	first brothers	hum	< 0002	
+veraa	jjq	0115	qe'an	ground	inm		
+veraa	jjq	0116	n̄ōl	top of the seaoak	inm	M 0103	
+veraa	jjq	0025	qēsēkēr	club	inm		
+veraa	jjq	0117	gidē	we	hum	> 0077, 0074	
+veraa	jjq	0118	duru	0001 and 0077	hum	> 0001, 0077	
+veraa	jjq	0119	-maduō	0001 and 0038	hum	> 0001, 0038	
+veraa	mvbw	0001	ruwa	a couple	hum	> 0002, 0003	
+veraa	mvbw	0002	ren̄e	the woman	hum	< 0001, 0032, 0035	
+veraa	mvbw	0003	'am̄an	the man	hum	< 0001, 0014	
+veraa	mvbw	0004	vul	the ninth month	tme		
+veraa	mvbw	0005	tētē	infant the woman gives birth to (Wedin̄gōr)	hum	< 0008, 0014, 0015, 0032	
+veraa	mvbw	0006	'e	two years	tme		
+veraa	mvbw	0007	ni'i	second child to be born (Bōar)	hum	< 0008, 0014, 0015, 0032	
+veraa	mvbw	0008	duruō	the two brothers	hum	> 0007, 0005; < 0014, 0015, 0032	
+veraa	mvbw	0009	so	name of 0005 (Wedin̄gōr)	abs	< 0031	
+veraa	mvbw	0010	so	name of 0007 (Bōar)	abs	< 0031	
+veraa	mvbw	0011	ren̄e	new good woman 0002 believes could come	hum		
+veraa	mvbw	0012	tēktēk	the speech of 0002	abs		
+veraa	mvbw	0013	ren̄e	the new woman 0003 marries	hum	> 0041, 0042, 0045, 0047, 0048; < 0014, 0015	
+veraa	mvbw	0014	dirē	the new woman, the father and the two boys	hum	> 0013, 0003, 0005, 0007, 0008	
+veraa	mvbw	0015	dir'ōl	the new woman and the two brothers	hum	> 0013, 0005, 0007, 0008	
+veraa	mvbw	0016	gamal	nagamal	loc		
+veraa	mvbw	0017	'ēqē'	taro garden	loc		
+veraa	mvbw	0018	gengen	food the new woman makes for the two brothers	mss		
+veraa	mvbw	0019	'i-'in̄i	juices the new woman smears on brothers	mss		
+veraa	mvbw	0020	milin̄sal	hunger	abs		
+veraa	mvbw	0021	'uvu	tree in the bush the two brothers reach	loc		
+veraa	mvbw	0022	wēwē	fruit in the tree	inm		
+veraa	mvbw	0023	qe'an	ground under the tree	loc		
+veraa	mvbw	0024	nes	song the firstborn wants to sing from the tree to call his mother	abs		
+veraa	mvbw	0025	lan̄	wind	inm		
+veraa	mvbw	0026	Wērēsurō	Wērēsurō	loc		
+veraa	mvbw	0027	vuvulu	dead friends of 0002	anm	< 0035	
+veraa	mvbw	0028	men	birds	anm		
+veraa	mvbw	0029	neln̄o	voice of the birds	inm		
+veraa	mvbw	0030	neln̄o-n	voice of 0005	inm		
+veraa	mvbw	0031	so	names of 0005 and 0007	abs	> 0009, 0010	
+veraa	mvbw	0032	gidē	we (the mother and her two boys)	hum	> 0002, 0005, 0007, 0008	
+veraa	mvbw	0033	gengen	food 0002 gives to 0008	mss		
+veraa	mvbw	0034	bē	water 0002 gives to 0008	mss		
+veraa	mvbw	0035	kamak	we (the mother and her dead friends)	hum	> 0002, 0027, 0039	
+veraa	mvbw	0036	din	room of 0008	loc		
+veraa	mvbw	0037	sava	something that could happen at night according to 0002	abs		
+veraa	mvbw	0038	din	room of new mother and father	loc		
+veraa	mvbw	0039	vō-wal	one spirit of the dead (after another)	anm	< 0035	
+veraa	mvbw	0040	mē'ēm̄ē	door of 0038	loc		
+veraa	mvbw	0041	'irbē	body of 0013	bdp	M 0013	
+veraa	mvbw	0042	dara	blood of 0013	bdp	M 0013	
+veraa	mvbw	0043	nim̄	house	loc		
+veraa	mvbw	0044	mē'ēm̄ē	door of the house	loc		
+veraa	mvbw	0045	qi'i	head of 0013	bdp	> 0047, 0048; M 0013	
+veraa	mvbw	0046	m̄ōm̄ōlēge	everything happening at night	abs		
+veraa	mvbw	0047	vili-ge	hair of 0013	bdp	M 0013, 0045	
+veraa	mvbw	0048	vin'i-ge	skin of 0013	bdp	M 0013, 0045	
+veraa	mvbw	0049	gunu	new third spouse 0003 is not allowed to take	hum		
+veraa	pala	0001	ruwa	a married couple	hum		
+veraa	pala	0002	ren̄e	woman	hum	< 0001	
+veraa	pala	0003	ni'i	child of 0001	hum		
+veraa	pala	0004	ni'i	child of 0001	hum		
+veraa	pala	0005	zero	the two children	hum	> 0003, 0004	
+veraa	pala	0006	maru	uncle of 0005	hum		
+veraa	pala	0007	ni'i	child of uncle	hum		depicted reality
+veraa	pala	0008	'ama'	devil	hum		depicted reality
+veraa	pala	0009	they	unclear	hum		
+veraa	pala	0010	lavet	feast	inm		
+veraa	pala	0011	'ama	father of 0003, 0004, 0005	hum	< 0001	
+veraa	pala	0012	vunu	village	loc		depicted reality
+veraa	pala	0013	tēktēk	talk of uncle	inm		depicted reality
+veraa	pala	0014	lak-laka	dances	inm		
+veraa	pala	0015	wōm̄ōm̄o	bush	loc		
+veraa	pala	0016	lumgav	young man	hum		
+veraa	pala	0017	vava viē	underneath a taro tree	loc		
+veraa	pala	0018	ge	one	hum		
+veraa	pala	0019	ge	one	hum		
+veraa	pala	0020	lak-laka	dance	inm		
+veraa	pala	0021	vono	home	loc		depicted reality
+veraa	pala	0022	dōl	the three of them (0016, 0003, 0004)	hum		depicted reality
+veraa	pala	0023	m̄ōglēge	stuff of 0003 and 0004	inm		
+veraa	pala	0024	lo	seaside	loc		
+veraa	pala	0025	nak	canoe	inm		
+veraa	pala	0026	kumruō	the two of them (0016, 0003)	hum		depicted reality
+veraa	pala	0027	qi'i	bow of the canoe	loc		
+veraa	pala	0028	vene	middle of the canoe	loc		
+veraa	pala	0029	n̄ērsi-gi	point	loc		
+veraa	pala	0030	n̄ērsi-gi	ten points	loc		
+veraa	pala	0031	kolo	back of the devil	bdp	M 0016	depicted reality
+veraa	pala	0032	lie	cave	loc		
+veraa	pala	0033	lie	another cave	loc		
+veraa	pala	0034	lie	cave	loc		
+veraa	pala	0035	san̄wul	the tenth cave	loc		
+veraa	pala	0036	'ōnō	sleeping place	loc		
+veraa	pala	0037	dōdōmia	thought	inm		
+veraa	pala	0038	deln̄o	ears of the devil	bdp	M 0016, 0008	
+veraa	pala	0039	m̄ōglēge	things of the sisters	inm		depicted reality
+veraa	pala	0040	m̄ōglēge	stuff of one of the sisters	inm		
+veraa	pala	0041	lie	cave	inm		
+veraa	pala	0042	'uwō	horn	inm		
+veraa	pala	0043	dudu	panundas leaves	inm		
+veraa	pala	0044	n̄ērsi-gi	point	loc		
+veraa	pala	0045	rer	current	inm		
+veraa	pala	0046	dudu	one of the panundas leaves	inm	< 0043	
+veraa	pala	0047	'an̄do-gi	throat of the devil	bdp	M 0016, 0008	
+veraa	pala	0048	n̄ērsi-gi	point	loc		
+veraa	pala	0049	dudu	leaf	inm	< 0043	
+veraa	pala	0050	dudu	leaf	inm	< 0043	
+veraa	pala	0051	n̄ērsi-gi	points	loc		
+veraa	pala	0052	qēqē	last leaf	inm	< 0043	
+veraa	pala	0053	n̄ērē'iē	shore	loc		
+veraa	pala	0054	nim̄ē	house of 0001	loc		
+veraa	pala	0055	mē'ēm̄ē	door of the house	loc	< 0054	
