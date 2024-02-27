@@ -51,25 +51,36 @@ def parse_referent_relations(s):
     return {k: sorted(v) for k, v in rels.items()}
 
 
-def iter_referents(p, refind_map):
+def iter_referents(p, refind_map, log=None):
     """
     Read the list-of-referents.tsv file of a corpus.
 
     :param p:
     :return:
     """
-    relid = 0
+    relid, seen = 0, set()
     for row in reader(p, dicts=True, delimiter='\t'):
         del row['corpus']
         tid = row.pop('text')
         if (tid, row['refind']) in refind_map:
             # Only consider refrents which are actually referenced by REFind indices.
+            if (tid, row['refind']) in seen:
+                if log:
+                    log.warning('skipping duplicate referent for {} with refind {}'.format(
+                        tid, row['refind']))
+                continue
+            seen.add((tid, row['refind']))
             row['refind'] = refind_map[tid, row['refind']]
             relations = []
             for rel, items in parse_referent_relations(row.pop('relations')).items():
                 for item in items:
-                    relid += 1
-                    relations.append((str(relid), row['refind'], refind_map[tid, item], rel))
+                    if (tid, item) in refind_map:
+                        relid += 1
+                        relations.append((str(relid), row['refind'], refind_map[tid, item], rel))
+                    else:
+                        if log:
+                            log.warning('skipping invalid referent relation with {}'.format(item))
+
             yield row, relations
 
 

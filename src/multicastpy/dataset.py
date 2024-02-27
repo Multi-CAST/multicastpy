@@ -147,7 +147,11 @@ class Dataset(BaseDataset):
         ))
         args.writer.cldf.sources = Sources.from_file(self.raw_dir / 'sources.bib')
         args.writer.objects['referents.csv'].append(dict(refind=UNMARKED))
-        for row, rels in iter_referents(self.raw_dir / 'list-of-referents.tsv', self.refind_map):
+        for row, rels in iter_referents(
+            self.raw_dir / 'list-of-referents.tsv',
+            self.refind_map,
+            log=args.log,
+        ):
             args.writer.objects['referents.csv'].append(row)
             for relid, source, target, rel in rels:
                 args.writer.objects['referent_relations.csv'].append(dict(
