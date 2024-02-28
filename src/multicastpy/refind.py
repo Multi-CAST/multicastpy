@@ -72,7 +72,7 @@ def iter_referents(p, refind_map, log=None):
             seen.add((tid, row['refind']))
             row['refind'] = refind_map[tid, row['refind']]
             relations = []
-            for rel, items in parse_referent_relations(row.pop('relations')).items():
+            for rel, items in parse_referent_relations(row.pop('relations') or '').items():
                 for item in items:
                     if (tid, item) in refind_map:
                         relid += 1

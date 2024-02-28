@@ -5,10 +5,10 @@ veraa	anv	0003	ni'i ren̄e	child of 0002 and 0004	hum
 veraa	anv	0004	'ama	husband of 0002, father of 0003	hum	< 0001	
 veraa	anv	0005	maru	uncle of 0003	hum	< 0015	
 veraa	anv	0006	'ōnō 'ev'ē voruo'	litter place	loc		
-veraa	anv	0007	ren̄e	close friend of 0003	hum	< 0015	
+veraa	anv	0007	ren̄e	close friend of 0003	hum	< 0015
 veraa	anv	0008	voruo'	rubbish	inm		
 veraa	anv	0009	tētē	two babies	hum		
-veraa	anv	0010	kolo	back of 0007	bdp	M 0007	
+veraa	anv	0010	kolo	back of 0007	bdp	M 0007
 veraa	anv	0011	'uvu woqe'enge	tree	inm		
 veraa	anv	0012	bē	water	inm		depicted reality
 veraa	anv	0013	wovinqa	coconut shells	inm		depicted reality
@@ -222,8 +222,9 @@ veraa	hhak	0074	mē'ērsa	harbour	loc
 veraa	hhak	0075	nak	canoe	inm		
 veraa	hhak	0076	nōn	beach	loc		
 veraa	hhak	0077	nak	canoe	inm		
-veraa	isam	0001	Lemerig	Lemerig	loc		
-veraa	isam	0002	'an̄sar	people of Lemerig	hum	> 0009, 0010	
+veraa	isam	0001	Lemerig	Lemerig	loc
+veraa	isam	0001	Lemerig	Lemerig	loc
+veraa	isam	0002	'an̄sar	people of Lemerig	hum	> 00091, 0010
 veraa	isam	0003	me'	reef	loc	> 0017, 0024, 0037, 0038, 0039; < 0018	
 veraa	isam	0004	vo-von̄odo	sea harvest	inm		
 veraa	isam	0005	mes	fish	inm		
@@ -284,8 +285,8 @@ veraa	iswm	0001	Wowōt	Wowōt	hum	> 0046, 0056, 0070; < 0004, 0133
 veraa	iswm	0002	m̄eter	m̄eter	hum	> 0068, 0069; < 0004	
 veraa	iswm	0003	vono	home	loc		
 veraa	iswm	0004	-ruō	0001 and 0002	hum	> 0001, 0002	
-veraa	iswm	0005	dir	they (generic)	hum	> 0084, 0086	
-veraa	iswm	0006	vono	village of 0001 (Nos)	loc		
+veraa	iswm	0005	dir	they (generic)	hum	> 0084, 0086
+veraa	iswm	0006	vono	village of 0001 (Nos)	loc
 veraa	iswm	0007	vono	village of 0002 (n̄erelan̄tir)	loc		
 veraa	iswm	0008	ruwa	a couple	hum	> 0010, 0015; < 0020, 0096, 0138	
 veraa	iswm	0010	'ama	father of the baby	hum	< 0008, 0020, 0138	
