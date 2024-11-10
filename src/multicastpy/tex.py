@@ -4,7 +4,7 @@ __all__ = ['iter_text_metadata']
 
 
 def iter_text_metadata(tex, tsv, corpus, globalmd):
-    """
+    r"""
     Side effect: some corpus-level metadata is parsed "on the side" and assigned to globalmd.
 
     \label{ssec:corpus-kalamang}
@@ -23,8 +23,8 @@ def iter_text_metadata(tex, tsv, corpus, globalmd):
         if row['corpus'] == corpus:
             tsvmd[row['text']] = {k: v for k, v in row.items() if k not in ['corpus', 'text']}
 
-    lines = [l.split('%')[0].strip() for l in tex.read_text(encoding='utf8').split('\n')]
-    lines = [l for l in lines if l]
+    lines = [li.split('%')[0].strip() for li in tex.read_text(encoding='utf8').split('\n')]
+    lines = [li for li in lines if li]
     in_section, in_subsection, in_itemize, in_description = False, False, False, False
     tids, text, itemize, sources = None, [], [], []
     res = {}
@@ -98,8 +98,6 @@ def iter_text_metadata(tex, tsv, corpus, globalmd):
                 lid = rem.tit.string if rem.tit else None
                 lname = rem.sqt.string if rem.sqt else None
                 res2[tid] = (lid.replace(r'\_', '_') if lid else lid, lname)
-    #assert set(res.keys()).issubset(tsvmd.keys()), '{} -- {}'.format(set(res.keys()), set(tsvmd.keys()))
-    #assert set(res2.keys()).issubset(tsvmd.keys()), '{} -- {}'.format(set(res2.keys()), set(tsvmd.keys()))
     globalmd['sources'] = sources
     for tid, md in tsvmd.items():
         yield dict(

@@ -21,7 +21,10 @@ def refind_map(tsvdir):
         refinds['_'.join(text.stem.split('_')[2:])] = {
             r['refind'] for r in reader(text, dicts=True, delimiter='\t') if r['refind']}
     # Compute the number of digits we need for the "old" index.
-    refind_length = len(str(max([int(s) for s in itertools.chain(*refinds.values())])))
+    try:
+        refind_length = len(str(max([int(s) for s in itertools.chain(*refinds.values())])))
+    except ValueError:  # pragma: no cover
+        refind_length = 0
     res = {}
     for i, (tid, ids) in enumerate(refinds.items(), start=1):
         res[tid] = i
@@ -58,6 +61,8 @@ def iter_referents(p, refind_map, log=None):
     :param p:
     :return:
     """
+    if not p.exists():
+        return  # pragma: no cover
     relid, seen = 0, set()
     for row in reader(p, dicts=True, delimiter='\t'):
         del row['corpus']

@@ -2,7 +2,6 @@
 
 """
 import shutil
-import subprocess
 
 import attr
 from clldutils.markup import Table
@@ -10,6 +9,7 @@ from clldutils.jsonlib import dump
 from clldutils.clilib import PathType
 
 from multicastpy.repos import MultiCast
+from multicastpy.util import is_same
 
 
 def existing_dir(d):
@@ -23,14 +23,6 @@ def register(parser):
     parser.add_argument('--corpus', default=None)
     parser.add_argument('--version', default=None)
     parser.add_argument('--target-repos', default=None, type=PathType(type='dir'))
-
-
-def is_same(d1, d2):
-    try:
-        subprocess.check_call(['diff', str(d1), str(d2)], stdout=subprocess.DEVNULL)
-        return True
-    except subprocess.CalledProcessError:
-        return False
 
 
 def run(args):
@@ -60,12 +52,12 @@ def run(args):
             print(version)
         return
 
-    if args.version not in valid_versions:
+    if args.version not in valid_versions:  # pragma: no cover
         args.log.error('{} is not a valid version for corpus {}. ({})'.format(
             args.version, args.corpus, valid_versions))
         return 256
 
-    if not args.target_repos:
+    if not args.target_repos:  # pragma: no cover
         args.log.error('No --target-repos specified')
         return 256
 
@@ -99,7 +91,8 @@ def run(args):
     }, rdir.parent / 'metadata.json', indent=4)
 
     for doc in md.docs:
-        shutil.copyfile(mc.path('data', 'pubs', doc.name), rdir / doc.name)
+        fname = doc if isinstance(doc, str) else doc.name
+        shutil.copyfile(mc.path('data', 'pubs', fname), rdir / fname)
 
     #
     # FIXME: write RELEASING.md!
@@ -118,7 +111,7 @@ def run(args):
     for subdir in datadir.iterdir():
         if subdir.is_dir():
             for p in subdir.iterdir():
-                if p.stem == 'mc_{}'.format(args.corpus) or p.suffix == '.zip':
+                if p.stem == 'mc_{}'.format(args.corpus) or p.suffix == '.zip':  # pragma: no cover
                     continue  # Ignore the aggregated files
                 shutil.copyfile(p, existing_dir(rdir / subdir.name) / p.name)
 
@@ -126,11 +119,14 @@ def run(args):
         shutil.copyfile(p, existing_dir(rdir / 'audio') / p.name)
 
     shutil.copyfile(mc.repos / 'images' / 'mc_{}.jpg'.format(args.corpus), rdir / 'image.jpg')
-    shutil.copyfile(
-        docsdir.joinpath(
-            'corpora', 'list-of-referents', args.corpus, 'tsv',
-            'mc_{}_list-of-referents.tsv'.format(args.corpus)),
-        rdir / 'list-of-referents.tsv')
+    try:
+        shutil.copyfile(
+            docsdir.joinpath(
+                'corpora', 'list-of-referents', args.corpus, 'tsv',
+                'mc_{}_list-of-referents.tsv'.format(args.corpus)),
+            rdir / 'list-of-referents.tsv')
+    except FileNotFoundError:  # pragma: no cover
+        args.log.warning('No list of referents available.')
     shutil.copyfile(
         docsdir.joinpath(
             'corpora', 'annotation-notes', args.corpus,
@@ -139,7 +135,8 @@ def run(args):
 
     # non-empty refind / isnref columns in merged tsv determine corresponding feature.
     # empty refind / isnref: 0x2205 - empty set
-    # refind -> foreign keys! prefix with integer ID of the text! Must also be done for refinds in "relations"!
+    # refind -> foreign keys! prefix with integer ID of the text! Must also be done for refinds in
+    # "relations"!
     # -> extract referents-list.relations into assoc table referent_relations!
 
     tdir.joinpath('cldfbench_mc{}.py'.format(args.corpus)).write_text("""\

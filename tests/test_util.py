@@ -11,3 +11,8 @@ def test_rmdir(tmp_path):
     shutil.copytree(pathlib.Path(multicastpy.__file__).parent / 'data', tmp_path / 'data' / 'data')
     assert tmp_path.joinpath('data').exists()
     assert not rmdir(tmp_path.joinpath('data')).exists()
+
+
+def test_is_same():
+    assert is_same(__file__, __file__)
+    assert not is_same(__file__, multicastpy.__file__)

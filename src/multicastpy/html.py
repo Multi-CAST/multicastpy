@@ -31,8 +31,8 @@ def iter_corpus_metadata(index_html, corpora):
             lname=title[0].text.strip(),  # LanguageTable
             lgc=sec.xpath(
                 ".//span[@class='iso']/a")[0].text
-                if sec.xpath(".//span[@class='iso']/a") else None,  # LanguageTable
-            contributors=[n.strip() for n in sec.xpath('h4')[0].text.split(',')],# ContributionTable
+            if sec.xpath(".//span[@class='iso']/a") else None,  # LanguageTable
+            contributors=[n.strip() for n in sec.xpath('h4')[0].text.split(',')],
             description=desc,  # metadata.json
             image_description=img_description,
         )

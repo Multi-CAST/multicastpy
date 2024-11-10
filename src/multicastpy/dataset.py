@@ -5,6 +5,7 @@ import functools
 import mimetypes
 
 import attr
+import ffmpeg
 from clldutils.markup import add_markdown_text
 from clldutils.path import md5
 from cldfbench import Dataset as BaseDataset, CLDFSpec, Metadata
@@ -55,9 +56,9 @@ class Dataset(BaseDataset):
     def with_isnref(self):
         for t in self.raw_dir.joinpath('tsv').iterdir():
             for r in reader(t, dicts=True, delimiter='\t'):
-                if r['isnref']:
+                if r.get('isnref'):
                     return True
-        return False
+        return False  # pragma: no cover
 
     @functools.cached_property
     def refind_map(self):
@@ -101,7 +102,6 @@ class Dataset(BaseDataset):
             'Description')
 
     def cmd_makecldf(self, args):
-        import ffmpeg
 
         self.add_schema(args.writer.cldf)
 
@@ -146,16 +146,23 @@ class Dataset(BaseDataset):
             Glottocode='stan1293',
         ))
         args.writer.cldf.sources = Sources.from_file(self.raw_dir / 'sources.bib')
-        args.writer.objects['referents.csv'].append(dict(refind=UNMARKED))
-        for row, rels in iter_referents(
+
+        i = -1
+        for i, (row, rels) in enumerate(iter_referents(
             self.raw_dir / 'list-of-referents.tsv',
             self.refind_map,
             log=args.log,
-        ):
+        )):
+            if i == 0:
+                args.writer.objects['referents.csv'].append(dict(refind=UNMARKED))
             args.writer.objects['referents.csv'].append(row)
             for relid, source, target, rel in rels:
                 args.writer.objects['referent_relations.csv'].append(dict(
                     ID=relid, Source_Referent_ID=source, Target_Referent_ID=target, Relation=rel))
+        if i < 0:  # pragma: no cover
+            assert not self.with_refind
+            args.writer.cldf.remove_table('referents.csv')
+            args.writer.cldf.remove_table('referent_relations.csv')
 
         for tid, t in self.raw_dir.read_json('texts.json').items():
             cfids, clauses, reclength = [], 0, 0
@@ -456,20 +463,23 @@ class Dataset(BaseDataset):
                 "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#comment",
             },
         )
-        cldf.add_table(
-            'referent_relations.csv',
-            {
-                "name": "ID",
-                "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#id",
-            },
-            'Source_Referent_ID',
-            'Target_Referent_ID',
-            {
-                'name': 'Relation', # M < >
-                'dc:description': """\
+        if self.with_refind:
+            cldf.add_table(
+                'referent_relations.csv',
+                {
+                    "name": "ID",
+                    "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#id",
+                },
+                'Source_Referent_ID',
+                'Target_Referent_ID',
+                {
+                    'name': 'Relation',  # M < >
+                    'dc:description': """\
 The relations of a referent to other referents; including < ‘set member of (partial
 co-reference)’, > ‘includes (split antecedence)’, and M ‘part-whole’."""}
-        )
-        cldf.add_foreign_key('referent_relations.csv', 'Source_Referent_ID', 'referents.csv', 'refind')
-        cldf.add_foreign_key('referent_relations.csv', 'Target_Referent_ID', 'referents.csv', 'refind')
-        cldf.add_foreign_key('ExampleTable', 'refindFK', 'referents.csv', 'refind')
+            )
+            cldf.add_foreign_key(
+                'referent_relations.csv', 'Source_Referent_ID', 'referents.csv', 'refind')
+            cldf.add_foreign_key(
+                'referent_relations.csv', 'Target_Referent_ID', 'referents.csv', 'refind')
+            cldf.add_foreign_key('ExampleTable', 'refindFK', 'referents.csv', 'refind')
