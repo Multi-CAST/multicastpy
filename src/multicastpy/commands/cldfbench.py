@@ -80,6 +80,7 @@ def run(args):
         "license": "CC-BY-4.0",
         "url": "https://multicast.aspra.uni-bamberg.de/#{}".format(args.corpus),
         "citation": md.citation,
+        "version": args.version,
         "language": md.lname,
         "glottocode": md.lgc,
         "affiliation": md.affiliation,
@@ -115,23 +116,26 @@ def run(args):
                     continue  # Ignore the aggregated files
                 shutil.copyfile(p, existing_dir(rdir / subdir.name) / p.name)
 
-    for p in mc.data.joinpath('audio', args.corpus, 'mp3').iterdir():
-        shutil.copyfile(p, existing_dir(rdir / 'audio') / p.name)
+    for suffix in ['mp3', 'wav']:
+        if mc.data.joinpath('audio', args.corpus, suffix).exists():
+            for p in mc.data.joinpath('audio', args.corpus, suffix).iterdir():
+                shutil.copyfile(p, existing_dir(rdir / 'audio') / p.name)
 
     shutil.copyfile(mc.repos / 'images' / 'mc_{}.jpg'.format(args.corpus), rdir / 'image.jpg')
-    try:
-        shutil.copyfile(
-            docsdir.joinpath(
-                'corpora', 'list-of-referents', args.corpus, 'tsv',
-                'mc_{}_list-of-referents.tsv'.format(args.corpus)),
-            rdir / 'list-of-referents.tsv')
-    except FileNotFoundError:  # pragma: no cover
-        args.log.warning('No list of referents available.')
-    shutil.copyfile(
-        docsdir.joinpath(
-            'corpora', 'annotation-notes', args.corpus,
-            'mc_{}_annotation-notes.pdf'.format(args.corpus)),
-        rdir / 'annotation-notes.pdf')
+    for fname, subdir in [
+        ('list-of-referents.tsv', 'tsv'),
+        ('annotation-notes.pdf', None),
+        ('translated-texts.pdf', None),
+        ('metadata.pdf', None),
+    ]:
+        pathcomps = ['corpora', fname.split('.')[0], args.corpus]
+        if subdir:
+            pathcomps.append(subdir)
+        pathcomps.append('mc_{}_{}'.format(args.corpus, fname))
+        try:
+            shutil.copyfile(docsdir.joinpath(*pathcomps), rdir / fname)
+        except FileNotFoundError:  # pragma: no cover
+            args.log.warning('No {} available.'.format(fname))
 
     # non-empty refind / isnref columns in merged tsv determine corresponding feature.
     # empty refind / isnref: 0x2205 - empty set

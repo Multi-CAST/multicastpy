@@ -1,8 +1,10 @@
 import json
+import wave
 import shutil
 import pathlib
 import functools
 import mimetypes
+import contextlib
 
 import attr
 import ffmpeg
@@ -18,8 +20,18 @@ from .xml import UNMARKED, get_file
 from .eaf import add_orthography
 
 
+def audio_duration(p):
+    if p.suffix == '.wav':
+        with contextlib.closing(wave.open(str(p), 'r')) as f:  # pragma: no cover
+            return f.getnframes() / float(f.getframerate())
+    if p.suffix == '.mp3':
+        return float(ffmpeg.probe(str(p))['format']['duration'])
+    raise ValueError(f'unknown audio format {p.suffix}')  # pragma: no cover
+
+
 @attr.s
 class MultiCastMetadata(Metadata):
+    version = attr.ib(default=None)
     glottocode = attr.ib(default=None)
     affiliation = attr.ib(default=None)
     varieties = attr.ib(default=None)
@@ -66,11 +78,12 @@ class Dataset(BaseDataset):
 
     def cmd_readme(self, args):
         res = BaseDataset.cmd_readme(self, args)
-        res = add_markdown_text(res, '![](raw/image.jpg)', 'How to cite')
-        lang = self.cldf_reader().get_object('LanguageTable', self.id)
+        res = add_markdown_text(res, '![](cldf/media/image.jpg)', 'How to cite')
+        ds = self.cldf_reader()
+        lang = ds.get_object('LanguageTable', self.id)
         lat = float(lang.cldf.latitude)
         lon = float(lang.cldf.longitude)
-        return add_markdown_text(
+        res = add_markdown_text(
             res,
             "```geojson\n{}\n```".format(json.dumps({
                 "type": "FeatureCollection",
@@ -100,6 +113,19 @@ class Dataset(BaseDataset):
                 ]
             }, indent=4)),
             'Description')
+        cmd = [m for m in ds['MediaTable'] if m['Media_Type'] == 'application/pdf']
+        return add_markdown_text(
+            res,
+            """
+## Corpus metadata
+
+{}
+""".format('\n'.join(
+                '- [{}](cldf/media/{})'.format(
+                    r['Name'].replace('.pdf', '').replace('-', ' ').capitalize(), r['Name'])
+                for r in cmd)),
+            'Description'
+        )
 
     def cmd_makecldf(self, args):
 
@@ -113,17 +139,20 @@ class Dataset(BaseDataset):
                 remap_refind(mdir / p.name, self.refind_map)
 
         docmap = {}
-        for p in ['annotation-notes.pdf', 'image.jpg'] + self.metadata.docs:
+        for p in ['annotation-notes.pdf',
+                  'image.jpg', 'metadata.pdf',
+                  'translated-texts.pdf'] + self.metadata.docs:
             p = self.raw_dir / p
-            docmap[p.name] = md5(p)
-            shutil.copyfile(p, mdir / p.name)
-            args.writer.objects['MediaTable'].append(dict(
-                ID=docmap[p.name],
-                Name=p.name,
-                Media_Type=mimetypes.guess_type(p.name)[0],
-                Size=p.stat().st_size,
-                Download_URL='{}/{}'.format(mdir.name, p.name),
-            ))
+            if p.exists():
+                docmap[p.name] = md5(p)
+                shutil.copyfile(p, mdir / p.name)
+                args.writer.objects['MediaTable'].append(dict(
+                    ID=docmap[p.name],
+                    Name=p.name,
+                    Media_Type=mimetypes.guess_type(p.name)[0],
+                    Size=p.stat().st_size,
+                    Download_URL='{}/{}'.format(mdir.name, p.name),
+                ))
         #
         # FIXME: use docmap to fix URLs in description!
         #
@@ -155,6 +184,9 @@ class Dataset(BaseDataset):
         )):
             if i == 0:
                 args.writer.objects['referents.csv'].append(dict(refind=UNMARKED))
+            #
+            # FIXME: store available refind and only add relations with available id!
+            #
             args.writer.objects['referents.csv'].append(row)
             for relid, source, target, rel in rels:
                 args.writer.objects['referent_relations.csv'].append(dict(
@@ -165,31 +197,42 @@ class Dataset(BaseDataset):
             args.writer.cldf.remove_table('referent_relations.csv')
 
         for tid, t in self.raw_dir.read_json('texts.json').items():
+            #
+            # FIXME: create HTML views of the texts! put in gh-pages?
+            #
             cfids, clauses, reclength = [], 0, 0
             for p in mdir.glob('mc_{}_{}*.xml'.format(self.lid, tid)):
                 file = get_file(p)
                 orthography = add_orthography(mdir / '{}.eaf'.format(p.stem))
                 fname = pathlib.Path(file.audio)
-                mp3 = self.raw_dir / 'audio' / '{}.mp3'.format(fname.stem)
-                fids = [md5(mp3)]
-                shutil.copyfile(mp3, mdir / mp3.name)
-                args.writer.objects['MediaTable'].append(dict(
-                    ID=fids[0],
-                    Name=mp3.name,
-                    Media_Type=mimetypes.guess_type(mp3.name)[0],
-                    Size=mp3.stat().st_size,
-                    Length=float(ffmpeg.probe(str(mp3))['format']['duration']),
-                    Contribution_ID=t['id'],
-                    Download_URL='{}/{}'.format(mdir.name, mp3.name),
-                ))
+                fids = []
+
+                for suffix in ['mp3', 'wav']:
+                    path = self.raw_dir / 'audio' / '{}.{}'.format(fname.stem, suffix)
+                    if not path.exists():
+                        continue
+                    fid = path.name.lstrip('mc_{}_'.format(self.lid)).replace('.', '_')
+                    fids.append(fid)
+                    shutil.copyfile(path, mdir / path.name)
+                    args.writer.objects['MediaTable'].append(dict(
+                        ID=fid,
+                        Name=path.name,
+                        Media_Type=mimetypes.guess_type(path.name)[0],
+                        Size=path.stat().st_size,
+                        Length=audio_duration(path),
+                        Contribution_ID=t['id'],
+                        Download_URL='{}/{}'.format(mdir.name, path.name),
+                    ))
+
                 reclength += args.writer.objects['MediaTable'][-1]['Length']
                 for suffix in ['eaf', 'xml', 'tsv']:
                     p = mdir / '{}.{}'.format(fname.stem, suffix)
+                    fid = p.name.lstrip('mc_{}_'.format(self.lid)).replace('.', '_')
                     mtype = 'application/eaf+xml' if suffix == 'eaf' \
                         else mimetypes.guess_type(p.name)[0]
-                    fids.append(md5(p))
+                    fids.append(fid)
                     args.writer.objects['MediaTable'].append(dict(
-                        ID=fids[-1],
+                        ID=fid,
                         Name=p.name,
                         Media_Type=mtype,
                         Size=p.stat().st_size,
@@ -199,6 +242,9 @@ class Dataset(BaseDataset):
 
                 for unit in file:
                     clauses += 1
+                    #
+                    # FIXME: Check if unit.refind is available, else warn and replace with None.
+                    #
                     args.writer.objects['ExampleTable'].append(dict(
                         ID='{}_{}'.format(tid, unit.uid),
                         Language_ID=self.id,
@@ -211,6 +257,9 @@ class Dataset(BaseDataset):
                         Audio_Start=int(unit.start_time),
                         Audio_End=int(unit.end_time),  # milliseconds
                         Meta_Language_ID='en',
+                        #
+                        # FIXME: lgr conformance
+                        #
                         graid=unit.graid,
                         refind=unit.refind,
                         refindFK=unit.refind,
@@ -383,7 +432,9 @@ class Dataset(BaseDataset):
                     "dc:description":
                         "A duplicate refind column is provided, to enable checking referential "
                         "integrity (via this list-valued foreign key) while still allowing uniform "
-                        "access to the annotation tiers in CLDF SQL.",
+                        "access to the annotation tiers in CLDF SQL. (While the refind column will "
+                        "be converted to a TEXT column in CLDF SQL, this column will be replaced "
+                        "by an association table.)",
                     "separator": "\t",
                 })
         if self.with_isnref:
