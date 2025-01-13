@@ -8,6 +8,7 @@ __all__ = ['CorpusMetadata', 'repl_version', 'ReplaceReferences']
 
 
 def repl_version(s, version):
+    s = re.sub(r'\. 20[0-9]{2}\.', '. 20{}.'.format(version[:2]), s)
     return re.sub('Version [0-9]{4}', 'Version {}'.format(version), s)
 
 

@@ -62,7 +62,7 @@ class Dataset(BaseDataset):
 
     @functools.cached_property
     def with_refind(self):
-        return any(self.refind_map.values())
+        return not all(isinstance(key, str) for key in self.refind_map)
 
     @functools.cached_property
     def with_isnref(self):
@@ -194,7 +194,8 @@ class Dataset(BaseDataset):
         if i < 0:  # pragma: no cover
             assert not self.with_refind
             args.writer.cldf.remove_table('referents.csv')
-            args.writer.cldf.remove_table('referent_relations.csv')
+            if 'referent_relations.csv' in args.writer.cldf:
+                args.writer.cldf.remove_table('referent_relations.csv')
 
         for tid, t in self.raw_dir.read_json('texts.json').items():
             #
