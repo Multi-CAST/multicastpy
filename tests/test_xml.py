@@ -4,6 +4,21 @@ import pytest
 from lxml.etree import fromstring
 
 from multicastpy.xml import *
+from multicastpy.xml import iter_words
+
+
+@pytest.mark.parametrize(
+    'word,gloss,res',
+    [
+        (['a--', 'b'], ['NC', 'DEM'], [('a—', 'NC'), ('b', 'DEM')]),
+        (['a-', 'b'], ['NC', 'DEM'], [('a—', 'NC'), ('b', 'DEM')]),
+        (['a=', 'b'], ['NC=', 'DEM'], [('a=b', 'NC=DEM')]),
+        (['a=', '=b'], ['NC=', 'DEM'], [('a=b', 'NC=DEM')]),
+        (['a-', 'b'], ['NC-', '-DEM'], [('a-b', 'NC-DEM')]),
+    ]
+)
+def test_iter_words(word, gloss, res):
+    assert list(iter_words(word, gloss)) == res
 
 
 @pytest.mark.parametrize(

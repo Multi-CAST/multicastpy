@@ -176,7 +176,7 @@ class Dataset(BaseDataset):
         ))
         args.writer.cldf.sources = Sources.from_file(self.raw_dir / 'sources.bib')
 
-        i = -1
+        i, refinds = -1, set()
         for i, (row, rels) in enumerate(iter_referents(
             self.raw_dir / 'list-of-referents.tsv',
             self.refind_map,
@@ -184,19 +184,30 @@ class Dataset(BaseDataset):
         )):
             if i == 0:
                 args.writer.objects['referents.csv'].append(dict(refind=UNMARKED))
-            #
-            # FIXME: store available refind and only add relations with available id!
-            #
             args.writer.objects['referents.csv'].append(row)
+            refinds.add(row['refind'])
             for relid, source, target, rel in rels:
                 args.writer.objects['referent_relations.csv'].append(dict(
-                    ID=relid, Source_Referent_ID=source, Target_Referent_ID=target, Relation=rel))
+                    ID=relid,
+                    Source_Referent_ID=source,
+                    Target_Referent_ID=target,
+                    Relation=rel))
+        rrs = []
+        for row in args.writer.objects['referent_relations.csv']:
+            if row['Source_Referent_ID'] in refinds and row['Target_Referent_ID'] in refinds:
+                rrs.append(row)
+            else:
+                args.log.warning('skipping referent relation {}'.format(row))  # pragma: no cover
+        args.writer.objects['referent_relations.csv'] = rrs
         if i < 0:  # pragma: no cover
             assert not self.with_refind
             args.writer.cldf.remove_table('referents.csv')
             if 'referent_relations.csv' in args.writer.cldf:
                 args.writer.cldf.remove_table('referent_relations.csv')
+            del args.writer.objects['referent_relations.csv']
 
+        refinds = {str(refind) for refind in refinds}
+        refinds.add(UNMARKED)
         for tid, t in self.raw_dir.read_json('texts.json').items():
             #
             # FIXME: create HTML views of the texts! put in gh-pages?
@@ -243,9 +254,10 @@ class Dataset(BaseDataset):
 
                 for unit in file:
                     clauses += 1
-                    #
-                    # FIXME: Check if unit.refind is available, else warn and replace with None.
-                    #
+                    if unit.refind and not all(
+                            refind in refinds for refind in unit.refind):  # pragma: no cover
+                        args.log.warning(
+                            'skipping invalid refind {} in example'.format(unit.refind))
                     args.writer.objects['ExampleTable'].append(dict(
                         ID='{}_{}'.format(tid, unit.uid),
                         Language_ID=self.id,
@@ -258,12 +270,11 @@ class Dataset(BaseDataset):
                         Audio_Start=int(unit.start_time),
                         Audio_End=int(unit.end_time),  # milliseconds
                         Meta_Language_ID='en',
-                        #
-                        # FIXME: lgr conformance
-                        #
+                        LGR_Conformance=unit.igt.conformance.name,
                         graid=unit.graid,
                         refind=unit.refind,
-                        refindFK=unit.refind,
+                        refindFK=[
+                            refind if refind in refinds else UNMARKED for refind in unit.refind],
                         isnref=unit.isnref,
                         add_orthography=orthography.get(unit.uid),
                         Media_IDs=fids,

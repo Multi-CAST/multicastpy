@@ -1,10 +1,42 @@
+import functools
+import itertools
 import contextlib
 import collections
 
 from lxml.etree import parse, tostring
+from pyigt import IGT
+from pyigt.lgrmorphemes import MORPHEME_SEPARATORS
 
 __all__ = ['UNMARKED', 'updateable_xml', 'get_file', 'text', 'remap_refind']
 UNMARKED = '∅'
+
+
+def iter_words(chunks1, chunks2):
+    assert len(chunks1) == len(chunks2)
+    word, gloss = '', ''
+    for chunk1, chunk2 in zip(chunks1, chunks2):
+        if chunk1.endswith('--'):  # We replace double-hyphen with em dash.
+            chunk1 = chunk1[:-2] + '—'
+        if chunk1.endswith('-') and chunk2 == 'NC':  # Bora specialty?
+            chunk1 = chunk1[:-1] + '—'
+
+        if not word:
+            word, gloss = chunk1, chunk2
+        else:
+            if word[-1] in MORPHEME_SEPARATORS or chunk1[0] in MORPHEME_SEPARATORS:
+                assert gloss[-1] in MORPHEME_SEPARATORS or chunk2[0] in MORPHEME_SEPARATORS
+                if word[-1] == chunk1[0]:  # Separator applied on both sides.
+                    chunk1 = chunk1[1:]
+                if gloss[-1] == chunk2[0]:  # Separator applied on both sides.
+                    chunk2 = chunk2[1:]
+                word += chunk1
+                gloss += chunk2
+            else:
+                yield word, gloss
+                word, gloss = chunk1, chunk2
+
+    if word:
+        yield word, gloss
 
 
 @contextlib.contextmanager
@@ -73,6 +105,23 @@ class Unit(Element):
         Element.__init__(self, e)
         for name, tier in parse_tiers(e).items():
             setattr(self, name, tier)
+        glossed_words = list(iter_words(self.gword, self.gloss))
+        self._gword = [w for w, _ in glossed_words]
+        self._gloss = [g for _, g in glossed_words]
+
+    @functools.cached_property
+    def igt(self):
+        igt = IGT(phrase=self._gword, gloss=self._gloss)
+        if igt.conformance.name == 'UNALIGNED':  # pragma: no cover
+            print(igt.conformance.name)
+            for k, v in itertools.zip_longest(self.gword, self.gloss):
+                print(k, v)
+            print(self.gword)
+            print(self.gloss)
+            print('---')
+            print(self._gword)
+            print(self._gloss)
+        return igt
 
     def __getattr__(self, item):
         if item in [
