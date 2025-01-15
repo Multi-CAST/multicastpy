@@ -36,7 +36,7 @@ multicast cldfbench <repos> --corpus <corpus>
 
 The resulting dataset repository can then be curated using `cldfbench`, i.e.
 - CLDF can be created via 
-  - `cldfbench makecldf --with-zenodo --with-cldfreadme cldfbench_<dsid>.py`
+  - `cldfbench makecldf --with-zenodo --with-cldfreadme --glottolog-version v5.1 cldfbench_<dsid>.py`
   - `cldfbench readme cldfbench_<dsid>.py`
   - `cldf validate cldf`
   - `cldf splitmedia cldf`

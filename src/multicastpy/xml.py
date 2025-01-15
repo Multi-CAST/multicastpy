@@ -24,7 +24,9 @@ def iter_words(chunks1, chunks2):
             word, gloss = chunk1, chunk2
         else:
             if word[-1] in MORPHEME_SEPARATORS or chunk1[0] in MORPHEME_SEPARATORS:
-                assert gloss[-1] in MORPHEME_SEPARATORS or chunk2[0] in MORPHEME_SEPARATORS
+                if not (gloss[-1] in MORPHEME_SEPARATORS or chunk2[0] in MORPHEME_SEPARATORS):
+                    assert chunk2 == UNMARKED, (chunks1, chunks2)
+                    chunk2 = (word[-1] if word[-1] in MORPHEME_SEPARATORS else chunk1[0]) + chunk2
                 if word[-1] == chunk1[0]:  # Separator applied on both sides.
                     chunk1 = chunk1[1:]
                 if gloss[-1] == chunk2[0]:  # Separator applied on both sides.
@@ -52,7 +54,11 @@ def updateable_xml(p, newline='\n'):
 
 def remap_refind(doc, refind_map, tid):
     for e in doc.xpath(".//refind"):
-        e.text = str(refind_map[tid, e.text])
+        try:
+            e.text = str(refind_map[tid, e.text])
+        except KeyError:  # pragma: no cover
+            tid = '_'.join(doc.xpath(".//file")[0].attrib['f_name'].split('_')[2:])
+            e.text = str(refind_map[tid, e.text])
 
 
 def iter_text(p, markdown=False):

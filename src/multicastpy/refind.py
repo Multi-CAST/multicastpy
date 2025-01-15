@@ -1,6 +1,7 @@
 """
 Handling of refind annotations and referent metadata.
 """
+import re
 import itertools
 import collections
 
@@ -18,8 +19,15 @@ def refind_map(tsvdir):
     """
     refinds = collections.OrderedDict()
     for text in sorted(tsvdir.iterdir(), key=lambda p: p.stem):
-        refinds['_'.join(text.stem.split('_')[2:])] = {
-            r['refind'] for r in reader(text, dicts=True, delimiter='\t') if r['refind']}
+        tid = text.stem
+        if tid.endswith('_a') or tid.endswith('_b'):  # pragma: no cover
+            tid = tid[:-2]
+        tid = '_'.join(tid.split('_')[2:])
+        refs = {r['refind'] for r in reader(text, dicts=True, delimiter='\t') if r['refind']}
+        if tid in refinds:  # pragma: no cover
+            refinds[tid] |= refs
+        else:
+            refinds[tid] = refs
     # Compute the number of digits we need for the "old" index.
     try:
         refind_length = len(str(max([int(s) for s in itertools.chain(*refinds.values())])))
@@ -67,6 +75,12 @@ def iter_referents(p, refind_map, log=None):
     for row in reader(p, dicts=True, delimiter='\t'):
         del row['corpus']
         tid = row.pop('text')
+        if (tid, row['refind']) not in refind_map:  # pragma: no cover
+            for letter in 'abcde':
+                if (tid + '_' + letter, row['refind']) in refind_map:
+                    tid = tid + '_' + letter
+                    break
+
         if (tid, row['refind']) in refind_map:
             # Only consider refrents which are actually referenced by REFind indices.
             if (tid, row['refind']) in seen:
@@ -86,6 +100,19 @@ def iter_referents(p, refind_map, log=None):
                         if log:
                             log.warning('skipping invalid referent relation with {}'.format(item))
 
+            desc, pos = '', 0
+            for m in re.finditer(r'(?P<refind>[0-9]{4})', row['description']):
+                desc += row['description'][pos:m.start()]
+                if (tid, m.group('refind')) in refind_map:
+                    desc += str(refind_map[tid, m.group('refind')])
+                else:  # pragma: no cover
+                    if log:
+                        log.warning('untranslateable refind referenced in description: {}'.format(
+                            row['description']))
+                    desc += m.group('refind')
+                pos = m.end()
+            desc += row['description'][pos:]
+            row['description'] = desc
             yield row, relations
 
 
@@ -97,8 +124,8 @@ def remap_refind(p, refind_map):
     :param refind_map:
     :return:
     """
-    tid = '_'.join(p.stem.split('_')[2:])
-    tid = tid[:-2] if tid.endswith('_a') or tid.endswith('_b') else tid
+    otid = '_'.join(p.stem.split('_')[2:])
+    tid = otid[:-2] if otid.endswith('_a') or otid.endswith('_b') else otid
     if p.suffix == '.eaf':
         with updateable_xml(p, newline='\n') as xml:
             eaf_remap_refind(xml, refind_map, tid)
@@ -111,7 +138,10 @@ def remap_refind(p, refind_map):
             for i, row in enumerate(rows):
                 if i == 0:
                     writer.writerow(row.keys())
-                row['refind'] = str(refind_map[tid, row['refind']] if row['refind'] else '')
+                try:
+                    row['refind'] = str(refind_map[tid, row['refind']] if row['refind'] else '')
+                except KeyError:  # pragma: no cover
+                    row['refind'] = str(refind_map[otid, row['refind']] if row['refind'] else '')
                 writer.writerow(row.values())
     else:  # pragma: no cover
         raise ValueError(p.suffix)

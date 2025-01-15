@@ -15,6 +15,7 @@ from multicastpy.xml import iter_words
         (['a=', 'b'], ['NC=', 'DEM'], [('a=b', 'NC=DEM')]),
         (['a=', '=b'], ['NC=', 'DEM'], [('a=b', 'NC=DEM')]),
         (['a-', 'b'], ['NC-', '-DEM'], [('a-b', 'NC-DEM')]),
+        (['a', '=b'], ['STUFF', UNMARKED], [('a=b', 'STUFF=' + UNMARKED)]),
     ]
 )
 def test_iter_words(word, gloss, res):

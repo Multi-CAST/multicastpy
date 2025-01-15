@@ -29,10 +29,13 @@ def run(args):
     mc = MultiCast(args.repos)
 
     if not args.corpus:
-        print('Available corpora:')
-        for cid in mc.corpora:
-            print(cid)
-        return
+        if args.target_repos:
+            args.corpus = args.target_repos.name[2:]  # pragma: no cover
+        else:
+            print('Available corpora:')
+            for cid in mc.corpora:
+                print(cid)
+            return
 
     valid_versions = []
 

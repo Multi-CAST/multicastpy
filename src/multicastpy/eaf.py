@@ -9,7 +9,11 @@ __all__ = ['remap_refind', 'add_orthography']
 def remap_refind(doc, refind_map, tid):
     for e in doc.xpath(
             ".//TIER[@TIER_ID='refind']/ANNOTATION/REF_ANNOTATION/ANNOTATION_VALUE"):
-        e.text = str(refind_map[tid, e.text])
+        try:
+            e.text = str(refind_map[tid, e.text])
+        except KeyError:  # pragma: no cover
+            stem = doc.xpath('.//MEDIA_DESCRIPTOR')[0].attrib['MEDIA_URL'].split('.')[0]
+            e.text = str(refind_map['_'.join(stem.split('_')[2:]), e.text])
 
 
 def add_orthography(p):

@@ -1,3 +1,4 @@
+import re
 import json
 import wave
 import shutil
@@ -158,13 +159,16 @@ class Dataset(BaseDataset):
         #
 
         glang = args.glottolog.api.languoid(self.metadata.glottocode)
+        geolang = glang
+        while not geolang.latitude:
+            geolang = geolang.parent  # pragma: no cover
         args.writer.objects['LanguageTable'].append(dict(
             ID=self.id,
             Name=self.metadata.language,
             Glottocode=glang.id,
             Macroarea=glang.macroareas[0].name,
-            Latitude=glang.latitude if glang.latitude else glang.parent.latitude,
-            Longitude=glang.longitude if glang.longitude else glang.parent.longitude,
+            Latitude=geolang.latitude,
+            Longitude=geolang.longitude,
             Affiliation=self.metadata.affiliation,
             Areas=self.metadata.areas,
             Varieties=self.metadata.varieties,
@@ -216,14 +220,18 @@ class Dataset(BaseDataset):
             for p in mdir.glob('mc_{}_{}*.xml'.format(self.lid, tid)):
                 file = get_file(p)
                 orthography = add_orthography(mdir / '{}.eaf'.format(p.stem))
-                fname = pathlib.Path(file.audio)
+                if file.audio == 'NA':  # pragma: no cover
+                    fname = pathlib.Path('mc_{}_{}.wav'.format(self.lid, tid))
+                else:
+                    fname = pathlib.Path(re.sub(
+                        r'_0(?P<c>[a-z])\.', lambda m: '_{}.'.format(m.group('c')), file.audio))
                 fids = []
 
                 for suffix in ['mp3', 'wav']:
                     path = self.raw_dir / 'audio' / '{}.{}'.format(fname.stem, suffix)
                     if not path.exists():
                         continue
-                    fid = path.name.lstrip('mc_{}_'.format(self.lid)).replace('.', '_')
+                    fid = '_'.join(path.name.split('_')[2:]).replace('.', '_')
                     fids.append(fid)
                     shutil.copyfile(path, mdir / path.name)
                     args.writer.objects['MediaTable'].append(dict(
@@ -236,10 +244,12 @@ class Dataset(BaseDataset):
                         Download_URL='{}/{}'.format(mdir.name, path.name),
                     ))
 
-                reclength += args.writer.objects['MediaTable'][-1]['Length']
+                if 'Length' in args.writer.objects['MediaTable'][-1]:
+                    reclength += args.writer.objects['MediaTable'][-1]['Length']
+
                 for suffix in ['eaf', 'xml', 'tsv']:
                     p = mdir / '{}.{}'.format(fname.stem, suffix)
-                    fid = p.name.lstrip('mc_{}_'.format(self.lid)).replace('.', '_')
+                    fid = '_'.join(p.name.split('_')[2:]).replace('.', '_')
                     mtype = 'application/eaf+xml' if suffix == 'eaf' \
                         else mimetypes.guess_type(p.name)[0]
                     fids.append(fid)
@@ -287,7 +297,7 @@ class Dataset(BaseDataset):
                 Description=t['description'],
                 Contributor=self.metadata.contributors,
                 Citation=self.metadata.citation,
-                Text_Number=self.refind_map[tid],
+                Text_Number=self.refind_map.get(tid),
                 Media_IDs=cfids,
                 Clause_Count=clauses,
                 Speaker=t['speaker'],
