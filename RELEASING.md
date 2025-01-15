@@ -15,7 +15,6 @@ Releasing multicastpy
 
 - Update the version number, by removing the trailing `.dev0` in:
   - `setup.cfg`
-  - `src/multicastpy/__init__.py`
 
 - Create the release commit:
   ```shell
