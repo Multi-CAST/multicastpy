@@ -1,5 +1,3 @@
-import functools
-import itertools
 import contextlib
 import collections
 
@@ -13,32 +11,19 @@ UNMARKED = '∅'
 
 def iter_words(chunks1, chunks2):
     assert len(chunks1) == len(chunks2)
-    word, gloss = '', ''
     for chunk1, chunk2 in zip(chunks1, chunks2):
         if chunk1.endswith('--'):  # We replace double-hyphen with em dash.
             chunk1 = chunk1[:-2] + '—'
         if chunk1.endswith('-') and chunk2 == 'NC':  # Bora specialty?
-            chunk1 = chunk1[:-1] + '—'
+            chunk2 = 'NC-'
 
-        if not word:
-            word, gloss = chunk1, chunk2
-        else:
-            if word[-1] in MORPHEME_SEPARATORS or chunk1[0] in MORPHEME_SEPARATORS:
-                if not (gloss[-1] in MORPHEME_SEPARATORS or chunk2[0] in MORPHEME_SEPARATORS):
-                    assert chunk2 == UNMARKED, (chunks1, chunks2)
-                    chunk2 = (word[-1] if word[-1] in MORPHEME_SEPARATORS else chunk1[0]) + chunk2
-                if word[-1] == chunk1[0]:  # Separator applied on both sides.
-                    chunk1 = chunk1[1:]
-                if gloss[-1] == chunk2[0]:  # Separator applied on both sides.
-                    chunk2 = chunk2[1:]
-                word += chunk1
-                gloss += chunk2
-            else:
-                yield word, gloss
-                word, gloss = chunk1, chunk2
+        ms1 = [c for c in chunk1 if c in MORPHEME_SEPARATORS]
+        ms2 = [c for c in chunk2 if c in MORPHEME_SEPARATORS]
+        if len(ms1) == len(ms2) and ms1 != ms2:
+            # We go with the separators as used for the gloss.
+            chunk1 = ''.join(ms2.pop(0) if c in MORPHEME_SEPARATORS else c for c in chunk1)
 
-    if word:
-        yield word, gloss
+        yield chunk1, chunk2
 
 
 @contextlib.contextmanager
@@ -112,22 +97,10 @@ class Unit(Element):
         for name, tier in parse_tiers(e).items():
             setattr(self, name, tier)
         glossed_words = list(iter_words(self.gword, self.gloss))
-        self._gword = [w for w, _ in glossed_words]
-        self._gloss = [g for _, g in glossed_words]
-
-    @functools.cached_property
-    def igt(self):
-        igt = IGT(phrase=self._gword, gloss=self._gloss)
-        if igt.conformance.name == 'UNALIGNED':  # pragma: no cover
-            print(igt.conformance.name)
-            for k, v in itertools.zip_longest(self.gword, self.gloss):
-                print(k, v)
-            print(self.gword)
-            print(self.gloss)
-            print('---')
-            print(self._gword)
-            print(self._gloss)
-        return igt
+        self.gword = [w for w, _ in glossed_words]
+        self.gloss = [g for _, g in glossed_words]
+        assert len(self.gword) == len(self.gloss) == len(self.graid)
+        self.igt = IGT(phrase=self.gword, gloss=self.gloss)
 
     def __getattr__(self, item):
         if item in [

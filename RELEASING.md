@@ -26,25 +26,8 @@ Releasing multicastpy
   git tag -a v<VERSION> -m"<VERSION> release"
   ```
 
-- Release to PyPI:
-  ```shell
-  rm dist/*
-  python -m build -n
-  twine upload dist/*
-  ```
-
 - Push to github:
   ```shell
   git push origin
   git push --tags
-  ```
-
-- Change version for the next release cycle, i.e. incrementing and adding .dev0
-  - `setup.cfg`
-  - `src/multicastpy/__init__.py`
-
-- Commit/push the version change:
-  ```shell
-  git commit -a -m "bump version for development"
-  git push origin
   ```
