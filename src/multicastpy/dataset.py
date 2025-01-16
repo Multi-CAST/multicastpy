@@ -6,6 +6,7 @@ import pathlib
 import functools
 import mimetypes
 import contextlib
+import subprocess
 
 import attr
 import ffmpeg
@@ -115,7 +116,7 @@ class Dataset(BaseDataset):
             }, indent=4)),
             'Description')
         cmd = [m for m in ds['MediaTable'] if m['Media_Type'] == 'application/pdf']
-        return add_markdown_text(
+        res = add_markdown_text(
             res,
             """
 ## Corpus metadata
@@ -128,8 +129,57 @@ class Dataset(BaseDataset):
             'Description'
         )
 
-    def cmd_makecldf(self, args):
+        def run_counts(clause_boundaries=False):
+            cmd = ['multicast', 'counts', str(self.dir), '--format', 'pipe']
+            if clause_boundaries:
+                cmd.append('--clause-boundaries')
+            return subprocess.check_output(cmd).decode('utf8')
 
+        return add_markdown_text(
+            res,
+            """
+## Corpus counts
+
+Only a small number of basic GRAID symbols are counted:
+
+*Function symbols*
+- ⟨0⟩ zero
+- ⟨pro⟩ definite pronoun
+- ⟨np⟩ full noun phrase
+- ⟨other⟩ form not further specified
+
+*Person/Animacy symbols*
+- ⟨.1⟩ first person
+- ⟨.2⟩ second person
+- ⟨.h⟩ third person, human
+- ⟨.d⟩ third person, anthropomorphic
+- ø third person, non-human
+
+*Function symbols*
+- ⟨:s⟩ subject of an intransitive clause
+- ⟨:a⟩ subject of a transitive clause
+- ⟨:ncs⟩ non-canonical subject
+- ⟨:p⟩ direct object
+- ⟨:obl⟩ oblique argument
+- ⟨:g⟩ goal argument
+- ⟨:l⟩ locational argument
+- ⟨:pred⟩ predicate
+- ⟨:poss⟩ possessive
+- ⟨:other⟩ function not further specified
+
+Only basic categories are listed; categories represented by complex symbols with additional
+specifiers (e.g. ⟨dem_pro⟩ ‘demonstrative pronoun’) have been subsumed under the more basic
+category (e.g. ⟨pro⟩ ‘definite pronoun’). Please refer to the annotation notes for this corpus for
+information on all annotated categories, including those not listed here.
+
+{}
+
+**Clause boundaries**
+
+{}
+""".format(run_counts(), run_counts(clause_boundaries=True)), 'Description')
+
+    def cmd_makecldf(self, args):
         self.add_schema(args.writer.cldf)
 
         mdir = rmdir(self.cldf_dir / 'media')

@@ -20,3 +20,5 @@ def run(args):  # pragma: no cover
     print(repos.git('tag -a v{0} -m "{0}"'.format(repos.version)))
     print(repos.git('push origin'))
     print(repos.git('push origin --tags'))
+    print('\nNow run:\n')
+    print('gh repo edit --description "{}" --add-topic "linguistics"'.format(repos.md['title']))

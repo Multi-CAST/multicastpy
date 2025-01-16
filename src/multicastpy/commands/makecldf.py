@@ -30,6 +30,7 @@ class Repos:  # pragma: no cover
         self.version = md['version']
         self.mod = self.dir / 'cldfbench_{}.py'.format(self.id)
         assert self.mod.exists()
+        self.md = md
 
     def git(self, line):
         return cmd('git -C {} {}'.format(self.dir, line))
@@ -43,9 +44,10 @@ def register(parser):  # pragma: no cover
 def run(args):  # pragma: no cover
     repos = Repos(args.repos)
     print(cmd(
-        'cldfbench makecldf --with-zenodo --with-cldfreadme --glottolog-version {} {}'.format(
+        'cldfbench makecldf --with-cldfreadme --glottolog-version {} {}'.format(
             args.glottolog_version, repos.mod,
         )))
+    print(cmd('cldfbench zenodo {} --communities multicast'.format(repos.mod)))
     print(cmd('cldfbench readme {}'.format(repos.mod)))
     print(cmd('cldf validate {}'.format(args.repos / 'cldf')))
     print(cmd('cldf splitmedia {}'.format(args.repos / 'cldf')))
