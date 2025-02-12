@@ -72,6 +72,23 @@ def iter_referents(p, refind_map, log=None):
     if not p.exists():
         return  # pragma: no cover
     relid, seen = 0, set()
+    try:
+        mrefind = max([v for k, v in refind_map.items() if not isinstance(k, str)])
+        rlen = 10
+        while rlen < mrefind:
+            rlen *= 10
+        rlen = int(rlen / 10)
+    except ValueError:
+        mrefind, rlen = None, None
+
+    if mrefind:
+        # If there are legitimate refind_map entries, we substitute ones which are not
+        # referenced.
+        for row in reader(p, dicts=True, delimiter='\t'):
+            tid = row['text']
+            if (tid, row['refind']) not in refind_map:
+                refind_map[tid, row['refind']] = refind_map[tid] * rlen + int(row['refind'])
+
     for row in reader(p, dicts=True, delimiter='\t'):
         del row['corpus']
         tid = row.pop('text')
@@ -133,8 +150,11 @@ def remap_refind(p, refind_map):
         with updateable_xml(p, newline='\r\n') as xml:
             xml_remap_refind(xml, refind_map, tid)
     elif p.suffix == '.tsv':
-        rows = list(reader(p, dicts=True, delimiter='\t'))
-        with UnicodeWriter(p, delimiter='\t') as writer:
+        fname = {
+            'mc_veraa_palaa.tsv': 'mc_veraa_pala_a.tsv',
+            'mc_veraa_palab.tsv': 'mc_veraa_pala_b.tsv'}.get(p.name, p.name)
+        rows = list(reader(p.parent / fname, dicts=True, delimiter='\t'))
+        with UnicodeWriter(p.parent / fname, delimiter='\t') as writer:
             for i, row in enumerate(rows):
                 if i == 0:
                     writer.writerow(row.keys())

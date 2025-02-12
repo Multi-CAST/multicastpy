@@ -186,7 +186,10 @@ information on all annotated categories, including those not listed here.
         mdir.mkdir()
         for d in ['eaf', 'tsv', 'xml']:
             for p in self.raw_dir.joinpath(d).glob('*.' + d):
-                shutil.copyfile(p, mdir / p.name)
+                fname = {
+                    'mc_veraa_palaa.tsv': 'mc_veraa_pala_a.tsv',
+                    'mc_veraa_palab.tsv': 'mc_veraa_pala_b.tsv'}.get(p.name, p.name)
+                shutil.copyfile(p, mdir / fname)
                 remap_refind(mdir / p.name, self.refind_map)
 
         docmap = {}
@@ -361,6 +364,8 @@ information on all annotated categories, including those not listed here.
                 Recording_Length=reclength,
                 Source=sorted(args.writer.cldf.sources.keys()),
             ))
+        if args.writer.objects.get('referent_relations.csv'):
+            self.add_refrel(args.writer.cldf)
 
     def add_schema(self, cldf):
         cldf.add_component(
@@ -487,28 +492,6 @@ information on all annotated categories, including those not listed here.
                 "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#contributionReference",
             },
         )
-        if self.with_refind:
-            cldf.add_columns(
-                'ExampleTable',
-                {
-                    "name": "refind",
-                    "dc:format": "RefIND",
-                    "dc:description":
-                        "Referent identification with the RefIND scheme (Referent "
-                        "indexing in natural-language discourse, Schiborr et al. 2018). {} is used "
-                        "to signal no referent information.".format(UNMARKED),
-                    "separator": "\t",
-                },
-                {
-                    "name": "refindFK",
-                    "dc:description":
-                        "A duplicate refind column is provided, to enable checking referential "
-                        "integrity (via this list-valued foreign key) while still allowing uniform "
-                        "access to the annotation tiers in CLDF SQL. (While the refind column will "
-                        "be converted to a TEXT column in CLDF SQL, this column will be replaced "
-                        "by an association table.)",
-                    "separator": "\t",
-                })
         if self.with_isnref:
             cldf.add_columns(
                 'ExampleTable',
@@ -522,7 +505,6 @@ information on all annotated categories, including those not listed here.
                         "used to signal no INNRef annotation.".format(UNMARKED),
                     "separator": "\t",
                 })
-
         cldf['ExampleTable'].common_props['dc:description'] = \
             'Annotated clauses of the texts in the collection.'
         cldf['ExampleTable', 'Analyzed_Word'].separator = '\t'
@@ -587,6 +569,32 @@ information on all annotated categories, including those not listed here.
             },
         )
         if self.with_refind:
+            self.add_refrel(cldf)
+
+    def add_refrel(self, cldf):
+        if ('ExampleTable', 'refind') not in cldf:
+            cldf.add_columns(
+                'ExampleTable',
+                {
+                    "name": "refind",
+                    "dc:format": "RefIND",
+                    "dc:description":
+                        "Referent identification with the RefIND scheme (Referent "
+                        "indexing in natural-language discourse, Schiborr et al. 2018). {} is used "
+                        "to signal no referent information.".format(UNMARKED),
+                    "separator": "\t",
+                },
+                {
+                    "name": "refindFK",
+                    "dc:description":
+                        "A duplicate refind column is provided, to enable checking referential "
+                        "integrity (via this list-valued foreign key) while still allowing uniform "
+                        "access to the annotation tiers in CLDF SQL. (While the refind column will "
+                        "be converted to a TEXT column in CLDF SQL, this column will be replaced "
+                        "by an association table.)",
+                    "separator": "\t",
+                })
+        if 'referent_relations.csv' not in cldf:
             cldf.add_table(
                 'referent_relations.csv',
                 {

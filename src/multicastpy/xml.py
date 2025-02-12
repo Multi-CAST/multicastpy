@@ -39,11 +39,12 @@ def updateable_xml(p, newline='\n'):
 
 def remap_refind(doc, refind_map, tid):
     for e in doc.xpath(".//refind"):
-        try:
-            e.text = str(refind_map[tid, e.text])
-        except KeyError:  # pragma: no cover
-            tid = '_'.join(doc.xpath(".//file")[0].attrib['f_name'].split('_')[2:])
-            e.text = str(refind_map[tid, e.text])
+        if e.text is not None:
+            try:
+                e.text = str(refind_map[tid, e.text])
+            except KeyError:  # pragma: no cover
+                tid = '_'.join(doc.xpath(".//file")[0].attrib['f_name'].split('_')[2:])
+                e.text = str(refind_map[tid, e.text])
 
 
 def iter_text(p, markdown=False):

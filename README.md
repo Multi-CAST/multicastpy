@@ -34,13 +34,7 @@ To list all available versions of a given corpus, run
 multicast cldfbench <repos> --corpus <corpus>
 ```
 
-The resulting dataset repository can then be curated using `cldfbench`, i.e.
-- CLDF can be created via 
-  - `cldfbench makecldf --with-zenodo --with-cldfreadme --glottolog-version v5.1 cldfbench_<dsid>.py`
-  - `cldfbench readme cldfbench_<dsid>.py`
-  - `cldf validate cldf`
-  - `cldf splitmedia cldf`
-  - `git commit -a -m"..." .`
-  - `git tag -a vXXXX -m"..."`
-  - `git push origin`
-  - `git push origin --tags`
+The resulting dataset repository can then be curated as follows
+- `multicast makecldf ...`
+- `multicast pushtag ...`
+- `mmulticast release ...`
